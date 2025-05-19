@@ -1,0 +1,254 @@
+{
+  "Transcona": {
+    "name": "Transcona",
+    "region": "East",
+    "latitude": 49.8954,
+    "longitude": -97.0153,
+    "default_price": 400000,
+    "monthly_prices": {
+      "January": 399678,
+      "February": 402099,
+      "March": 397818,
+      "April": 396655,
+      "May": 403995,
+      "June": 396023,
+      "July": 402317,
+      "August": 397080,
+      "September": 404642,
+      "October": 395982,
+      "November": 405260,
+      "December": 401276
+    }
+  },
+  "St. Vital": {
+    "name": "St. Vital",
+    "region": "South",
+    "latitude": 49.82,
+    "longitude": -97.09,
+    "default_price": 500000,
+    "monthly_prices": {
+      "January": 500260,
+      "February": 491503,
+      "March": 490957,
+      "April": 507365,
+      "May": 501144,
+      "June": 500015,
+      "July": 505954,
+      "August": 505389,
+      "September": 490082,
+      "October": 490557,
+      "November": 493167,
+      "December": 491696
+    }
+  },
+  "Fort Garry": {
+    "name": "Fort Garry",
+    "region": "Southwest",
+    "latitude": 49.8384,
+    "longitude": -97.1664,
+    "default_price": 600000,
+    "monthly_prices": {
+      "January": 602632,
+      "February": 607696,
+      "March": 596574,
+      "April": 611129,
+      "May": 603647,
+      "June": 592296,
+      "July": 588227,
+      "August": 596186,
+      "September": 589265,
+      "October": 610078,
+      "November": 607863,
+      "December": 610061
+    }
+  },
+  "River Heights": {
+    "name": "River Heights",
+    "region": "Central",
+    "latitude": 49.8667,
+    "longitude": -97.2,
+    "default_price": 700000,
+    "monthly_prices": {
+      "January": 689071,
+      "February": 699224,
+      "March": 688521,
+      "April": 710246,
+      "May": 702880,
+      "June": 698216,
+      "July": 691703,
+      "August": 696245,
+      "September": 695465,
+      "October": 709645,
+      "November": 707125,
+      "December": 705216
+    }
+  },
+  "Tuxedo": {
+    "name": "Tuxedo",
+    "region": "West",
+    "latitude": 49.87,
+    "longitude": -97.21,
+    "default_price": 900000,
+    "monthly_prices": {
+      "January": 910743,
+      "February": 907950,
+      "March": 885174,
+      "April": 897966,
+      "May": 898803,
+      "June": 901380,
+      "July": 901416,
+      "August": 902541,
+      "September": 898091,
+      "October": 897741,
+      "November": 904969,
+      "December": 908053
+    }
+  },
+  "Bridgewater": {
+    "name": "Bridgewater",
+    "region": "Southwest",
+    "latitude": 49.7917,
+    "longitude": -97.1875,
+    "default_price": 750000,
+    "monthly_prices": {
+      "January": 739913,
+      "February": 747377,
+      "March": 746170,
+      "April": 752898,
+      "May": 750374,
+      "June": 743774,
+      "July": 742916,
+      "August": 760266,
+      "September": 757738,
+      "October": 747398,
+      "November": 764180,
+      "December": 748226
+    }
+  },
+  "Prairie Pointe": {
+    "name": "Prairie Pointe",
+    "region": "Southwest",
+    "latitude": 49.7925,
+    "longitude": -97.195,
+    "default_price": 720000,
+    "monthly_prices": {
+      "January": 716188,
+      "February": 714348,
+      "March": 730934,
+      "April": 719909,
+      "May": 709739,
+      "June": 708025,
+      "July": 720778,
+      "August": 718178,
+      "September": 726723,
+      "October": 711696,
+      "November": 715907,
+      "December": 720058
+    }
+  },
+  "East Kildonan": {
+    "name": "East Kildonan",
+    "region": "Northeast",
+    "latitude": 49.9267,
+    "longitude": -97.065,
+    "default_price": 450000,
+    "monthly_prices": {
+      "January": 457550,
+      "February": 458977,
+      "March": 443721,
+      "April": 445250,
+      "May": 453718,
+      "June": 443523,
+      "July": 442498,
+      "August": 442600,
+      "September": 445877,
+      "October": 442144,
+      "November": 454477,
+      "December": 450361
+    }
+  },
+  "West End": {
+    "name": "West End",
+    "region": "West",
+    "latitude": 49.892,
+    "longitude": -97.165,
+    "default_price": 480000,
+    "monthly_prices": {
+      "January": 477810,
+      "February": 488188,
+      "March": 485797,
+      "April": 471472,
+      "May": 472204,
+      "June": 487067,
+      "July": 482128,
+      "August": 474622,
+      "September": 482506,
+      "October": 488995,
+      "November": 472925,
+      "December": 478921
+    }
+  },
+  "North Kildonan": {
+    "name": "North Kildonan",
+    "region": "North",
+    "latitude": 49.9442,
+    "longitude": -97.0422,
+    "default_price": 460000,
+    "monthly_prices": {
+      "January": 463203,
+      "February": 462477,
+      "March": 465203,
+      "April": 453436,
+      "May": 454625,
+      "June": 452090,
+      "July": 462169,
+      "August": 455069,
+      "September": 460746,
+      "October": 460154,
+      "November": 451805,
+      "December": 457233
+    }
+  },
+  "St. James": {
+    "name": "St. James",
+    "region": "West",
+    "latitude": 49.89,
+    "longitude": -97.2,
+    "default_price": 470000,
+    "monthly_prices": {
+      "January": 477163,
+      "February": 465596,
+      "March": 475505,
+      "April": 476560,
+      "May": 461935,
+      "June": 469016,
+      "July": 465886,
+      "August": 478783,
+      "September": 478742,
+      "October": 472621,
+      "November": 477328,
+      "December": 470741
+    }
+  },
+  "Sage Creek": {
+    "name": "Sage Creek",
+    "region": "Southeast",
+    "latitude": 49.8055,
+    "longitude": -96.9965,
+    "default_price": 650000,
+    "monthly_prices": {
+      "January": 651822,
+      "February": 644583,
+      "March": 654862,
+      "April": 653889,
+      "May": 651913,
+      "June": 640854,
+      "July": 643991,
+      "August": 655985,
+      "September": 639789,
+      "October": 649747,
+      "November": 661917,
+      "December": 658691
+    }
+  }
+}
