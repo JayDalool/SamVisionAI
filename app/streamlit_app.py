@@ -9,11 +9,14 @@ import ast
 import datetime
 import plotly.express as px
 import tempfile
-import camelot
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from utils.pdf_sales_parser import extract_pdf_sales, insert_sales_to_db
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 
-# Load model and DB config
 model = joblib.load('trained_price_model.pkl')
 with open("config.txt", "r") as file:
     db_config = ast.literal_eval(file.read())
@@ -23,11 +26,15 @@ conn = psycopg2.connect(**db_config)
 df_all = pd.read_sql_query("SELECT * FROM housing_data", conn)
 conn.close()
 
+# Fallback lot_size for input default
+lot_size_sqft = float(df_all['lot_size'].median()) if 'lot_size' in df_all.columns else 5000.0
+
 # Setup layout
 st.set_page_config(page_title="SamVision AI", layout="wide")
 tab1, tab2, tab3 = st.tabs(["🏠 Home", "📊 CMA Tool", "💰 Price Prediction"])
 
-# 🏠 Tab 1: Home & Upload
+
+
 with tab1:
     st.title("🏠 SamVisionAI")
     st.markdown("""
@@ -40,20 +47,41 @@ with tab1:
     st.subheader("📥 Upload PDF Files (MLS Sales)")
     uploaded_pdfs = st.file_uploader("Upload PDF(s)", type="pdf", accept_multiple_files=True)
     if uploaded_pdfs:
-        all_tables = []
         for uploaded_file in uploaded_pdfs:
             with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
                 tmp_file.write(uploaded_file.read())
                 tmp_path = tmp_file.name
 
-            tables = camelot.read_pdf(tmp_path, pages="all", flavor="stream")
-            for table in tables:
-                df = table.df
-                all_tables.append(df)
-                st.dataframe(df)
-        st.success(f"✅ Parsed {sum(len(df) for df in all_tables)} rows from {len(uploaded_pdfs)} file(s)")
+            parsed_df = extract_pdf_sales(tmp_path)
 
-# 📊 Tab 2: CMA Tool
+            if not parsed_df.empty:
+                st.markdown("### 🔎 Preview Extracted Listings")
+                highlight_cols = [col for col in ['sold_price', 'region', 'neighborhood', 'garage_type'] if col in parsed_df.columns]
+                styled = parsed_df.style.apply(lambda x: ["background-color: #ffdddd" if pd.isna(x[col]) else "" for col in highlight_cols], axis=1)
+                st.dataframe(styled)
+
+                if parsed_df[highlight_cols].isnull().any().any():
+                    st.warning("⚠️ Some rows have missing fields. Please review before inserting.")
+
+                if st.button("📥 Insert Parsed Listings"):
+                    inserted, skipped = insert_sales_to_db(parsed_df, db_config)
+                    st.success(f"✅ Inserted {inserted} records. Skipped {len(skipped)}.")
+
+                    if st.button("🔁 Retrain Model with Latest Data"):
+                        conn = psycopg2.connect(**db_config)
+                        df = pd.read_sql_query("SELECT * FROM housing_data", conn)
+                        conn.close()
+
+                        df['age'] = datetime.datetime.now().year - df['built_year']
+                        df = pd.get_dummies(df, columns=['neighborhood', 'region', 'house_type', 'garage_type', 'season'], drop_first=True)
+                        X = df.drop(['sold_price', 'built_year', 'listing_date', 'latitude', 'longitude', 'address'], axis=1, errors='ignore')
+                        y = df['sold_price']
+
+                        model = RandomForestRegressor(n_estimators=100, random_state=42)
+                        model.fit(X, y)
+                        joblib.dump(model, 'trained_price_model.pkl')
+                        st.success("✅ Model retrained and updated!")
+
 with tab2:
     st.header("📊 Comparative Market Analysis")
     df_all['Select'] = False
@@ -71,10 +99,9 @@ with tab2:
 # 💰 Tab 3: Price Prediction
 with tab3:
     st.header("💰 Predict House Price")
-
     default = df_all.iloc[0]
-    col1, col2, col3 = st.columns(3)
 
+    col1, col2, col3 = st.columns(3)
     with col1:
         neighborhood = st.text_input("Neighborhood", default['neighborhood'])
         region = st.text_input("Region", default['region'])
@@ -86,7 +113,7 @@ with tab3:
         sqft = st.number_input("Sqft", 600, 5000, default['sqft'])
 
     with col3:
-        lot_size = st.number_input("Lot Size", 0.0, 10000.0, float(default['lot_size']))
+        lot_size = st.number_input("Lot Size (sqft)", min_value=0.0, max_value=100000.0, value=round(lot_size_sqft, 2))
         built_year = st.slider("Built Year", 1900, datetime.datetime.now().year, default['built_year'])
         garage_type = st.selectbox("Garage Type", sorted(df_all['garage_type'].dropna().unique()))
         season = st.selectbox("Season", ['Winter', 'Spring', 'Summer', 'Fall'])
@@ -100,18 +127,25 @@ with tab3:
             'lot_size': lot_size, 'age': age, 'dom': dom
         }
 
+
+        
         cat_cols = ['neighborhood', 'region', 'house_type', 'season', 'garage_type']
         df_encoded = pd.get_dummies(df_all[cat_cols], drop_first=True)
         for col in df_encoded.columns:
-            input_dict[col] = int(col.endswith(neighborhood) or col.endswith(region) or
-                                  col.endswith(house_type) or col.endswith(season) or col.endswith(garage_type))
+            input_dict[col] = int(
+                col.endswith(str(neighborhood or "")) or
+                col.endswith(str(region or "")) or
+                col.endswith(str(house_type or "")) or
+                col.endswith(str(season or "")) or
+                col.endswith(str(garage_type or ""))
+            )
+
 
         df_input = pd.DataFrame([input_dict])
         df_input = df_input.reindex(columns=model.feature_names_in_, fill_value=0)
 
         predicted_price = model.predict(df_input)[0]
 
-        # Confidence range ± $5K–$7.5K
         conn = psycopg2.connect(**db_config)
         df_eval = pd.read_sql_query("SELECT * FROM housing_data", conn)
         conn.close()

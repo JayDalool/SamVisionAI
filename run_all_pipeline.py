@@ -16,10 +16,10 @@ def run_script(path, desc):
 
 if __name__ == "__main__":
     steps = [
-        #("data/generate_real_estate_data.py", "Generate Synthetic Real Estate Data"),
-        ("data/load_to_postgresql.py", "Load Data to PostgreSQL"),
-        ("ml/train_model.py", "Train Prediction Model")
+    ("data/load_to_postgresql.py", "Load Real MLS Data to PostgreSQL"),
+    ("ml/train_model.py", "Train Prediction Model")
     ]
+
 
     print(f"🕒 Started pipeline at: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
     for script_path, description in steps:

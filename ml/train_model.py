@@ -16,7 +16,8 @@ with open("config.txt", "r") as file:
 # --- Query Real Data from PostgreSQL
 query = """
 SELECT neighborhood, region, house_type, bedrooms, bathrooms, sqft, lot_size,
-       built_year, garage_type, season, sold_price, listing_date
+       built_year, garage_type, season, sold_price, listing_date,
+       address, dom, latitude, longitude
 FROM housing_data;
 """
 
@@ -26,14 +27,14 @@ conn.close()
 
 # --- Feature Engineering
 df['age'] = datetime.now().year - df['built_year']
-df['dom'] = (pd.Timestamp.now() - pd.to_datetime(df['listing_date'])).dt.days.clip(lower=0)
+df['dom'] = df['dom'].fillna((pd.Timestamp.now() - pd.to_datetime(df['listing_date'])).dt.days.clip(lower=0))
 
 # --- One-Hot Encode Categorical
 categorical_cols = ['neighborhood', 'region', 'house_type', 'season', 'garage_type']
 df = pd.get_dummies(df, columns=categorical_cols, drop_first=True)
 
 # --- Train/Test Split
-X = df.drop(['sold_price', 'built_year', 'listing_date'], axis=1)
+X = df.drop(['sold_price', 'built_year', 'listing_date', 'address'], axis=1)
 y = df['sold_price']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
