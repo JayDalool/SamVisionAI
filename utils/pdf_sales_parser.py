@@ -1,34 +1,50 @@
 # file: utils/pdf_sales_parser.py
 
-import fitz  # PyMuPDF
+import fitz
 import re
 import pandas as pd
 import datetime
 import json
-import psycopg2
-from typing import Tuple, List
+from typing import Tuple, List, Callable, Any, Union
 
 REGION_FILE = "data/region_lookup.json"
-
-
-
-def load_region_lookup():
-    try:
-        with open(REGION_FILE, "r") as f:
-            return json.load(f)
-    except:
-        return {}
-
-def save_region_lookup(region_map):
-    with open(REGION_FILE, "w") as f:
-        json.dump(region_map, f, indent=2)
-
-def safe_match(pattern, text, cast=str, group=1):
-    m = re.search(pattern, text)
-    return cast(m.group(group).replace(",", "")) if m else None
+MISSING_ADDR_LOG = "data/missing_addresses.txt"
 
 def get_season(date):
     return ["Winter", "Winter", "Spring", "Spring", "Spring", "Summer", "Summer", "Summer", "Fall", "Fall", "Fall", "Winter"][date.month - 1]
+
+def safe_match(pattern: str, text: str, cast: Callable[[Any], Any] = str, group: Union[int, Tuple[int, ...]] = 1) -> Any:
+    match = re.search(pattern, text)
+    if not match:
+        return None
+    if isinstance(group, tuple):
+        try:
+            values = [match.group(g).replace(",", "").strip() for g in group]
+            return cast(values)
+        except:
+            return None
+    else:
+        try:
+            value = match.group(group).replace(",", "").strip()
+            return cast(value)
+        except:
+            return None
+
+def normalize_garage_type(raw: str) -> str:
+    raw = raw.lower().strip()
+    if "single" in raw and "attached" in raw:
+        return "single_attached"
+    if "single" in raw and "detached" in raw:
+        return "single_detached"
+    if "double" in raw and "attached" in raw:
+        return "double_attached"
+    if "double" in raw and "detached" in raw:
+        return "double_detached"
+    if "triple" in raw and "attached" in raw:
+        return "triple_attached"
+    if "triple" in raw and "detached" in raw:
+        return "triple_detached"
+    return "none"
 
 def extract_pdf_sales(pdf_path: str) -> pd.DataFrame:
     doc = fitz.open(pdf_path)
@@ -37,80 +53,94 @@ def extract_pdf_sales(pdf_path: str) -> pd.DataFrame:
     for page in doc:
         text = page.get_text()
 
-        # Field extractors
-        list_price = re.search(r"List Price:\s*\$?([\d,]+)", text)
-        sold_price = re.search(r"Sell Price:\s*\$?([\d,]+)", text)
-        address = re.search(r"\d{3,}\s+.*?Winnipeg.*?(R\d+[A-Z]+\d+)?", text)
-        mls_id = re.search(r"MLS.?#:\s*([\d]+)", text)
-        dom = re.search(r"DOM[:\s]+(\d+)", text)
-        house_type = re.search(r"Type:\s*(\w+)", text)
-        bedrooms = re.search(r"Beds[:\s]+(\d+)", text)
-        bathrooms = re.search(r"Baths[:\s]+(\d+\.?\d*)", text)
-        sqft = re.search(r"Liv Area[:\s]+([\d,]+)", text)
-        year_built = re.search(r"Yr Built[:/ ]+(\d{4})", text)
-        garage_type = re.search(r"Garage\s*[:\-]?\s*([\w\s\-]+)", text)
-        lot_size_match = re.search(r"Lot\s+Dim:\s+(\d+)\s*x\s*(\d+)", text)
+        lot_area_m2 = safe_match(r"Lot Area:\s*([\d,.]+)\s*M2", text, lambda x: float(x))
+        lot_front = safe_match(r"Lot Front:\s*([\d.]+)\s*M", text, float)
+        lot_depth = safe_match(r"Lot Dpth:\s*([\d.]+)\s*M", text, float)
 
-        # Derived values
-        lot_area = None
-        if lot_size_match:
-            try:
-                lot_area = int(lot_size_match.group(1)) * int(lot_size_match.group(2))
-            except:
-                lot_area = None
+        lot_area_sqft = None
+        if lot_area_m2:
+            lot_area_sqft = round(lot_area_m2 * 10.7639)
+        elif lot_front and lot_depth:
+            lot_area_sqft = round(lot_front * lot_depth * 10.7639)
 
-        # Append row
-        rows.append({
+        # Improved address extraction: Greedy lines starting with number and capitalized words
+        lines = text.split("\n")
+        address = None
+        for line in lines:
+            if re.match(r"^\d{3,5} [\w\s,.#'-]+Winnipeg", line):
+                address = line.strip()
+                break
+
+        data = {
             "listing_date": datetime.datetime.today().date(),
             "season": get_season(datetime.datetime.today()),
-            "address": address.group(0).strip() if address else None,
-            "mls_id": mls_id.group(1) if mls_id else None,
-            "list_price": int(list_price.group(1).replace(",", "")) if list_price else None,
-            "original_price": int(list_price.group(1).replace(",", "")) if list_price else None,
-            "sold_price": int(sold_price.group(1).replace(",", "")) if sold_price else None,
-            "house_type": house_type.group(1) if house_type else "RD",
-            "bedrooms": int(bedrooms.group(1)) if bedrooms else None,
-            "bathrooms": float(bathrooms.group(1)) if bathrooms else 0.0,
-            "dom": int(dom.group(1)) if dom else None,
-            "built_year": int(year_built.group(1)) if year_built else None,
-            "garage_type": garage_type.group(1).strip() if garage_type else None,
-            "sqft": int(sqft.group(1).replace(",", "")) if sqft else None,
-            "lot_size": lot_area,
+            "address": address,
+            "list_price": safe_match(r"List Price:\s*\$?([\d,]+)", text, int),
+            "original_price": safe_match(r"List Price:\s*\$?([\d,]+)", text, int),
+            "sold_price": safe_match(r"Sell Price:\s*\$?([\d,]+)", text, int),
+            "house_type": safe_match(r"Type:\s*(\w+)", text),
+            "bedrooms": safe_match(r"BDA:\s*(\d+)", text, int),
+            "bathrooms": safe_match(r"Baths:\s*F(\d+)/H(\d+)", text, lambda x: int(x[0]) + int(x[1]), group=(1, 2)),
+            "dom": safe_match(r"DOM[:\s]+(\d+)", text, int),
+            "built_year": safe_match(r"Yr Built(?:/Age)?:\s*(\d{4})", text, int),
+            "garage_type": normalize_garage_type(safe_match(r"Parking:\s*([^\n]*)", text) or "none"),
+            "sqft": safe_match(r"Liv Area:\s*([\d.]+)\s*M2", text, lambda x: round(float(x) * 10.7639)),
+            "lot_size": lot_area_sqft,
             "latitude": 0.0,
             "longitude": 0.0,
-            "neighborhood": None,
-            "region": None
-        })
+            "neighborhood": safe_match(r"Nghbrhd:\s*([^\n]+)", text),
+            "region": safe_match(r"Nghbrhd:\s*([^\n]+)", text)
+        }
 
-    return pd.DataFrame(rows)
+        rows.append(data)
 
+    df = pd.DataFrame(rows)
+    return clean_sales_data(df)
 
-def insert_sales_to_db(df: pd.DataFrame, db_config: dict) -> Tuple[int, List[str]]:
-    conn = psycopg2.connect(**db_config)
-    cursor = conn.cursor()
-    inserted, skipped = 0, []
+def clean_sales_data(df: pd.DataFrame) -> pd.DataFrame:
+    try:
+        with open(REGION_FILE) as f:
+            region_map = json.load(f)
+    except:
+        region_map = {}
 
-    for _, row in df.iterrows():
-        try:
-            cursor.execute('''
-                INSERT INTO housing_data (
-                    neighborhood, region, house_type, bedrooms, bathrooms, sqft,
-                    lot_size, built_year, garage_type, address, dom,
-                    listing_date, season, latitude, longitude,
-                    list_price, original_price, sold_price
-                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            ''', (
-                row.get("neighborhood"), row.get("region"), row.get("house_type"),
-                row.get("bedrooms"), row.get("bathrooms"), row.get("sqft"),
-                row.get("lot_size"), row.get("built_year"), row.get("garage_type"), row.get("address"),
-                row.get("dom"), row.get("listing_date"), row.get("season"),
-                None, None, row.get("list_price"), row.get("original_price"), row.get("sold_price")
-            ))
-            inserted += 1
-        except:
-            skipped.append(row.get("address"))
+    for i, row in df.iterrows():
+        if not row["season"]:
+            df.at[i, "season"] = get_season(row["listing_date"])
 
-    conn.commit()
-    cursor.close()
-    conn.close()
-    return inserted, skipped
+        if not row["garage_type"]:
+            df.at[i, "garage_type"] = "none"
+
+        if row["garage_type"]:
+            val = row["garage_type"].lower()
+            val = val.replace("dbl", "double").replace("sgl", "single").replace("att", "attached").replace("det", "detached")
+            df.at[i, "garage_type"] = val.strip()
+
+        if row["sqft"] is not None and (row["sqft"] <= 0 or row["sqft"] > 10000):
+            df.at[i, "sqft"] = None
+
+        if row["lot_size"] is not None and (row["lot_size"] <= 0 or row["lot_size"] > 100000):
+            df.at[i, "lot_size"] = None
+
+        if isinstance(row["address"], str):
+            df.at[i, "address"] = row["address"].strip()
+            for key in region_map:
+                if key.lower() in row["address"].lower():
+                    df.at[i, "region"] = region_map[key]
+                    break
+
+    df["sold_price"] = df["sold_price"].fillna(df["list_price"])
+    df["bathrooms"] = df["bathrooms"].fillna(1)
+
+    for col in ["garage_type", "region", "neighborhood"]:
+        df[col] = df[col].fillna("none")
+
+    return df
+
+if __name__ == "__main__":
+    import sys
+    from pprint import pprint
+
+    pdf_path = sys.argv[1] if len(sys.argv) > 1 else "pdf_uploads/sample.pdf"
+    df = extract_pdf_sales(pdf_path)
+    pprint(df.head())

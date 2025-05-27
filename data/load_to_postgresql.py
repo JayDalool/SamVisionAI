@@ -7,9 +7,15 @@ import ast
 import pandas as pd
 import psycopg2
 from psycopg2.extras import execute_values
+import sys, os
+sys.path.append(os.path.abspath(os.getcwd()))
+import sys
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
 
 # Import from parent directory
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.append(os.path.abspath(os.getcwd()))
 from utils.pdf_sales_parser import extract_pdf_sales
 
 CSV_PATH = 'winnipeg_housing_data.csv'
@@ -56,7 +62,7 @@ def get_dataframe():
     else:
         raise FileNotFoundError("❌ CSV and PDF directory both missing. Cannot proceed.")
 
-print("📦 Loading MLS data to PostgreSQL...")
+print("[INFO] Loading MLS data to PostgreSQL...")
 df = get_dataframe()
 
 required_columns = [

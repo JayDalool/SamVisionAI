@@ -7,10 +7,10 @@ import joblib
 import psycopg2
 import ast
 import datetime
-import plotly.express as px
 import tempfile
 import sys
 import os
+import shutil
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from utils.pdf_sales_parser import extract_pdf_sales, insert_sales_to_db
@@ -21,19 +21,14 @@ model = joblib.load('trained_price_model.pkl')
 with open("config.txt", "r") as file:
     db_config = ast.literal_eval(file.read())
 
-# Load DB data
 conn = psycopg2.connect(**db_config)
 df_all = pd.read_sql_query("SELECT * FROM housing_data", conn)
 conn.close()
 
-# Fallback lot_size for input default
 lot_size_sqft = float(df_all['lot_size'].median()) if 'lot_size' in df_all.columns else 5000.0
 
-# Setup layout
 st.set_page_config(page_title="SamVision AI", layout="wide")
 tab1, tab2, tab3 = st.tabs(["🏠 Home", "📊 CMA Tool", "💰 Price Prediction"])
-
-
 
 with tab1:
     st.title("🏠 SamVisionAI")
@@ -48,39 +43,41 @@ with tab1:
     uploaded_pdfs = st.file_uploader("Upload PDF(s)", type="pdf", accept_multiple_files=True)
     if uploaded_pdfs:
         for uploaded_file in uploaded_pdfs:
-            with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
-                tmp_file.write(uploaded_file.read())
-                tmp_path = tmp_file.name
+            save_path = os.path.join("pdf_uploads", uploaded_file.name)
+            with open(save_path, "wb") as f:
+                f.write(uploaded_file.read())
 
-            parsed_df = extract_pdf_sales(tmp_path)
+        if st.button("📤 Parse & Load PDFs to Database"):
+            parsed_frames = [extract_pdf_sales(os.path.join("pdf_uploads", f.name)) for f in uploaded_pdfs]
+            parsed_df = pd.concat(parsed_frames, ignore_index=True)
 
             if not parsed_df.empty:
                 st.markdown("### 🔎 Preview Extracted Listings")
+
                 highlight_cols = [col for col in ['sold_price', 'region', 'neighborhood', 'garage_type'] if col in parsed_df.columns]
-                styled = parsed_df.style.apply(lambda x: ["background-color: #ffdddd" if pd.isna(x[col]) else "" for col in highlight_cols], axis=1)
+
+                def highlight_nulls_limited(row):
+                    return ["background-color: #ffdddd" if col in highlight_cols and pd.isna(row[col]) else "" for col in row.index]
+
+                styled = parsed_df.style.apply(highlight_nulls_limited, axis=1)
                 st.dataframe(styled)
 
-                if parsed_df[highlight_cols].isnull().any().any():
-                    st.warning("⚠️ Some rows have missing fields. Please review before inserting.")
+                inserted, skipped = insert_sales_to_db(parsed_df, db_config)
+                st.success(f"✅ Inserted {inserted} records. Skipped {len(skipped)}.")
 
-                if st.button("📥 Insert Parsed Listings"):
-                    inserted, skipped = insert_sales_to_db(parsed_df, db_config)
-                    st.success(f"✅ Inserted {inserted} records. Skipped {len(skipped)}.")
+                conn = psycopg2.connect(**db_config)
+                df = pd.read_sql_query("SELECT * FROM housing_data", conn)
+                conn.close()
 
-                    if st.button("🔁 Retrain Model with Latest Data"):
-                        conn = psycopg2.connect(**db_config)
-                        df = pd.read_sql_query("SELECT * FROM housing_data", conn)
-                        conn.close()
+                df['age'] = datetime.datetime.now().year - df['built_year']
+                df = pd.get_dummies(df, columns=['neighborhood', 'region', 'house_type', 'garage_type', 'season'], drop_first=True)
+                X = df.drop(['sold_price', 'built_year', 'listing_date', 'latitude', 'longitude', 'address'], axis=1, errors='ignore')
+                y = df['sold_price']
 
-                        df['age'] = datetime.datetime.now().year - df['built_year']
-                        df = pd.get_dummies(df, columns=['neighborhood', 'region', 'house_type', 'garage_type', 'season'], drop_first=True)
-                        X = df.drop(['sold_price', 'built_year', 'listing_date', 'latitude', 'longitude', 'address'], axis=1, errors='ignore')
-                        y = df['sold_price']
-
-                        model = RandomForestRegressor(n_estimators=100, random_state=42)
-                        model.fit(X, y)
-                        joblib.dump(model, 'trained_price_model.pkl')
-                        st.success("✅ Model retrained and updated!")
+                model = RandomForestRegressor(n_estimators=100, random_state=42)
+                model.fit(X, y)
+                joblib.dump(model, 'trained_price_model.pkl')
+                st.success("✅ Model retrained and updated!")
 
 with tab2:
     st.header("📊 Comparative Market Analysis")
@@ -96,7 +93,6 @@ with tab2:
         st.dataframe(selected_cma)
         st.download_button("📥 Download CMA", selected_cma.to_csv(index=False), "cma_report.csv", "text/csv")
 
-# 💰 Tab 3: Price Prediction
 with tab3:
     st.header("💰 Predict House Price")
     default = df_all.iloc[0]
@@ -127,8 +123,6 @@ with tab3:
             'lot_size': lot_size, 'age': age, 'dom': dom
         }
 
-
-        
         cat_cols = ['neighborhood', 'region', 'house_type', 'season', 'garage_type']
         df_encoded = pd.get_dummies(df_all[cat_cols], drop_first=True)
         for col in df_encoded.columns:
@@ -139,7 +133,6 @@ with tab3:
                 col.endswith(str(season or "")) or
                 col.endswith(str(garage_type or ""))
             )
-
 
         df_input = pd.DataFrame([input_dict])
         df_input = df_input.reindex(columns=model.feature_names_in_, fill_value=0)
