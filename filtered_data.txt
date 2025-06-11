@@ -1,0 +1,2274 @@
+- MLS ID: "202509796"
+  Address: "570 Walker Avenue, Winnipeg R3L 1C4"
+  List Price: "\$334,900"
+  Sold Price: "\$401,570"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F2/H0"
+  DOM: "6"
+  Year Built: "1909/Older"
+  Parking: "Parking Pad, Plug-In, Unpaved Driveway"
+  Liv Area (sqft): "1025"
+  Neighborhood: "Lord Roberts"
+
+- MLS ID: "202509555"
+  Address: "1149 McMillan Avenue, Winnipeg R3M 0T7"
+  List Price: "\$339,900"
+  Sold Price: "\$355,000"
+  House Type: "RD"
+  Bedrooms: "1"
+  Bathrooms: "F2/H0"
+  DOM: "9"
+  Year Built: "1946/Older"
+  Parking: "Single Detached"
+  Liv Area (sqft): "700"
+  Neighborhood: "Crescentwood"
+
+- MLS ID: "202508543"
+  Address: "108 Brock Street, Winnipeg R3N 0Y4"
+  List Price: "\$724,900"
+  Sold Price: "\$725,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H1"
+  DOM: "7"
+  Year Built: "1927"
+  Parking: "Single Attached, Garage door opener"
+  Liv Area (sqft): "2361"
+  Neighborhood: "River Heights North"
+
+- MLS ID: "202511580"
+  Address: "120 Lanark Street, Winnipeg R3N 1L1"
+  List Price: "\$399,900"
+  Sold Price: "\$418,500"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F1/H0"
+  DOM: "6"
+  Year Built: "1923/Older"
+  Parking: "Double Detached"
+  Liv Area (sqft): "1001"
+  Neighborhood: "River Heights"
+
+- MLS ID: "202510849"
+  Address: "703 Brock Street, Winnipeg R3N 0Z3"
+  List Price: "\$524,900"
+  Sold Price: "\$518,500"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "8"
+  Year Built: "1953/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "1130"
+  Neighborhood: "River Heights South"
+
+- MLS ID: "202511672"
+  Address: "699 Oxford Street, Winnipeg R3M 3J3"
+  List Price: "\$399,900"
+  Sold Price: "\$494,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F2/H0"
+  DOM: "5"
+  Year Built: "1957/Older"
+  Parking: "Single Detached"
+  Liv Area (sqft): "1545"
+  Neighborhood: "River Heights"
+
+- MLS ID: "202509406"
+  Address: "694 Park Boulevard S, Winnipeg R3P 0X1"
+  List Price: "\$1,549,900"
+  Sold Price: "\$1,450,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F4/H1"
+  DOM: "2"
+  Year Built: "1982/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "3208"
+  Neighborhood: "Tuxedo"
+
+- MLS ID: "202513358"
+  Address: "6021 Southboine Drive, Winnipeg R3R 0B5"
+  List Price: "\$970,000"
+  Sold Price: "\$955,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F3/H0"
+  DOM: "0"
+  Year Built: "1972/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "1580"
+  Neighborhood: "Charleswood"
+
+- MLS ID: "202511061"
+  Address: "26 Willow Ridge Road, Winnipeg R3R 1L6"
+  List Price: "\$497,900"
+  Sold Price: "\$555,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F2/H0"
+  DOM: "8"
+  Year Built: "1961/Older"
+  Parking: "Double Attached, Front Drive Access, Garage door opener"
+  Liv Area (sqft): "1342"
+  Neighborhood: "Charleswood"
+
+- MLS ID: "202511198"
+  Address: "18 Tillbrook Place, Winnipeg R3R 1W2"
+  List Price: "\$1,095,000"
+  Sold Price: "\$1,265,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F3/H1"
+  DOM: "9"
+  Year Built: "2015/Older"
+  Parking: "Double Attached, Garage door opener, Insulated, Oversized, Workshop"
+  Liv Area (sqft): "2200"
+  Neighborhood: "Charleswood"
+
+- MLS ID: "202513254"
+  Address: "62 Civic Street, Winnipeg R3R 3M6"
+  List Price: "\$650,000"
+  Sold Price: "\$650,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F2/H1"
+  DOM: "0"
+  Year Built: "1988/Older"
+  Parking: "Double Attached; Enclsd: 2; Ttl: 8"
+  Liv Area (sqft): "2051"
+  Neighborhood: "Charleswood"
+
+- MLS ID: "202510475"
+  Address: "617 Coventry Road, Winnipeg R3R 1B5"
+  List Price: "\$379,900"
+  Sold Price: "\$465,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "8"
+  Year Built: "1970/Older"
+  Parking: "Front Drive Access, Parking Pad"
+  Liv Area (sqft): "1097"
+  Neighborhood: "Charleswood"
+
+- MLS ID: "202510632"
+  Address: "179 Joynson Crescent, Winnipeg R3R 3Y4"
+  List Price: "\$609,000"
+  Sold Price: "\$685,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F3/H0"
+  DOM: "6"
+  Year Built: "2019/Older"
+  Parking: "Double Attached, Insulated"
+  Liv Area (sqft): "1440"
+  Neighborhood: "Charleswood"
+
+- MLS ID: "202509056"
+  Address: "7 Alora Cove, Winnipeg R3R 4A3"
+  List Price: "\$579,900"
+  Sold Price: "\$560,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H1"
+  DOM: "21"
+  Year Built: "2024/Older"
+  Parking: "Double Attached; Enclsd: 2"
+  Liv Area (sqft): "1496"
+  Neighborhood: "Charleswood"
+
+- MLS ID: "202507919"
+  Address: "167 Joynson Crescent, Winnipeg R3R 2W9"
+  List Price: "\$624,800"
+  Sold Price: "\$624,800"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F3/H1"
+  DOM: "7"
+  Year Built: "2019"
+  Parking: "Double Attached"
+  Liv Area (sqft): "1851"
+  Neighborhood: "Charleswood"
+
+- MLS ID: "202510691"
+  Address: "107 Yellow Rail Crescent, Winnipeg R3R 3Z3"
+  List Price: "\$649,900"
+  Sold Price: "\$638,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F3/H1"
+  DOM: "8"
+  Year Built: "2022/Older"
+  Parking: "Double Attached, Front Drive Access"
+  Liv Area (sqft): "1661"
+  Neighborhood: "Charleswood"
+
+- MLS ID: "202511232"
+  Address: "144 Wildwood C Park, Winnipeg R3T 0E1"
+  List Price: "\$699,900"
+  Sold Price: "\$840,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F3/H1"
+  DOM: "7"
+  Year Built: "1947/"
+  Parking: "Single Detached, Oversized"
+  Liv Area (sqft): "2124"
+  Neighborhood: "Wildwood"
+
+- MLS ID: "202511512"
+  Address: "136 Wildwood C Park, Winnipeg R3T 0E1"
+  List Price: "\$499,800"
+  Sold Price: "\$541,136"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F1/H1"
+  DOM: "7"
+  Year Built: "1947/Older"
+  Parking: "Double Detached"
+  Liv Area (sqft): "1152"
+  Neighborhood: "Wildwood"
+
+- MLS ID: "202510960"
+  Address: "921 Merriam Boulevard, Winnipeg R3T 0V2"
+  List Price: "\$344,900"
+  Sold Price: "\$387,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F2/H0"
+  DOM: "10"
+  Year Built: "1946/Older"
+  Parking: "Single Detached"
+  Liv Area (sqft): "1387"
+  Neighborhood: "East Fort Garry"
+
+- MLS ID: "202506093"
+  Address: "1030 Howard Avenue, Winnipeg R3T 1S2"
+  List Price: "\$282,900"
+  Sold Price: "\$270,000"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F1/H0"
+  DOM: "49"
+  Year Built: "1954/Older"
+  Parking: "Single Detached"
+  Liv Area (sqft): "720"
+  Neighborhood: "West Fort Garry"
+
+- MLS ID: "202508419"
+  Address: "3 St Edmund's Bay, Winnipeg R3T 3M5"
+  List Price: "\$619,900"
+  Sold Price: "\$610,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F3/H0"
+  DOM: "33"
+  Year Built: "1971/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "N/A"
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202511366"
+  Address: "43 Celtic Bay, Winnipeg R3T 2W8"
+  List Price: "\$399,900"
+  Sold Price: "\$447,000"
+  House Type: "RD"
+  Bedrooms: "6"
+  Bathrooms: "F2/H1"
+  DOM: "7"
+  Year Built: "1965/Older"
+  Parking: "Single Detached, Carport"
+  Liv Area (sqft): "1058"
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202505563"
+  Address: "90 Kings Drive, Winnipeg R3T 3E5"
+  List Price: "\$799,900"
+  Sold Price: "\$730,000"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F1/H0"
+  DOM: "35"
+  Year Built: "1941/Older"
+  Parking: "Single Attached, Front Drive Access"
+  Liv Area (sqft): "1131"
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202509727"
+  Address: "7 Grimston Road, Winnipeg R3T 3T2"
+  List Price: "\$389,900"
+  Sold Price: "\$484,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F2/H0"
+  DOM: "6"
+  Year Built: "1975/Older"
+  Parking: "Front Drive Access, Parking Pad, Plug-In"
+  Liv Area (sqft): "1204"
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202511307"
+  Address: "1002 Chancellor Drive, Winnipeg R3T 4S1"
+  List Price: "\$299,900"
+  Sold Price: "\$350,500"
+  House Type: "SA"
+  Bedrooms: "3"
+  Bathrooms: "F1/H1"
+  DOM: "7"
+  Year Built: "1978/Older"
+  Parking: "Parking Pad"
+  Liv Area (sqft): "1156"
+  Neighborhood: "Waverley Heights"
+
+- MLS ID: "202513203"
+  Address: "48 East Lake Drive, Winnipeg R3T 4V5"
+  List Price: "\$320,000"
+  Sold Price: "\$320,000"
+  House Type: "SA"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "0"
+  Year Built: "1979/Older"
+  Parking: "Front Drive Access"
+  Liv Area (sqft): "800"
+  Neighborhood: "Waverley Heights"
+
+- MLS ID: "202509388"
+  Address: "23 Wankling Court, Winnipeg R3P 2P8"
+  List Price: "\$899,900"
+  Sold Price: "\$950,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "8"
+  Year Built: "2006/Older"
+  Parking: "Double Attached, Front Drive Access, Garage door opener, Paved Driveway"
+  Liv Area (sqft): "2473"
+  Neighborhood: "Linden Woods"
+
+- MLS ID: "202511322"
+  Address: "118 Prairie Sky Drive, Winnipeg R3Y 0G6"
+  List Price: "\$629,900"
+  Sold Price: "\$690,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F3/H1"
+  DOM: "7"
+  Year Built: "2011/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "2171"
+  Neighborhood: "South Pointe"
+
+- MLS ID: "202506560"
+  Address: "118 Fossil Creek Crescent, Winnipeg R3Y 2J9"
+  List Price: "\$589,900"
+  Sold Price: "\$589,900"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F3/H1"
+  DOM: "49"
+  Year Built: "2025/To Be Built"
+  Parking: "Double Attached"
+  Liv Area (sqft): "1745"
+  Neighborhood: "Prairie Pointe"
+
+- MLS ID: "202511232"
+  Address: "144 Wildwood C Park , Winnipeg R3T 0E1"
+  List Price: "\$699,900"
+  Sold Price: "\$840,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F3/H1"
+  DOM: "7"
+  Year Built: "1947/"
+  Parking: "Single Detached, Oversized"
+  Liv Area (sqft): "2124"
+  Neighborhood: "Wildwood"
+
+- MLS ID: "202511512"
+  Address: "136 Wildwood C Park , Winnipeg R3T 0E1"
+  List Price: "\$499,800"
+  Sold Price: "\$541,136"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F1/H1"
+  DOM: "7"
+  Year Built: "1947/Older"
+  Parking: "Double Detached"
+  Liv Area (sqft): "1152"
+  Neighborhood: "Wildwood"
+
+- MLS ID: "202510960"
+  Address: "921 Merriam Boulevard , Winnipeg R3T 0V2"
+  List Price: "\$344,900"
+  Sold Price: "\$387,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F2/H0"
+  DOM: "10"
+  Year Built: "1946/Older"
+  Parking: "Single Detached"
+  Liv Area (sqft): "1387"
+  Neighborhood: "East Fort Garry"
+
+- MLS ID: "202506093"
+  Address: "1030 Howard Avenue , Winnipeg R3T 1S2"
+  List Price: "\$282,900"
+  Sold Price: "\$270,000"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F1/H0"
+  DOM: "49"
+  Year Built: "1954/Older"
+  Parking: "Single Detached"
+  Liv Area (sqft): "720"
+  Neighborhood: "West Fort Garry"
+
+- MLS ID: "202508419"
+  Address: "3 St Edmund's Bay , Winnipeg R3T 3M5"
+  List Price: "\$619,900"
+  Sold Price: "\$610,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F3/H0"
+  DOM: "33"
+  Year Built: "1971/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): N/A
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202511366"
+  Address: "43 Celtic Bay , Winnipeg R3T 2W8"
+  List Price: "\$399,900"
+  Sold Price: "\$447,000"
+  House Type: "RD"
+  Bedrooms: "6"
+  Bathrooms: "F2/H1"
+  DOM: "7"
+  Year Built: "1965/Older"
+  Parking: "Single Detached, Carport"
+  Liv Area (sqft): N/A
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202505563"
+  Address: "90 Kings Drive , Winnipeg R3T 3E5"
+  List Price: "\$799,900"
+  Sold Price: "\$730,000"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F1/H0"
+  DOM: "35"
+  Year Built: "1941/Older"
+  Parking: "Single Attached, Front Drive Access"
+  Liv Area (sqft): "1131"
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202506093"
+  Address: "1030 Howard Avenue, Winnipeg R3T 1S2"
+  List Price: "\$282,900"
+  Sold Price: "\$270,000"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms:  "F1/H0"
+  DOM: "49"
+  Year Built: "1954/Older"
+  Parking:  "Single Detached"
+  Liv Area (sqft): "720"
+  Neighborhood:  "West Fort Garry"
+- MLS ID: "202509727"
+  Address: "7 Grimston Road , Winnipeg R3T 3T2"
+  List Price: "\$389,900"
+  Sold Price: "\$484,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms:  "F2/H0"
+  DOM: "6"
+  Year Built: "1975/Older"
+  Parking:  "Front Drive Access, Parking Pad, Plug-In"
+  Liv Area (sqft): "1204"
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202511307"
+  Address: "1002 Chancellor Drive , Winnipeg R3T 4S1"
+  List Price: "\$299,900"
+  Sold Price: "\$350,500"
+  House Type: "SA"
+  Bedrooms: "3"
+  Bathrooms: "F1/H1"
+  DOM: "7"
+  Year Built: "1978/Older"
+  Parking:  "Parking Pad"
+  Liv Area (sqft): "1156"
+  Neighborhood: "Waverley Heights"
+ - MLS ID: "202513203"
+  Address: "48 East Lake Drive , Winnipeg R3T 4V5"
+  List Price: "\$320,000"
+  Sold Price: "\$320,000"
+  House Type: "SA"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "0"
+  Year Built: "1979/Older"
+  Parking: "Front Drive Access"
+  Liv Area (sqft): "800"
+  Neighborhood: "Waverley Heights"
+ - MLS ID: "202509388"
+  Address: "23 Wankling Court , Winnipeg R3P 2P8"
+  List Price: "\$899,900"
+  Sold Price: "\$950,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "8"
+  Year Built: "2006/Older"
+  Parking: "Double Attached, Front Drive Access, Garage door opener, Paved Driveway"
+  Liv Area (sqft): "2473"
+  Neighborhood: "Linden Woods"
+ - MLS ID: "202421185"
+  Address: "120 Lindenshore Drive , Winnipeg R3P 2M9"
+  List Price: "\$3,499,000"
+  Sold Price: "\$3,200,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F5/H2"
+  DOM: "202"
+  Year Built: "2000/"
+  Parking: "Multiple Attached"
+  Liv Area (sqft): "4400"
+  Neighborhood: "Linden Woods"
+ - MLS ID: "202511345"
+  Address: "15 Leander Crescent , Winnipeg R3Y 1W5"
+  List Price: "\$589,900"
+  Sold Price: "\$640,015"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F3/H0"
+  DOM: "8"
+  Year Built: "2002/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "1794"
+  Neighborhood: "Whyte Ridge"
+ - MLS ID: "202508295"
+  Address: "147 Apple Hill Road , Winnipeg R3Y 1A3"
+  List Price: "\$589,900"
+  Sold Price: "\$579,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F2/H1"
+  DOM: "8"
+  Year Built: "1987/Older"
+  Parking: "Double Attached, Front Drive Access, Paved Driveway"
+  Liv Area (sqft): "1736"
+  Neighborhood: "Whyte Ridge"
+- MLS ID: "202511322"
+  Address: "118 Prairie Sky Drive , Winnipeg R3Y 0G6"
+  List Price: "\$629,900"
+  Sold Price: "\$690,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F3/H1"
+  DOM: "7"
+  Year Built: "2011/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "2171"
+  Neighborhood: "South Pointe"
+- MLS ID: "202506560"
+  Address: "118 Fossil Creek Crescent , Winnipeg R3Y 2J9"
+  List Price: "\$589,900"
+  Sold Price: "\$589,900"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F2/H1"
+  DOM: "49"
+  Year Built: "2025/To Be Built"
+  Parking: "Double Attached"
+  Liv Area (sqft): "1745"
+  Neighborhood: "Prairie Pointe"
+ - MLS ID: "202510401"
+  Address: "689 Moncton Avenue , Winnipeg R2M 3J3"
+  List Price: "\$269,900"
+  Sold Price: "\$300,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F1/H0"
+  DOM: "12"
+  Year Built: "1947/Older"
+  Parking: "Single Detached"
+  Liv Area (sqft): "1043"
+  Neighborhood: "East Kildonan"
+ - MLS ID: "202511579"
+  Address: "371 Leighton Avenue , Winnipeg R2K 3T3"
+  List Price: "\$339,900"
+  Sold Price: "\$346,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F1/H1"
+  DOM: "6"
+  Year Built: "1953/Older"
+  Parking: "Front Drive Access, Plug-In, Paved Driveway"
+  Liv Area (sqft): "1112"
+  Neighborhood: "North Kildonan"
+ - MLS ID: "202511324"
+  Address: "10 Inman Avenue , Winnipeg R2M 0R5"
+  List Price: "\$299,900"
+  Sold Price: "\$335,533"
+  House Type: "SA"
+  Bedrooms: "2"
+  Bathrooms: "F1/H1"
+  DOM: "7"
+  Year Built: "1978/Older"
+  Parking: "Parking Pad"
+  Liv Area (sqft): "1080"
+  Neighborhood: "St Vital"
+ - MLS ID: "202511382"
+  Address: "15 Worthington Avenue , Winnipeg R2M 1G6"
+  List Price: "\$399,900"
+  Sold Price: "\$494,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "6"
+  Year Built: "1957/Older"
+  Parking: "Single Detached, Rear Drive Access"
+  Liv Area (sqft): "1546"
+  Neighborhood: "St Vital"
+ - MLS ID: "202513038"
+  Address: "25 Sadler Avenue , Winnipeg R2M1N6"
+  List Price: "\$340,000"
+  Sold Price: "\$340,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F1/H2"
+  DOM: "0"
+  Year Built: "Older"
+  Parking: "Front & Rear Drive Access"
+  Liv Area (sqft): "1525"
+  Neighborhood: "St Vital"
+ - MLS ID: "202511232"
+  Address: "144 Wildwood C Park , Winnipeg R3T 0E1"
+  List Price: "\$699,900"
+  Sold Price: "\$840,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F3/H1"
+  DOM: "7"
+  Year Built: "/"
+  Parking: "Single Detached, Oversized"
+  Liv Area (sqft): "2124"
+  Neighborhood: "Wildwood"
+ - MLS ID: "202511512"
+  Address: "136 Wildwood C Park , Winnipeg R3T 0E1"
+  List Price: "\$499,800"
+  Sold Price: "\$541,136"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F1/H1"
+  DOM: "7"
+  Year Built: "1947/Older"
+  Parking: "N/A"
+  Liv Area (sqft): "1152"
+  Neighborhood: "Wildwood"
+
+- MLS ID: "202510960"
+  Address: "921 Merriam Boulevard , Winnipeg R3T 0V2"
+  List Price: "\$344,900"
+  Sold Price: "\$387,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F2/H0"
+  DOM: "10"
+  Year Built: "1946/Older"
+  Parking: "Single Detached"
+  Liv Area (sqft): "1387"
+  Neighborhood: "East Fort Garry"
+
+- MLS ID: "202506093"
+  Address: "1030 Howard Avenue , Winnipeg R3T 1S2"
+  List Price: "\$282,900"
+  Sold Price: "\$270,000"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F1/H0"
+  DOM: "49"
+  Year Built: "1954/Older"
+  Parking: "Single Detached"
+  Liv Area (sqft): "720"
+  Neighborhood: "West Fort Garry"
+
+- MLS ID: "202508419"
+  Address: "3 St Edmund's Bay , Winnipeg R3T 3M5"
+  List Price: "\$619,900"
+  Sold Price: "\$610,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F3/H0"
+  DOM: "33"
+  Year Built: "1971/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "1800"
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202511366"
+  Address: "43 Celtic Bay , Winnipeg R3T 2W8"
+  List Price: "\$399,900"
+  Sold Price: "\$447,000"
+  House Type: "RD"
+  Bedrooms: "6"
+  Bathrooms: "F2/H1"
+  DOM: "7"
+  Year Built: "1965/Older"
+  Parking: "Single Detached, Carport"
+  Liv Area (sqft): "N/A"
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202505563"
+  Address: "90 Kings Drive , Winnipeg R3T 3E5"
+  List Price: "\$799,900"
+  Sold Price: "\$730,000"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F1/H0"
+  DOM: "35"
+  Year Built: "1941/Older"
+  Parking: "Single Attached, Front Drive Access"
+  Liv Area (sqft): "1131"
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202509727"
+  Address: "7 Grimston Road , Winnipeg R3T 3T2"
+  List Price: "\$389,900"
+  Sold Price: "\$484,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F2/H0"
+  DOM: "6"
+  Year Built: "1975/Older"
+  Parking: "Front Drive Access, Parking Pad, Plug-In"
+  Liv Area (sqft): "1204"
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202511307"
+  Address: "1002 Chancellor Drive , Winnipeg R3T 4S1"
+  List Price: "\$299,900"
+  Sold Price: "\$350,500"
+  House Type: "SA"
+  Bedrooms: "3"
+  Bathrooms: "F1/H1"
+  DOM: "7"
+  Year Built: "1978/Older"
+  Parking: "Parking Pad"
+  Liv Area (sqft): "1156"
+  Neighborhood: "Waverley Heights"
+
+- MLS ID: "202513203"
+  Address: "48 East Lake Drive , Winnipeg R3T 4V5"
+  List Price: "\$320,000"
+  Sold Price: "\$320,000"
+  House Type: "SA"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "0"
+  Year Built: "1979/Older"
+  Parking: "Front Drive Access"
+  Liv Area (sqft): "800"
+  Neighborhood: "Waverley Heights"
+
+- MLS ID: "202509388"
+  Address: "23 Wankling Court , Winnipeg R3P 2P8"
+  List Price: "\$899,900"
+  Sold Price: "\$950,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "8"
+  Year Built: "2006/Older"
+  Parking: "Double Attached, Front Drive Access, Garage door opener, Paved Driveway"
+  Liv Area (sqft): "2473"
+  Neighborhood: "Linden Woods"
+
+- MLS ID: "202421185"
+  Address: "120 Lindenshore Drive , Winnipeg R3P 2M9"
+  List Price: "\$3,499,000"
+  Sold Price: "\$3,200,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F5/H2"
+  DOM: "202"
+  Year Built: "2000/"
+  Parking: "Multiple Attached"
+  Liv Area (sqft): "4400"
+  Neighborhood: "Linden Woods"
+
+- MLS ID: "202511345"
+  Address: "15 Leander Crescent , Winnipeg R3Y 1W5"
+  List Price: "\$589,900"
+  Sold Price: "\$640,015"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F3/H0"
+  DOM: "8"
+  Year Built: "2002/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "1794"
+  Neighborhood: "Whyte Ridge"
+
+- MLS ID: "202508295"
+  Address: "147 Apple Hill Road , Winnipeg R3Y 1A3"
+  List Price: "\$589,900"
+  Sold Price: "\$579,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F2/H1"
+  DOM: "8"
+  Year Built: "1987/Older"
+  Parking: "Double Attached, Front Drive Access, Paved Driveway"
+  Liv Area (sqft): "1736"
+  Neighborhood: "Whyte Ridge"
+
+- MLS ID: "202509503"
+  Address: "116 Le Maire Street , Winnipeg R3V 1C9"
+  List Price: "\$234,900"
+  Sold Price: "\$270,200"
+  House Type: "SA"
+  Bedrooms: "3"
+  Bathrooms: "F1/H0"
+  DOM: "6"
+  Year Built: "1972/Older"
+  Parking: "Parking Pad, Rear Drive Access, Unpaved Driveway"
+  Liv Area (sqft): "928"
+  Neighborhood: "Grandmont Park"
+
+- MLS ID: "202510836"
+  Address: "281 Appleford Gate , Winnipeg R3Y 0S5"
+  List Price: "\$559,900"
+  Sold Price: "\$547,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H1"
+  DOM: "10"
+  Year Built: "2015/Older"
+  Parking: "Double Detached"
+  Liv Area (sqft): "1615"
+  Neighborhood: "Bridgwater Trails"
+
+- MLS ID: "202511093"
+  Address: "131 Lake Bend Road , Winnipeg R3Y 0M4"
+  List Price: "\$799,900"
+  Sold Price: "\$851,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F3/H1"
+  DOM: "7"
+  Year Built: "2014/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "N/A"
+  Neighborhood: "Bridgwater Lakes"
+
+- MLS ID: "202506560"
+  Address: "118 Fossil Creek Crescent , Winnipeg R3Y 2J9"
+  List Price: "\$589,900"
+  Sold Price: "\$589,900"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F3/H0"
+  DOM: "49"
+  Year Built: "2025/To Be Built"
+  Parking: "Double Attached"
+  Liv Area (sqft): "1745"
+  Neighborhood: "Prairie Pointe"
+
+- MLS ID: "202511322"
+  Address: "118 Prairie Sky Drive , Winnipeg R3Y 0G6"
+  List Price: "\$629,900"
+  Sold Price: "\$690,000"
+  House Type: "RD"
+  Bedrooms: "5"
+  Bathrooms: "F3/H1"
+  DOM: "7"
+  Year Built: "2011/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): "2171"
+  Neighborhood: "South Pointe"
+
+- MLS ID: "202509790"
+  Address: "8500 Roblin Boulevard , Headingley R4J 1B3"
+  List Price: "\$529,900"
+  Sold Price: "\$517,500"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F3/H1"
+  DOM: "8"
+  Year Built: "1973/Older"
+  Parking: "Multiple Detached"
+  Liv Area (sqft): "2230"
+  Neighborhood: "Headingley South"
+
+- MLS ID: "202511301"
+  Address: "219 Dumoulin Street , Winnipeg R2H 0E4"
+  List Price: "\$349,900"
+  Sold Price: "\$451,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "8"
+  Year Built: "1949/"
+  Parking: "Double Detached, Rear Drive Access"
+  Liv Area (sqft): N/A
+  Neighborhood: "St Boniface"
+
+- MLS ID: "202510855"
+  Address: "41 West Fernwood Avenue , Winnipeg R2M 1W7"
+  List Price: "\$339,900"
+  Sold Price: "\$440,441"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F2/H0"
+  DOM: "7"
+  Year Built: "1928/Older"
+  Parking: "Single Detached, Front Drive Access, Garage door opener, Oversized, Paved Driveway"
+  Liv Area (sqft): "779"
+  Neighborhood: "Norberry"
+
+- MLS ID: "202511397"
+  Address: "50 Tyrone Bay , Winnipeg R2M 4R2"
+  List Price: "\$429,900"
+  Sold Price: "\$473,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "12"
+  Year Built: "1975/"
+  Parking: "Front Drive Access, Parking Pad, Plug-In"
+  Liv Area (sqft): "1204"
+  Neighborhood: "Pulberry"
+
+- MLS ID: "202511581"
+  Address: "20 Cunnington Avenue , Winnipeg R2M 0W5"
+  List Price: "\$469,900"
+  Sold Price: "\$512,174"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F1/H1"
+  DOM: "6"
+  Year Built: "1927/Older"
+  Parking: "Double Detached"
+  Liv Area (sqft): "2080"
+  Neighborhood: "Elm Park"
+
+- MLS ID: "202510588"
+  Address: "366 Riel Avenue , Winnipeg R2M 4P1"
+  List Price: "\$414,900"
+  Sold Price: "\$435,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F2/H0"
+  DOM: "9"
+  Year Built: "1975/Older"
+  Parking: "Single Attached"
+  Liv Area (sqft): "1116"
+  Neighborhood: "Bright Oaks"
+
+- MLS ID: "202510609"
+  Address: "107 Hindley Avenue , Winnipeg R2M 1P6"
+  List Price: "\$319,900"
+  Sold Price: "\$450,250"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "8"
+  Year Built: "1951/"
+  Parking: "Double Detached"
+  Liv Area (sqft): "856"
+  Neighborhood: "St Vital"
+
+- MLS ID: "202511301"
+  Address: "219 Dumoulin Street , Winnipeg R2H 0E4"
+  List Price: "\$349,900"
+  Sold Price: "\$451,000"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F2/H0"
+  DOM: "8"
+  Year Built: "1949/"
+  Parking: "Double Detached, Rear Drive Access"
+  Liv Area (sqft): N/A
+  Neighborhood: "St Boniface"
+
+- MLS ID: "202506000"
+  Address: "299 Redwood Avenue , Winnipeg R2W 1S1"
+  List Price: "\$67,000"
+  Sold Price: "\$65,500"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F1/H0"
+  DOM: "5"
+  Year Built: "N/A"
+  Parking: "Single Detached, Rear Drive Access"
+  Liv Area (sqft): "1000"
+  Neighborhood: "North End"
+ - MLS ID: "202513203"
+  Address: "48 East Lake Drive , Winnipeg R3T 4V5"
+  List Price: "\$320,000"
+  Sold Price: "\$320,000"
+  House Type: "SA"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "0"
+  Year Built: "1979/Older"
+  Parking: "Front Drive Access"
+  Liv Area (sqft): "800"
+  Neighborhood: "Waverley Heights"
+
+- MLS ID: "202509790"
+  Address: "8500 Roblin Boulevard , Headingley R4J 1B3"
+  List Price: "\$529,900"
+  Sold Price: "\$517,500"
+  House Type: "RD"
+  Bedrooms: "2"
+  Bathrooms: "F3/H1"
+  DOM: "8"
+  Year Built: "1973/Older"
+  Parking: "Multiple Detached, Front Drive Access"
+  Liv Area (sqft): "2230"
+  Neighborhood: "Headingley South"
+
+- MLS ID: "202511698"
+  Address: "648 Niagara Street , Winnipeg R3N 0V4"
+  List Price: "\$629,900"
+  Sold Price: "\$720,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F3/H0"
+  DOM: "4"
+  Year Built: "1926/Older"
+  Parking: N/A
+  Liv Area (sqft): N/A
+  Neighborhood: "Crescentwood"
+
+ - MLS ID: "202508223"
+  Address: "502 Kingsford Avenue , Winnipeg R2G 0K2"
+  List Price: "\$299,900"
+  Sold Price: "\$367,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F1/H1"
+  DOM: "8"
+  Year Built: "1955/Older"
+  Parking: "Single Detached"
+  Liv Area (sqft): "1358"
+  Neighborhood: "East Kildonan"
+- MLS ID: "202511324"
+  Address: "10 Inman Avenue , Winnipeg R2M 0R5"
+  List Price: "\$299,900"
+  Sold Price: "\$335,533"
+  House Type: "SA"
+  Bedrooms: "2"
+  Bathrooms: "F1/H1"
+  DOM: "7"
+  Year Built: "1978/Older"
+  Parking: "Parking Pad"
+  Liv Area (sqft): N/A
+  Neighborhood: "St Vital"
+
+- MLS ID: "202511382"
+  Address: "15 Worthington Avenue , Winnipeg R2M 1G6"
+  List Price: "\$399,900"
+  Sold Price: "\$494,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "6"
+  Year Built: "1971/Older"
+  Parking: "Double Detached, Rear Drive Access"
+  Liv Area (sqft): N/A
+  Neighborhood: "St Vital"
+
+- MLS ID: "202513038"
+  Address: "25 Sadler Avenue , Winnipeg R2M1N6"
+  List Price: "\$340,000"
+  Sold Price: "\$340,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F1/H2"
+  DOM: "0"
+  Year Built: "/"
+  Parking: "Front & Rear Drive Access"
+  Liv Area (sqft): "1525"
+  Neighborhood: "St Vital"
+
+- MLS ID: "202510048"
+  Address: "46 John Neufeld Crescent , Winnipeg R3T 2W8"
+  List Price: "\$579,900"
+  Sold Price: "\$560,000"
+  House Type: "RD"
+  Bedrooms: "4"
+  Bathrooms: "F2/H1"
+  DOM: "21"
+  Year Built: "2024/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): N/A
+  Neighborhood: "Fort Richmond"
+
+- MLS ID: "202511512"
+  Address: "136 Wildwood C Park , Winnipeg R3T 0E1"
+  List Price: "\$499,800"
+  Sold Price: "\$541,136"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F1/H1"
+  DOM: "7"
+  Year Built: "1947/Older"
+  Parking: "N/A"
+  Liv Area (sqft): "1152"
+  Neighborhood: "Wildwood"
+
+ - MLS ID: "202510067"
+  Address: "91 Gemini Avenue , Winnipeg R2G 0T7"
+  List Price: "\$399,900"
+  Sold Price: "\$418,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F1/H0"
+  DOM: "7"
+  Year Built: "/"
+  Parking: "Single Detached, Oversized, Parking Pad, Rear Drive Access"
+  Liv Area (sqft): N/A
+  Neighborhood: "North Kildonan"
+
+ - MLS ID: "202510004"
+  Address: "32 Stone Meadow Road , Winnipeg R3Y 1S4"
+  List Price: "\$599,900"
+  Sold Price: "\$599,900"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "9"
+  Year Built: "2017/Older"
+  Parking: "Double Attached"
+  Liv Area (sqft): N/A
+  Neighborhood: "Bridgwater Trails"
+
+- MLS ID: "202510464"
+  Address: "4921 Eldridge Avenue , Winnipeg R3R 0M4"
+  List Price: "\$499,900"
+  Sold Price: "\$545,000"
+  House Type: "RD"
+  Bedrooms: "3"
+  Bathrooms: "F2/H0"
+  DOM: "7"
+  Year Built: "1969/Older"
+  Parking: "Single Detached, Front Drive Access"
+  Liv Area (sqft): "1128"
+  Neighborhood: "Charleswood"
+
+- MLS ID: 202513202
+  Address: 405 Churchill Drive, Winnipeg R3L 1W2
+  List Price: \$524,900
+  Sold Price: \$601,405
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 2
+  DOM: 9
+  Year Built: 1954
+  Parking: Double Detached
+  Liv Area (sqft): 1,472
+  Neighborhood: Fort Rouge
+
+- MLS ID: 202513082
+  Address: 853 Nassau Street S, Winnipeg R3L 2N1
+  List Price: \$224,900
+  Sold Price: \$232,500
+  House Type: RD
+  Bedrooms: 2
+  Bathrooms: 1
+  DOM: 12
+  Year Built: 1909
+  Parking: Carport, Rear Drive Access
+  Liv Area (sqft): 800
+  Neighborhood: Fort Rouge
+
+- MLS ID: 202511521
+  Address: 324 Morley Avenue , Winnipeg R3L 0Y5
+  List Price: \$299,900
+  Sold Price: \$292,500
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 2
+  DOM: 12
+  Year Built: 1913
+  Parking: Rear Drive Access, Unpaved Driveway
+  Liv Area (sqft): 1,202
+  Neighborhood: Fort Rouge
+
+- MLS ID: 202513491
+  Address: 515 Wardlaw Avenue , Winnipeg R3L 0L9
+  List Price: \$599,990
+  Sold Price: \$600,000
+  House Type: RD
+  Bedrooms: 4
+  Bathrooms: 2
+  DOM: 0
+  Year Built: 1905
+  Parking: Single Detached, Parking Pad
+  Liv Area (sqft): 2,018
+  Neighborhood: Osborne Village
+
+- MLS ID: 202509071
+  Address: 724 Ebby Avenue , Winnipeg R3M 2H6
+  List Price: \$249,900
+  Sold Price: \$239,900
+  House Type: RD
+  Bedrooms: 2
+  Bathrooms: 1
+  DOM: 32
+  Year Built: Unknown
+  Parking: Single Detached, Rear Drive Access
+  Liv Area (sqft): 700
+  Neighborhood: Crescentwood
+
+- MLS ID: 202510991
+  Address: 866 Garwood Avenue , Winnipeg R3M 1N5
+  List Price: \$309,900
+  Sold Price: \$337,000
+  House Type: RD
+  Bedrooms: 2
+  Bathrooms: 2
+  DOM: 7
+  Year Built: 1930
+  Parking: Single Detached, Garage door opener, Parking Pad
+  Liv Area (sqft): 712
+  Neighborhood: Crescentwood
+
+- MLS ID: 202513121
+  Address: 1229 Corydon Avenue , Winnipeg R3M 0X6
+  List Price: \$349,900
+  Sold Price: \$400,000
+  House Type: RD
+  Bedrooms: 5
+  Bathrooms: 2
+  DOM: 6
+  Year Built: 1950
+  Parking: Plug-In, Rear Drive Access
+  Liv Area (sqft): 1,210
+  Neighborhood: Crescentwood
+
+- MLS ID: 202513433
+  Address: 341 Oxford Street , Winnipeg R3M 3H9
+  List Price: \$1,149,900
+  Sold Price: \$1,270,000
+  House Type: RD
+  Bedrooms: 4
+  Bathrooms: 4
+  DOM: 7
+  Year Built: 1929
+  Parking: Double Detached
+  Liv Area (sqft): 2,500
+  Neighborhood: River Heights North
+
+- MLS ID: 202513663
+  Address: 768 Borebank Street , Winnipeg R3N 1G4
+  List Price: \$599,900
+  Sold Price: \$651,600
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 2
+  DOM: 9
+  Year Built: 1954
+  Parking: Double Detached
+  Liv Area (sqft): 1,361
+  Neighborhood: River Heights
+
+- MLS ID: 202513169
+  Address: 870 Borebank Street , Winnipeg R3N 1G6
+  List Price: \$479,900
+  Sold Price: \$480,000
+  House Type: RD
+  Bedrooms: 5
+  Bathrooms: 2
+  DOM: 8
+  Year Built: 1960
+  Parking: Double Detached, Parking Pad
+  Liv Area (sqft): 1,122
+  Neighborhood: River Heights South
+
+- MLS ID: 202510896
+  Address: 674 Waverley Street , Winnipeg R3M 3L6
+  List Price: \$524,900
+  Sold Price: \$642,500
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 2
+  DOM: 10
+  Year Built: 1957
+  Parking: Double Detached
+  Liv Area (sqft): 1,600
+  Neighborhood: River Heights South
+
+- MLS ID: 202511280
+  Address: 520 Centennial Street , Winnipeg R3N 1P9
+  List Price: \$309,900
+  Sold Price: \$360,000
+  House Type: SA
+  Bedrooms: 3
+  Bathrooms: 2
+  DOM: 9
+  Year Built: 1988
+  Parking: Parking Pad
+  Liv Area (sqft): 1,072
+  Neighborhood: River Heights
+
+- MLS ID: 202508831
+  Address: 1564 Mathers Bay W, Winnipeg R3N 0T7
+  List Price: \$799,900
+  Sold Price: \$760,000
+  House Type: RD
+  Bedrooms: 5
+  Bathrooms: 3
+  DOM: 28
+  Year Built: 1973
+  Parking: Double Attached
+  Liv Area (sqft): 2,702
+  Neighborhood: River Heights
+
+- MLS ID: 202512743
+  Address: 779 Renfrew Street , Winnipeg R3N 1K3
+  List Price: \$395,000
+  Sold Price: \$461,000
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 1
+  DOM: 10
+  Year Built: 1957
+  Parking: Double Detached
+  Liv Area (sqft): 1,000
+  Neighborhood: River Heights
+
+- MLS ID: 202512722
+  Address: 141 Park Place W, Winnipeg R3P 2C8
+  List Price: \$990,000
+  Sold Price: \$1,160,000
+  House Type: RD
+  Bedrooms: 5
+  Bathrooms: 4
+  DOM: 8
+  Year Built: 1992
+  Parking: Double Attached, Front Drive Access, Insulated
+  Liv Area (sqft): 2,750
+  Neighborhood: Tuxedo
+
+- MLS ID: 202513607
+  Address: 857 Community Row , Winnipeg R3R 1H9
+  List Price: \$399,900
+  Sold Price: \$437,000
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 1
+  DOM: 8
+  Year Built: 1971
+  Parking: Double Detached
+  Liv Area (sqft): 1,050
+  Neighborhood: Charleswood
+
+- MLS ID: 202513472
+  Address: 106 Epsom Crescent , Winnipeg R3R 0X2
+  List Price: \$439,900
+  Sold Price: \$579,000
+  House Type: RD
+  Bedrooms: 4
+  Bathrooms: 2
+  DOM: 7
+  Year Built: 1983
+  Parking: Double Attached, Front Drive Access
+  Liv Area (sqft): 1,104
+  Neighborhood: Charleswood
+
+- MLS ID: 202513759
+  Address: 821 Laxdal Road , Winnipeg R3R 1V7
+  List Price: \$224,900
+  Sold Price: \$220,000
+  House Type: VL
+  Bedrooms: 0
+  Bathrooms: 0
+  DOM: 5
+  Year Built: Unknown
+  Parking: Front Drive Access
+  Liv Area (sqft): Unknown
+  Neighborhood: Charleswood
+
+- MLS ID: 202513255
+  Address: 3430 Beiko Avenue , Winnipeg R3R 0M6
+  List Price: \$489,900
+  Sold Price: \$485,000
+  House Type: RD
+  Bedrooms: 4
+  Bathrooms: 3
+  DOM: 8
+  Year Built: 1976
+  Parking: Double Attached
+  Liv Area (sqft): 1,282
+  Neighborhood: Charleswood
+
+- MLS ID: 202508446
+  Address: 381 Glenbush Street , Winnipeg R2Y 0N1
+  List Price: \$884,000
+  Sold Price: \$850,000
+  House Type: RD
+  Bedrooms: 5
+  Bathrooms: 3
+  DOM: 42
+  Year Built: 2016
+  Parking: Double Attached
+  Liv Area (sqft): 1,674
+  Neighborhood: Charleswood
+
+- MLS ID: 202510910
+  Address: 54 Cadiz Bay , Winnipeg R3R 2M7
+  List Price: \$499,900
+  Sold Price: \$460,000
+  House Type: RD
+  Bedrooms: 4
+  Bathrooms: 2
+  DOM: 10
+  Year Built: 1976
+  Parking: Single Attached, Front Drive Access, Paved Driveway
+  Liv Area (sqft): 1,380
+  Neighborhood: Charleswood
+
+- MLS ID: 202512945
+  Address: 634 Fairmont Road , Winnipeg R3R 1B1
+  List Price: \$949,900
+  Sold Price: \$940,000
+  House Type: RD
+  Bedrooms: 4
+  Bathrooms: 4
+  DOM: 7
+  Year Built: 2007
+  Parking: Triple Attached
+  Liv Area (sqft): 2,275
+  Neighborhood: Charleswood
+
+- MLS ID: 202512975
+  Address: 607 Dieppe Road , Winnipeg R3R 1C5
+  List Price: \$419,900
+  Sold Price: \$550,000
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 2
+  DOM: 7
+  Year Built: 1967
+  Parking: Double Attached
+  Liv Area (sqft): 1,539
+  Neighborhood: Charleswood
+
+- MLS ID: 202511045
+  Address: 134 Robindale Road , Winnipeg R3R 1G7
+  List Price: \$399,900
+  Sold Price: \$387,500
+  House Type: RD
+  Bedrooms: 2
+  Bathrooms: 2
+  DOM: 9
+  Year Built: 1949
+  Parking: Double Attached
+  Liv Area (sqft): 796
+  Neighborhood: Charleswood
+
+- MLS ID: 202511252
+  Address: 82 Bergman Crescent , Winnipeg R3R 1Z7
+  List Price: \$299,900
+  Sold Price: \$351,500
+  House Type: SA
+  Bedrooms: 3
+  Bathrooms: 1
+  DOM: 12
+  Year Built: 1973
+  Parking: Carport
+  Liv Area (sqft): 948
+  Neighborhood: Charleswood
+
+- MLS ID: 202513765
+  Address: 19 Hofsted Drive , Winnipeg R3R 4A8
+  List Price: \$649,000
+  Sold Price: \$716,000
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 3
+  DOM: 7
+  Year Built: 2018
+  Parking: Double Attached
+  Liv Area (sqft): 2,053
+  Neighborhood: Charleswood
+
+- MLS ID: 202511493
+  Address: 27 O’Brien Crescent , Winnipeg R3R 1M5
+  List Price: \$529,900
+  Sold Price: \$515,000
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 3
+  DOM: 13
+  Year Built: 1966
+  Parking: Front Drive Access, No Garage, Paved Driveway
+  Liv Area (sqft): 1,850
+  Neighborhood: Westdale
+
+- MLS ID: 202513014
+  Address: 73 Kestrel Way , Winnipeg R3R 3Y7
+  List Price: \$549,900
+  Sold Price: \$565,073
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 2
+  DOM: 7
+  Year Built: 2019
+  Parking: Double Attached
+  Liv Area (sqft): 1,263
+  Neighborhood: Charleswood
+
+- MLS ID: 202507722
+  Address: 34 Kowalsky Crescent , Winnipeg R3R 3A8
+  List Price: \$679,900
+  Sold Price: \$660,000
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 4
+  DOM: 42
+  Year Built: 2017
+  Parking: Double Attached
+  Liv Area (sqft): 1,649
+  Neighborhood: Charleswood
+
+- MLS ID: 202513062
+  Address: 51 Riverside Drive , Winnipeg R3T 0G7
+  List Price: \$379,900
+  Sold Price: \$515,000
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 1
+  DOM: 8
+  Year Built: 1929
+  Parking: Single Detached
+  Liv Area (sqft): 1,307
+  Neighborhood: East Fort Garry
+
+- MLS ID: 202513908
+  Address: 10 Neptune Bay , Winnipeg R3T 0Z7
+  List Price: \$299,900
+  Sold Price: \$350,000
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 2
+  DOM: 6
+  Year Built: 1963
+  Parking: Single Detached
+  Liv Area (sqft): 1,382
+  Neighborhood: West Fort Garry
+
+- MLS ID: 202507570
+  Address: 1462 Mars Drive , Winnipeg R3T 1E9
+   List Price: \$379,000
+   Sold Price: \$425,000
+   House Type: RD
+   Bedrooms: 3
+   Bathrooms: 1
+   DOM: 8
+   Year Built: 1960
+   Parking: Single Detached
+   Liv Area (sqft): 948
+   Neighborhood: West Fort Garry
+
+- MLS ID: 202510101
+   Address: 888 Kilkenny Drive , Winnipeg R3T 4G3
+   List Price: \$890,000
+   Sold Price: \$886,000
+   House Type: RD
+   Bedrooms: 4
+   Bathrooms: 4
+   DOM: 13
+   Year Built: 1983
+   Parking: Double Attached
+   Liv Area (sqft): 2,812
+   Neighborhood: Fort Richmond
+
+- MLS ID: 202509586
+   Address: 71 Loyola Bay , Winnipeg R3P 0T3
+   List Price: \$374,900
+   Sold Price: \$410,000
+   House Type: RD
+   Bedrooms: 4
+   Bathrooms: 2
+   DOM: 8
+   Year Built: 1968
+   Parking: Single Detached, Oversized
+   Liv Area (sqft): 804
+   Neighborhood: Fort Richmond
+
+- MLS ID: 202507896
+   Address: 43 Macalester Bay , Winnipeg R3T 2X6
+   List Price: \$456,000
+   Sold Price: \$427,140
+   House Type: RD
+   Bedrooms: 3
+   Bathrooms: 2
+   DOM: 39
+   Year Built: 1965
+   Parking: Single Attached, Breezeway
+   Liv Area (sqft): 1,000
+   Neighborhood: Fort Richmond
+
+- MLS ID: 202510809
+   Address: 71 Bryn Mawr Road , Winnipeg R3T 3K3
+   List Price: \$499,000
+   Sold Price: \$486,500
+   House Type: RD
+   Bedrooms: 3
+   Bathrooms: 2
+   DOM: 13
+   Year Built: 1972
+   Parking: Single Detached
+   Liv Area (sqft): 1,068
+   Neighborhood: Fort Richmond
+
+- MLS ID: 202513765
+   Address: 19 Hofsted Drive , Winnipeg R3R 4A8
+   List Price: \$649,000
+   Sold Price: \$716,000
+   House Type: RD
+   Bedrooms: 3
+   Bathrooms: 3
+   DOM: 7
+   Year Built: 2018
+   Parking: Double Attached
+   Liv Area (sqft): 2,053
+   Neighborhood: Charleswood
+
+- MLS ID: 202513062
+   Address: 51 Riverside Drive , Winnipeg R3T 0G7
+   List Price: \$379,900
+   Sold Price: \$515,000
+   House Type: RD
+   Bedrooms: 3
+   Bathrooms: 1
+   DOM: 8
+   Year Built: 1929
+   Parking: Single Detached
+   Liv Area (sqft): 1,307
+   Neighborhood: East Fort Garry
+
+- MLS ID: 202513908
+   Address: 10 Neptune Bay , Winnipeg R3T 0Z7
+   List Price: \$299,900
+   Sold Price: \$350,000
+   House Type: RD
+   Bedrooms: 3
+   Bathrooms: 2
+   DOM: 6
+   Year Built: 1963
+   Parking: Single Detached
+   Liv Area (sqft): 1,382
+   Neighborhood: West Fort Garry
+
+- MLS ID: 202512722
+   Address: 141 Park Place W, Winnipeg R3P 2C8
+   List Price: \$990,000
+   Sold Price: \$1,160,000
+   House Type: RD
+   Bedrooms: 5
+   Bathrooms: 4
+   DOM: 8
+   Year Built: 1992
+   Parking: Double Attached, Front Drive Access, Insulated
+   Liv Area (sqft): 2,750
+   Neighborhood: Tuxedo
+- MLS ID: 202513014
+  Address: 73 Kestrel Way , Winnipeg R3R 3Y7
+  List Price: \$549,900
+  Sold Price: \$565,073
+  House Type: RD
+  Bedrooms: 3
+  Bathrooms: 2
+  DOM: 7
+  Year Built: 2019
+  Parking: Double Attached
+  Liv Area (sqft): 1,263
+  Neighborhood: Charleswood
+
+- MLS ID: 202512743
+   Address: 779 Renfrew Street , Winnipeg R3N 1K3
+   List Price: \$395,000
+   Sold Price: \$461,000
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: 1
+   DOM: 10
+   Year Built: 1957
+   Parking: Double Detached
+   Liv Area (sqft): 1,000
+   Neighborhood: River Heights
+
+- MLS ID: 202512945
+   Address: 634 Fairmont Road , Winnipeg R3R 1B1
+   List Price: \$949,900
+   Sold Price: \$940,000
+   House Type: RD
+   Bedrooms: 4
+   Bathrooms: 4
+   DOM: 7
+   Year Built: 2007
+   Parking: Triple Attached
+   Liv Area (sqft): 2,275
+   Neighborhood: Charleswood
+
+- MLS ID: 202511280
+   Address: 520 Centennial Street , Winnipeg R3N 1P9
+   List Price: \$309,900
+   Sold Price: \$360,000
+   House Type: SA
+   Bedrooms: 3
+   Bathrooms: 2
+   DOM: 9
+   Year Built: 1988
+   Parking: Parking Pad
+   Liv Area (sqft): 1,072
+   Neighborhood: River Heights
+
+- MLS ID: 202512975
+   Address: 607 Dieppe Road , Winnipeg R3R 1C5
+   List Price: \$419,900
+   Sold Price: \$550,000
+   House Type: RD
+   Bedrooms: 3
+   Bathrooms: 2
+   DOM: 7
+   Year Built: 1967
+   Parking: Double Attached
+   Liv Area (sqft): 1,539
+   Neighborhood: Charleswood
+- MLS ID: 202511045
+   Address: 134 Robindale Road , Winnipeg R3R 1G7
+   List Price: \$399,900
+   Sold Price: \$387,500
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: 1
+   DOM: 9
+   Year Built: 1949
+   Parking: Double Attached
+   Liv Area (sqft): 796
+   Neighborhood: Charleswood
+- MLS ID: 202511252
+   Address: 82 Bergman Crescent , Winnipeg R3R 1Z7
+   List Price: \$299,900
+   Sold Price: \$351,500
+   House Type: SA
+   Bedrooms: 3
+   Bathrooms: 1
+   DOM: 12
+   Year Built: 1973
+   Parking: Carport
+   Liv Area (sqft): 948
+   Neighborhood: Charleswood
+
+- MLS ID: 202513255
+   Address: 3430 Beiko Avenue , Winnipeg R3R 0M6
+   List Price: \$489,900
+   Sold Price: \$485,000
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: 3
+   DOM: 8
+   Year Built: 1976
+   Parking: Double Attached
+   Liv Area (sqft): 1,282
+   Neighborhood: Charleswood
+- MLS ID: 202510910
+   Address: 54 Cadiz Bay , Winnipeg R3R 2M7
+   List Price: \$499,900
+   Sold Price: \$460,000
+   House Type: RD
+   Bedrooms: 3
+   Bathrooms: 2
+   DOM: 10
+   Year Built: 1976
+   Parking: Single Attached, Front Drive Access, Paved Driveway
+   Liv Area (sqft): 1,380
+   Neighborhood: Charleswood
+
+- MLS ID: 202509071
+   Address: 724 Ebby Avenue , Winnipeg R3M 2H6
+   List Price: \$249,900
+   Sold Price: \$239,900
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: Unknown
+   DOM: 32
+   Year Built: Unknown
+   Parking: Single Detached, Rear Drive Access
+   Liv Area (sqft): 700
+   Neighborhood: Crescentwood
+- MLS ID: 202508446
+   Address: 381 Glenbush Street , Winnipeg R2Y 0N1
+   List Price: \$884,000
+   Sold Price: \$850,000
+   House Type: RD
+   Bedrooms: 5
+   Bathrooms: 3
+   DOM: 42
+   Year Built: 2016
+   Parking: Double Attached
+   Liv Area (sqft): 1,674
+   Neighborhood: Charleswood
+- MLS ID: 202513433
+   Address: 341 Oxford Street , Winnipeg R3M 3H9
+   List Price: \$1,149,900
+   Sold Price: \$1,270,000
+   House Type: RD
+   Bedrooms: 4
+   Bathrooms: 4
+   DOM: 7
+   Year Built: 1929
+   Parking: Double Detached
+   Liv Area (sqft): 2,500
+   Neighborhood: River Heights North
+- MLS ID: 202507722
+   Address: 34 Kowalsky Crescent , Winnipeg R3R 3A8
+   List Price: \$679,900
+   Sold Price: \$660,000
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: 4
+   DOM: 42
+   Year Built: 2017
+   Parking: Double Attached, Front Drive Access, Garage door opener, Plug-In, Paved Driveway
+   Liv Area (sqft): 1,649
+   Neighborhood: Charleswood
+- MLS ID: 202512736
+   Address: 99 Duncan Norrie Drive , Winnipeg R3P 2K2
+   List Price: \$689,900
+   Sold Price: \$781,500
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: 3
+   DOM: 8
+   Year Built: 1996
+   Parking: Double Attached
+   Liv Area (sqft): 2,215
+   Neighborhood: Linden Woods
+
+- MLS ID: 202512784
+   Address: 107 Valley Brook Road , Winnipeg R3Y 0Z8
+   List Price: \$1,070,000
+   Sold Price: \$1,015,000
+   House Type: RD
+   Bedrooms: 5
+   Bathrooms: 4
+   DOM: 11
+   Year Built: 2022
+   Parking: Double Attached
+   Liv Area (sqft): 2,494
+   Neighborhood: Bridgwater Trails
+- MLS ID: 202512727
+   Address: 690 River Road , Winnipeg R2M 5A4
+   List Price: \$524,900
+   Sold Price: \$605,000
+   House Type: RD
+   Bedrooms: 4
+   Bathrooms: 3
+   DOM: 8
+   Year Built: 1977
+   Parking: Single Attached
+   Liv Area (sqft): 2,220
+   Neighborhood: St Vital
+
+- MLS ID: 202512940
+   Address: 66 Lake Albrin Bay , Winnipeg R3T 4S7
+   List Price: \$429,900
+   Sold Price: \$555,000
+   House Type: RD
+   Bedrooms: 3
+   Bathrooms: 2
+   DOM: 7
+   Year Built: 1978
+   Parking: Front Drive Access, Plug-In, Paved Driveway
+   Liv Area (sqft): 1,120
+   Neighborhood: Waverley Heights
+
+- MLS ID: 202512899
+   Address: 51 Prestwood Place , Winnipeg R3T 4Y9
+   List Price: \$469,900
+   Sold Price: \$469,900
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: 2
+   DOM: 10
+   Year Built: 1981
+   Parking: Single Attached, Front Drive Access
+   Liv Area (sqft): 1,844
+   Neighborhood: Fort Richmond
+
+- MLS ID: 202512975
+   Address: 607 Dieppe Road , Winnipeg R3R 1C5
+   List Price: \$419,900
+   Sold Price: \$550,000
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: Unknown
+   DOM: 7
+   Year Built: 1967
+   Parking: Double Attached
+   Liv Area (sqft): 1,539
+   Neighborhood: Charleswood
+- MLS ID: 202511547
+   Address: 171 Southbend Crescent , Winnipeg R3P 2H4
+   List Price: \$584,900
+   Sold Price: \$592,000
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: 4
+   DOM: 6
+   Year Built: 1990
+   Parking: Double Attached
+   Liv Area (sqft): 1,870
+   Neighborhood: Linden Woods
+
+- MLS ID: 202512736
+   Address: 99 Duncan Norrie Drive , Winnipeg R3P 2K2
+   List Price: \$689,900
+   Sold Price: \$781,500
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: 3
+   DOM: 8
+   Year Built: 1996
+   Parking: Double Attached
+   Liv Area (sqft): 2,215
+   Neighborhood: Linden Woods
+
+- MLS ID: 202509705
+   Address: 10 Hidden Ridge Cove , Winnipeg R3Y 1X1
+   List Price: \$749,900
+   Sold Price: \$740,000
+   House Type: RD
+   Bedrooms: 3
+   Bathrooms: 2
+   DOM: 19
+   Year Built: 2004
+   Parking: Double Attached
+   Liv Area (sqft): 1,983
+   Neighborhood: Linden Ridge
+
+- MLS ID: 202511677
+   Address: 31 Foxmeadow Road , Winnipeg R3P 1S5
+   List Price: \$639,900
+   Sold Price: \$630,000
+   House Type: RD
+   Bedrooms: Unknown
+   Bathrooms: 4
+   DOM: 14
+   Year Built: Unknown
+   Parking: Double Attached, Front Drive Access, Garage door opener, Paved Driveway
+   Liv Area (sqft): 1,706
+   Neighborhood: Linden Woods
+
+
+MLS ID: 202513765
+Address: 19 Hofsted Drive , Winnipeg R3R 4A8
+List Price: $649,000
+Sold Price: $716,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 3
+DOM: 7
+Year Built: 2018
+Parking: Double Attached
+Liv Area (sqft): 2,053
+Neighborhood: Charleswood
+
+MLS ID: 202513062
+Address: 51 Riverside Drive , Winnipeg R3T 0G7
+List Price: $379,900
+Sold Price: $515,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: Unknown
+DOM: 8
+Year Built: 1929
+Parking: Single Detached
+Liv Area (sqft): 1,307
+Neighborhood: East Fort Garry
+
+MLS ID: 202513099
+Address: 255 Grandmont Boulevard , Winnipeg R3V 1R9
+List Price: $349,900
+Sold Price: $401,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 2
+DOM: 7
+Year Built: Unknown
+Parking: Parking Pad, Rear Drive Access
+Liv Area (sqft): 820
+Neighborhood: Richmond Lakes
+
+MLS ID: 202513025
+Address: 82 Hill Street , Winnipeg R2H 2L4
+List Price: $319,900
+Sold Price: $390,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 2
+DOM: 8
+Year Built: 1943
+Parking: Single Detached, Garage door opener, Parking Pad, Plug-In
+Liv Area (sqft): 738
+Neighborhood: Norwood
+
+MLS ID: 202512994
+Address: 29 Crestwood Crescent , Winnipeg R2J 1H5
+List Price: $379,900
+Sold Price: $390,300
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 2
+DOM: 7
+Year Built: 1959
+Parking: Single Detached, Front Drive Access, Garage door opener, Paved Driveway
+Liv Area (sqft): 911
+Neighborhood: Windsor Park
+
+MLS ID: 202512965
+Address: 607 Dieppe Road , Winnipeg R3R 1C5
+List Price: $419,900
+Sold Price: $550,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: Unknown
+DOM: 7
+Year Built: 1967
+Parking: Double Attached
+Liv Area (sqft): 1,539
+Neighborhood: Charleswood
+
+MLS ID: 202512927
+Address: 38 Miner Cove , Winnipeg R2N 0B4
+List Price: $619,900
+Sold Price: $675,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 4
+DOM: 7
+Year Built: Unknown
+Parking: Double Attached, Front Drive Access, Garage door opener, Plug-In, Paved Driveway, Recreational Vehicle
+Liv Area (sqft): 2,012
+Neighborhood: River Park South
+
+MLS ID: 202512909
+Address: 94 Stranmillis Avenue , Winnipeg R2M 0K1
+List Price: $325,000
+Sold Price: $375,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 2
+DOM: 9
+Year Built: 1931
+Parking: Single Attached, Double Detached
+Liv Area (sqft): 1,015
+Neighborhood: St Vital
+
+MLS ID: 202512899
+Address: 51 Prestwood Place , Winnipeg R3T 4Y9
+List Price: $469,900
+Sold Price: $469,900
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: Unknown
+DOM: 10
+Year Built: 1981
+Parking: Single Attached, Front Drive Access
+Liv Area (sqft): 1,844
+Neighborhood: Fort Richmond
+
+MLS ID: 202512813
+Address: 19 Mager Drive W, Winnipeg R2M 0R9
+List Price: $799,900
+Sold Price: $799,900
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: Unknown
+DOM: 10
+Year Built: 1941
+Parking: Single Attached, Front Drive Access, Garage door opener, Insulated, Oversized, Paved Driveway
+Liv Area (sqft): 2,548
+Neighborhood: Elm Park
+
+MLS ID: 202512789
+Address: 31 Coleman Cove , Winnipeg R2N 4H3
+List Price: $579,900
+Sold Price: $592,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: Unknown
+DOM: 13
+Year Built: 1998
+Parking: Double Attached
+Liv Area (sqft): 1,464
+Neighborhood: River Park South
+
+MLS ID: 202512727
+Address: 690 River Road , Winnipeg R2M 5A4
+List Price: $524,900
+Sold Price: $605,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 3
+DOM: 8
+Year Built: 1977
+Parking: Single Attached
+Liv Area (sqft): 2,220
+Neighborhood: St Vital
+
+MLS ID: 202512681
+Address: 313 Park West Drive , Winnipeg R3Y 0V9
+List Price: $479,900
+Sold Price: $479,900
+House Type: TH
+Bedrooms: Unknown
+Bathrooms: Unknown
+DOM: 0
+Year Built: 2017
+Parking: Parking Pad, Rear Drive Access
+Liv Area (sqft): 1,492
+Neighborhood: Bridgwater Centre
+
+MLS ID: 202511663
+Address: 46 Woodydell Avenue , Winnipeg R2M 2T9
+List Price: $289,000
+Sold Price: $331,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: Unknown
+DOM: 12
+Year Built: 1972
+Parking: Double Detached
+Liv Area (sqft): 1,034
+Neighborhood: Meadowood
+
+MLS ID: 202511569
+Address: 93 Laurent Drive , Winnipeg R3V 1S1
+List Price: $339,900
+Sold Price: $441,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: Unknown
+DOM: 8
+Year Built: 1984
+Parking: Front Drive Access, Parking Pad, Plug-In
+Liv Area (sqft): 1,072
+Neighborhood: Grandmont Park
+
+MLS ID: 202511534
+Address: 45 Sandale Drive , Winnipeg R2N 1A1
+List Price: $259,900
+Sold Price: $260,000
+House Type: MH
+Bedrooms: 3
+Bathrooms: 2
+DOM: 6
+Year Built: 2016
+Parking: Parking Pad
+Liv Area (sqft): 1,472
+Neighborhood: South Glen
+
+MLS ID: 202511625
+Address: 18 Egerton Road , Winnipeg R2M 2V5
+List Price: $649,900
+Sold Price: $726,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 2
+DOM: 9
+Year Built: 2007
+Parking: Double Attached, Triple Attached, Heated, Oversized, Workshop
+Liv Area (sqft): 2,019
+Neighborhood: St Vital
+
+MLS ID: 202511465
+Address: 26 Thornewood Avenue , Winnipeg R2N 1K5
+List Price: $489,900
+Sold Price: $480,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: Unknown
+DOM: 7
+Year Built: 1981
+Parking: Single Attached, Front Drive Access
+Liv Area (sqft): 1,216
+Neighborhood: River Park South
+
+MLS ID: 202511394
+Address: 6 Hochman Avenue , Winnipeg R2N 3Y5
+List Price: $499,900
+Sold Price: $521,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 4
+DOM: 12
+Year Built: 1996
+Parking: Double Attached
+Liv Area (sqft): 1,612
+Neighborhood: River Park South
+
+MLS ID: 202511224
+Address: 466 Aulneau Street , Winnipeg R2H 0V2
+List Price: $499,900
+Sold Price: $455,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 4
+DOM: 15
+Year Built: 1945
+Parking: Double Detached, Garage door opener
+Liv Area (sqft): 2,612
+Neighborhood: St Boniface
+
+MLS ID: 202511225
+Address: 315 Dumoulin Street , Winnipeg R2H 0E7
+List Price: $579,900
+Sold Price: $573,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 4
+DOM: 9
+Year Built: 1940
+Parking: Double Detached, Garage door opener, Heated, Insulated garage door
+Liv Area (sqft): 2,030
+Neighborhood: St Boniface
+
+MLS ID: 202509710
+Address: 139 Landover Drive , Winnipeg R3Y 0Z2
+List Price: $598,880
+Sold Price: $598,880
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 4
+DOM: 7
+Year Built: 2019
+Parking: Double Detached
+Liv Area (sqft): 1,612
+Neighborhood: Bridgwater Trails
+
+MLS ID: 202510333
+Address: 1034 Dugald Road , Winnipeg R2J 0H1
+List Price: $224,900
+Sold Price: $223,000
+House Type: RD
+Bedrooms: Unknown
+Bathrooms: 2
+DOM: 11
+Year Built: 1954
+Parking: Rear Drive Access
+Liv Area (sqft): 715
+Neighborhood: St Boniface

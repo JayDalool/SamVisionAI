@@ -1,0 +1,101 @@
+listing_date,season,address,list_price,original_price,sold_price,house_type,bedrooms,bathrooms,dom,built_year,garage_type,sqft,lot_size,latitude,longitude,neighborhood,region
+2025-05-27,Spring,"570 Walker Avenue , Winnipeg R3L 1C4",334900,334900,334900,RD,2,2,6,1909.0,none,1025.0,2200.0,0.0,0.0,Lord Roberts,Lord Roberts
+2025-05-27,Spring,"1149 McMillan Avenue , Winnipeg R3M 0T7",339900,339900,339900,RD,1,2,9,1946.0,single_detachedached,700.0,4839.0,0.0,0.0,Crescentwood,Crescentwood
+2025-05-27,Spring,"1026 Jessie Avenue , Winnipeg R3M 1B2",539900,539900,539900,RD,2,2,12,1927.0,double_detachedached,1250.0,4006.0,0.0,0.0,Crescentwood,Crescentwood
+2025-05-27,Spring,"1125 Corydon Avenue , Winnipeg R3M 0X4",249900,249900,249900,RD,2,2,6,1946.0,single_detachedached,810.0,4839.0,0.0,0.0,Crescentwood,Crescentwood
+2025-05-27,Spring,"353 Yale Avenue , Winnipeg R3M 0L5",629900,629900,629900,RD,4,4,45,1929.0,double_detachedached,3126.0,12753.0,0.0,0.0,Crescentwood,Crescentwood
+2025-05-27,Spring,"451 Waverley Street , Winnipeg R3M 3K6",769000,769000,769000,RD,3,4,7,1941.0,double_detachedached,1642.0,4800.0,0.0,0.0,River Heights,River Heights
+2025-05-27,Spring,"144 Borebank Street , Winnipeg R3N 1C9",424899,424899,424899,RD,3,2,13,1914.0,double_detachedached,1657.0,,0.0,0.0,River Heights North,River Heights North
+2025-05-27,Spring,"603 Oak Street , Winnipeg R3M 3P9",487500,487500,487500,RD,2,1,57,1950.0,single_detachedached,1088.0,,0.0,0.0,River Heights,River Heights
+2025-05-27,Spring,"440 Cordova Street , Winnipeg R3N 1A7",580000,580000,580000,RD,4,3,24,1951.0,double_detachedached,2085.0,4829.0,0.0,0.0,River Heights,River Heights
+2025-05-27,Spring,"955 Queenston Bay , Winnipeg R3N 0Y3",599900,599900,599900,RD,4,3,6,1963.0,double_detachedached,1780.0,5300.0,0.0,0.0,River Heights,River Heights
+2025-05-27,Spring,,899900,899900,899900,RD,4,4,10,1967.0,double_attachedached,3054.0,9746.0,0.0,0.0,Tuxedo,Tuxedo
+2025-05-27,Spring,,1599000,1599000,1599000,RD,3,4,13,1998.0,double_attachedached,3403.0,11135.0,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,,749900,749900,749900,RD,4,4,8,1974.0,double_attachedached,2136.0,7202.0,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,"4921 Eldridge Avenue , Winnipeg R3R 0M4",499900,499900,499900,RD,3,2,7,1969.0,double_detachedached,1128.0,12007.0,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,"533 Berkley Street , Winnipeg R3R 1K1",319900,319900,319900,RD,2,2,7,1976.0,none,1006.0,,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,,399900,399900,399900,RD,3,1,10,1979.0,single_attachedached,1128.0,5400.0,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,"744 Haney Street , Winnipeg R3R 0Y8",474900,474900,474900,RD,3,3,9,1972.0,double_detachedached,1329.0,9842.0,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,"533 Charleswood Road , Winnipeg R3R 1K5",559900,559900,559900,RD,3,4,9,1982.0,double_attachedached,2043.0,10621.0,0.0,0.0,Charleswood,West
+2025-05-27,Spring,,479900,479900,479900,RD,3,2,6,1981.0,double_attachedached,1450.0,5149.0,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,"726 Community Row , Winnipeg R3R 1H7",429900,429900,429900,RD,3,2,7,1971.0,none,1076.0,7202.0,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,,419900,419900,419900,RD,4,2,7,1979.0,double_detachedached,1558.0,,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,"3441 Beiko Avenue , Winnipeg R3R 0M7",599900,599900,599900,RD,3,3,9,1983.0,double_attachedached,1575.0,6601.0,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,,299900,299900,299900,SA,3,2,6,1969.0,none,1076.0,,0.0,0.0,Westdale,Westdale
+2025-05-27,Spring,,349900,349900,349900,RD,3,1,12,1970.0,double_detachedached,1056.0,8149.0,0.0,0.0,Charleswood,Charleswood
+2025-05-27,Spring,"708 Riverwood Avenue , Winnipeg R3T 1K6",299900,299900,299900,RD,3,2,15,1949.0,none,1168.0,5865.0,0.0,0.0,East Fort Garry,East Fort Garry
+2025-05-27,Spring,"856 Holly Avenue , Winnipeg R3T 1W4",499900,499900,499900,RD,4,2,6,1958.0,double_detachedached,1936.0,5760.0,0.0,0.0,East Fort Garry,East Fort Garry
+2025-05-27,Spring,"1111 Somerville Avenue , Winnipeg R3T 1B8",319900,319900,319900,RD,4,1,9,1946.0,single_detachedached,986.0,4600.0,0.0,0.0,West Fort Garry,West Fort Garry
+2025-05-27,Spring,,299900,299900,299900,TH,3,2,9,1954.0,none,1032.0,3795.0,0.0,0.0,West Fort Garry,West Fort Garry
+2025-05-27,Spring,,494900,494900,494900,RD,3,2,40,1972.0,none,1065.0,5936.0,0.0,0.0,Fort Richmond,Fort Richmond
+2025-05-27,Spring,,389900,389900,389900,RD,3,2,7,1969.0,double_detachedached,1158.0,6269.0,0.0,0.0,Fort Richmond,Fort Richmond
+2025-05-27,Spring,,529000,529000,529000,RD,3,3,24,1979.0,double_attachedached,1307.0,6598.0,0.0,0.0,Waverley Heights,Waverley Heights
+2025-05-27,Spring,"139 Wallingford Crescent , Winnipeg R3P 1L5",624900,624900,624900,RD,4,4,12,1987.0,double_attachedached,2080.0,6961.0,0.0,0.0,Linden Woods,Linden Woods
+2025-05-27,Spring,"144 Huntingdale Road , Winnipeg R3P 2H2",649000,649000,649000,RD,3,4,7,1993.0,double_attachedached,1950.0,,0.0,0.0,Linden Woods,Linden Woods
+2025-05-27,Spring,,739000,739000,739000,RD,5,4,15,1996.0,double_attachedached,2360.0,7443.0,0.0,0.0,Whyte Ridge,Whyte Ridge
+2025-05-27,Spring,"876 Lemay Avenue , Winnipeg R3V 1E5",399900,399900,399900,RD,3,2,7,1965.0,single_attachedached,1140.0,,0.0,0.0,St Norbert,St Norbert
+2025-05-27,Spring,,379900,379900,379900,RD,3,2,16,1985.0,none,1058.0,4693.0,0.0,0.0,Grandmont Park,Grandmont Park
+2025-05-27,Spring,"217 Southview Crescent , Winnipeg R3Y 0G9",559900,559900,559900,RD,3,3,45,2013.0,double_attachedached,1681.0,6176.0,0.0,0.0,South Pointe,South Pointe
+2025-05-27,Spring,,79900,79900,79900,VL,0,0,15,,none,,35632.0,0.0,0.0,Bridgwater Lakes,Bridgwater Lakes
+2025-05-27,Spring,"239 Oak Lawn Road , Winnipeg R3Y 0H1",849900,849900,849900,RD,2,3,7,2011.0,double_attachedached,1736.0,,0.0,0.0,Bridgwater Forest,Bridgwater Forest
+2025-05-27,Spring,,504900,504900,504900,SA,3,3,59,2025.0,single_attachedached,1489.0,,0.0,0.0,Prairie Pointe,Prairie Pointe
+2025-05-27,Spring,,417900,417900,417900,SA,3,3,69,2025.0,none,1399.0,1994.0,0.0,0.0,Prairie Pointe,Prairie Pointe
+2025-05-27,Spring,"280 Willow Creek Road , Winnipeg R3Y 1S4",939900,939900,939900,RD,3,3,56,2022.0,double_attachedached,2664.0,4883.0,0.0,0.0,Bridgwater Trails,Bridgwater Trails
+2025-05-27,Spring,,769900,769900,769900,RD,5,3,4,2017.0,double_attachedached,2252.0,,0.0,0.0,Prairie Pointe,Prairie Pointe
+2025-05-27,Spring,,599900,599900,599900,RD,3,4,9,2017.0,double_detachedached,1621.0,3989.0,0.0,0.0,Bridgwater Trails,Bridgwater Trails
+2025-05-27,Spring,,619900,619900,619900,RD,4,3,7,2011.0,double_attachedached,2090.0,,0.0,0.0,South Pointe,South Pointe
+2025-05-27,Spring,,739000,739000,739000,SA,3,4,4,2014.0,double_attachedached,2291.0,10608.0,0.0,0.0,Bridgwater Lakes,Bridgwater Lakes
+2025-05-27,Spring,,739900,739900,739900,RD,3,4,10,2013.0,double_attachedached,2328.0,5901.0,0.0,0.0,Bridgwater Forest,Bridgwater Forest
+2025-05-27,Spring,,459900,459900,459900,TH,3,3,17,2024.0,single_detachedached,1399.0,,0.0,0.0,Prairie Pointe,Prairie Pointe
+2025-05-27,Spring,,549900,549900,549900,RD,3,3,8,2014.0,double_attachedached,1359.0,,0.0,0.0,South Pointe,South Pointe
+2025-05-27,Spring,,417900,417900,417900,SA,3,3,67,2025.0,none,1399.0,1994.0,0.0,0.0,Prairie Pointe,Prairie Pointe
+2025-05-27,Spring,"156 Red Spruce Road , Winnipeg R3Y 0R1",719900,719900,719900,RD,3,3,7,2017.0,double_attachedached,2043.0,6464.0,0.0,0.0,Bridgwater Lakes,Bridgwater Lakes
+2025-05-27,Spring,,699900,699900,699900,RD,4,4,37,2011.0,double_attachedached,2258.0,,0.0,0.0,South Pointe,South Pointe
+2025-05-27,Spring,"435 Bridge Lake Drive , Winnipeg R3Y 0S3",545000,545000,545000,RD,3,3,17,2017.0,double_detachedached,1600.0,,0.0,0.0,Bridgwater Lakes,Bridgwater Lakes
+2025-05-27,Spring,,581422,581422,581422,RD,4,2,93,2026.0,double_attachedached,1704.0,,0.0,0.0,Prairie Pointe,Prairie Pointe
+2025-05-27,Spring,,639000,639000,639000,RD,3,3,7,2013.0,double_attachedached,1578.0,,0.0,0.0,Bridgwater Forest,Bridgwater Forest
+2025-05-27,Spring,"143 Lake Bend Road , Winnipeg R3Y 1N3",859900,859900,859900,RD,4,4,8,2014.0,double_attachedached,2858.0,6318.0,0.0,0.0,Bridgwater Lakes,Bridgwater Lakes
+2025-05-27,Spring,"305 Park West Drive , Winnipeg R3Y 0V9",455000,455000,455000,TH,3,3,29,2017.0,none,1462.0,,0.0,0.0,Bridgwater Centre,Bridgwater Centre
+2025-05-27,Spring,"589 Bridge Lake Drive , Winnipeg R3Y 0W8",739900,739900,739900,RD,4,3,3,2017.0,double_attachedached,2446.0,,0.0,0.0,Bridgwater Trails,Bridgwater Trails
+2025-05-27,Spring,,549900,549900,549900,RD,3,3,14,1999.0,double_attachedached,1164.0,4044.0,0.0,0.0,Richmond West,Richmond West
+2025-05-27,Spring,,499900,499900,499900,RD,3,2,7,,triple_detachedached,1220.0,,0.0,0.0,Headingley South,Headingley South
+2025-05-27,Spring,"552 Cherrier Street , Winnipeg R2J 0M4",219900,219900,219900,RD,2,1,8,1910.0,none,640.0,3399.0,0.0,0.0,St Boniface,St Boniface
+2025-05-27,Spring,"394 St Jean Baptiste Street , Winnipeg R2H 2X4",449900,449900,449900,RD,3,2,8,1945.0,double_detachedached,1626.0,4990.0,0.0,0.0,St Boniface,St Boniface
+2025-05-27,Spring,"544 De La Morenie Street , Winnipeg R2H 2Z5",364900,364900,364900,RD,3,4,32,1913.0,double_detachedached,1638.0,5901.0,0.0,0.0,St Boniface,St Boniface
+2025-05-27,Spring,"366 Dubuc Street , Winnipeg R2H 1G1",399900,399900,399900,RD,3,1,8,1947.0,single_detachedached,1216.0,5402.0,0.0,0.0,Norwood,Norwood
+2025-05-27,Spring,,424900,424900,424900,RD,3,2,7,1960.0,single_detachedached,1268.0,,0.0,0.0,Pulberry,Pulberry
+2025-05-27,Spring,,473900,473900,473900,RD,2,2,13,1927.0,double_detachedached,1270.0,11150.0,0.0,0.0,Pulberry,Pulberry
+2025-05-27,Spring,,475000,475000,475000,RD,3,3,4,1975.0,double_detachedached,1120.0,9581.0,0.0,0.0,Bright Oaks,Bright Oaks
+2025-05-27,Spring,"378 Beliveau Road , Winnipeg R2M 1T4",299900,299900,299900,SA,2,2,8,1975.0,none,720.0,,0.0,0.0,St Vital,St Vital
+2025-05-27,Spring,,269900,269900,269900,RD,2,1,7,1941.0,double_detachedached,898.0,11339.0,0.0,0.0,St Vital,St Vital
+2025-05-27,Spring,,239900,239900,239900,RD,2,1,7,1945.0,double_detachedached,840.0,5850.0,0.0,0.0,St Vital,St Vital
+2025-05-27,Spring,"113 Vivian Avenue , Winnipeg R2M 0E6",349900,349900,349900,RD,2,2,2,2003.0,single_detachedached,930.0,2550.0,0.0,0.0,St Vital,St Vital
+2025-05-27,Spring,"368 Beliveau Road , Winnipeg R2M 1T4",364900,364900,364900,RD,0,0,35,1950.0,double_detachedached,800.0,8000.0,0.0,0.0,St Vital,St Vital
+2025-05-27,Spring,"179 Imperial Avenue , Winnipeg R2M 0K9",369900,369900,369900,RD,3,2,7,1963.0,none,1050.0,4079.0,0.0,0.0,St Vital,St Vital
+2025-05-27,Spring,"518 Novavista Drive , Winnipeg R2N 2L5",399900,399900,399900,RD,2,2,8,1988.0,single_detachedached,906.0,3455.0,0.0,0.0,Meadowood,Meadowood
+2025-05-27,Spring,"444 Novavista Drive , Winnipeg R2N 3V9",339900,339900,339900,RD,3,2,6,1990.0,none,904.0,,0.0,0.0,Meadowood,Meadowood
+2025-05-27,Spring,"816 Aldgate Road , Winnipeg R2N 4P3",519900,519900,519900,RD,3,2,9,2005.0,double_attachedached,1297.0,,0.0,0.0,River Park South,River Park South
+2025-05-27,Spring,,529900,529900,529900,RD,3,2,8,2013.0,double_attachedached,1432.0,5787.0,0.0,0.0,River Park South,River Park South
+2025-05-27,Spring,,249900,249900,249900,MH,3,2,3,1997.0,single_detachedached,1216.0,,0.0,0.0,South Glen,South Glen
+2025-05-27,Spring,"820 Aldgate Road , Winnipeg R2N 4P3",488900,488900,488900,RD,3,3,8,2005.0,double_attachedached,1560.0,,0.0,0.0,River Park South,River Park South
+2025-05-27,Spring,,525000,525000,525000,RD,3,3,18,2000.0,double_attachedached,1259.0,,0.0,0.0,River Park South,River Park South
+2025-05-27,Spring,"139 Nutley Circle , Winnipeg R2N 1S2",474900,474900,474900,RD,3,3,6,1983.0,single_attachedached,1320.0,4400.0,0.0,0.0,River Park South,River Park South
+2025-05-27,Spring,,559900,559900,559900,RD,3,3,9,2014.0,double_attachedached,1352.0,,0.0,0.0,River Park South,River Park South
+2025-05-27,Spring,,399900,399900,399900,RD,2,2,7,1985.0,double_detachedached,867.0,,0.0,0.0,River Park South,River Park South
+2025-05-27,Spring,"127 Seaside Drive , Winnipeg R2J 3V1",577500,577500,577500,RD,3,4,29,2013.0,double_attachedached,1527.0,,0.0,0.0,Waterside Estates,Waterside Estates
+2025-05-27,Spring,,399999,399999,399999,RD,3,2,6,1964.0,double_detachedached,1120.0,6350.0,0.0,0.0,Windsor Park,Windsor Park
+2025-05-27,Spring,,389900,389900,389900,RD,3,2,7,1962.0,none,1080.0,5773.0,0.0,0.0,Windsor Park,Windsor Park
+2025-05-27,Spring,,349900,349900,349900,RD,3,2,7,1955.0,single_detachedached,903.0,5494.0,0.0,0.0,Windsor Park,Windsor Park
+2025-05-27,Spring,,649900,649900,649900,RD,4,4,9,1986.0,double_attachedached,2057.0,7562.0,0.0,0.0,Southdale,Southdale
+2025-05-27,Spring,"166 Edgemont Drive , Winnipeg R2J 3H9",549900,549900,549900,RD,4,4,11,1976.0,double_attachedached,1802.0,6300.0,0.0,0.0,Southdale,Southdale
+2025-05-27,Spring,"106 Cliffwood Drive , Winnipeg R2J 3N3",549900,549900,549900,RD,4,3,7,1981.0,double_attachedached,1930.0,6161.0,0.0,0.0,Southdale,Southdale
+2025-05-27,Spring,"106 Evelyne Reese Boulevard , Winnipeg R3X 2G9",469900,469900,469900,TH,3,3,43,2017.0,none,1462.0,,0.0,0.0,Bonavista,Bonavista
+2025-05-27,Spring,"176 Evelyne Reese Boulevard , Winnipeg R3X 0P2",489000,489000,489000,TH,3,3,62,2021.0,single_detachedached,1492.0,,0.0,0.0,Bonavista,Bonavista
+2025-05-27,Spring,,489900,489900,489900,RD,3,3,9,1986.0,double_attachedached,1460.0,5172.0,0.0,0.0,Island Lakes,Island Lakes
+2025-05-27,Spring,,639900,639900,639900,RD,3,3,8,2007.0,double_attachedached,1509.0,4759.0,0.0,0.0,Royalwood,Royalwood
+2025-05-27,Spring,,474900,474900,474900,RD,2,2,8,2005.0,double_attachedached,1219.0,5759.0,0.0,0.0,Island Lakes,Island Lakes
+2025-05-27,Spring,,749900,749900,749900,RD,3,3,7,2009.0,double_attachedached,1741.0,13812.0,0.0,0.0,Royalwood,Royalwood
+2025-05-27,Spring,,674900,674900,674900,RD,3,2,28,1998.0,double_attachedached,1807.0,6492.0,0.0,0.0,Royalwood,Royalwood
+2025-05-27,Spring,,549900,549900,549900,RD,3,2,7,2010.0,double_attachedached,1575.0,,0.0,0.0,Sage Creek,Sage Creek
+2025-05-27,Spring,"434 William Newton Avenue , Winnipeg R2L 0W5",269900,269900,269900,RD,3,3,6,1907.0,none,1400.0,3076.0,0.0,0.0,Elmwood,Elmwood
+2025-05-27,Spring,"447 tweed Avenue , Winnipeg R2L 0W1",154900,154900,154900,RD,2,1,32,1907.0,none,600.0,,0.0,0.0,Elmwood,Elmwood
