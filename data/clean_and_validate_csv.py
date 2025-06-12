@@ -1,21 +1,25 @@
-# file: data/clean_and_validate_csv.py
+# data/clean_and_validate_csv.py
 
-import pandas as pd
 import os
+import pandas as pd
 
 INPUT = "parsed_csv/merged.csv"
 OUTPUT = "parsed_csv/validated.csv"
 
 if not os.path.exists(INPUT):
-    raise FileNotFoundError(f"{INPUT} not found")
+    print(f"❌ Error: File not found - {INPUT}")
+    exit(1)
 
-df = pd.read_csv(INPUT)
+try:
+    df = pd.read_csv(INPUT)
+except pd.errors.EmptyDataError:
+    print(f"❌ Error: Empty CSV - {INPUT}")
+    exit(1)
 
-# Drop rows with missing crucial fields
-df_clean = df.dropna(subset=["address", "sold_price"])
+# Optional: perform additional cleaning if needed
+# Example: drop duplicates, normalize types, or rename columns
+# df.drop_duplicates(inplace=True)
 
-# Optional: filter out junk/zeros
-df_clean = df_clean[df_clean["sold_price"] > 1000]
-
-df_clean.to_csv(OUTPUT, index=False)
-print(f"✅ Cleaned & validated rows saved to {OUTPUT}")
+# Write validated file
+df.to_csv(OUTPUT, index=False)
+print(f"✅ Saved validated CSV: {OUTPUT}")

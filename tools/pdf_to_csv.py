@@ -1,54 +1,40 @@
 # file: tools/pdf_to_csv.py
 
-import pdfplumber
-import pandas as pd
 import os
-import re
+import io
+import sys
+import pandas as pd
+from utils.pdf_sales_parser import extract_pdf_sales
 
-OUTPUT_DIR = "parsed_csv"
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-def extract_csv_from_pdf(pdf_path):
-    rows = []
-    with pdfplumber.open(pdf_path) as pdf:
-        for page in pdf.pages:
-            table = page.extract_table()
-            if table:
-                for row in table:
-                    cleaned = [col.strip() if col else "" for col in row]
-                    if len(cleaned) < 5 or "Winnipeg" not in str(cleaned):
-                        continue
-                    rows.append(cleaned)
-    
-    if not rows:
-        print(f"[SKIP] No rows parsed from {pdf_path}")
-        return None
+PDF_DIR = "pdf_uploads/"
+OUTPUT_CSV = "parsed_csv/merged.csv"
 
-    df = pd.DataFrame(rows)
-    return df
+def convert_all_pdfs():
+    os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
 
-
-def convert_all_pdfs(input_folder="pdf_uploads"):
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    all_dfs = []
-
-    for filename in os.listdir(input_folder):
+    all_data = []
+    for filename in sorted(os.listdir(PDF_DIR)):
         if filename.lower().endswith(".pdf"):
-            path = os.path.join(input_folder, filename)
-            print(f"Processing {filename}...")
-            df = extract_csv_from_pdf(path)
-            if df is not None:
-                csv_path = os.path.join(OUTPUT_DIR, filename.replace(".pdf", ".csv"))
-                df.to_csv(csv_path, index=False)
-                all_dfs.append(df)
-                print(f" Saved: {csv_path}")
+            pdf_path = os.path.join(PDF_DIR, filename)
+            print(f"> Parsing: {filename}")
+            try:
+                df = extract_pdf_sales(pdf_path)
+                if not df.empty:
+                    print(f"✅ Parsed {len(df)} rows from {filename}")
+                    all_data.append(df)
+                else:
+                    print(f"[SKIP] Empty DataFrame from {filename}")
+            except Exception as e:
+                print(f"[ERROR] {filename}: {e}")
 
-    if all_dfs:
-        combined = pd.concat(all_dfs, ignore_index=True)
-        combined.to_csv(os.path.join(OUTPUT_DIR, "merged.csv"), index=False)
-        print(" Merged CSV saved to: parsed_csv/merged.csv")
+    if all_data:
+        merged_df = pd.concat(all_data, ignore_index=True)
+        merged_df.to_csv(OUTPUT_CSV, index=False)
+        print(f"✅ Saved merged CSV: {OUTPUT_CSV}")
     else:
-        print(" No data parsed from any PDF.")
-
+        print("⚠️ No valid data parsed. No file written.")
 
 if __name__ == "__main__":
     convert_all_pdfs()

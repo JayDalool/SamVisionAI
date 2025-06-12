@@ -1,0 +1,985 @@
+listing_date,season,mls_number,neighborhood,address,list_price,sold_price,sell_list_ratio,dom,bedrooms,bathrooms,garage_type,house_type,sqft,lot_size
+2025-06-12,Summer,unknown,/Neighbr,34 Arnold Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,840,0
+2025-06-12,Summer,unknown,/Neighbr,228 Balfour Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,860,0
+2025-06-12,Summer,unknown,/Neighbr,301 Ashland Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1354,0
+2025-06-12,Summer,unknown,/Neighbr,231 Montgomery Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,864,0
+2025-06-12,Summer,unknown,/Neighbr,315 Ashland Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1330,0
+2025-06-12,Summer,unknown,/Neighbr,116 Clare Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1227,0
+2025-06-12,Summer,unknown,/Neighbr,316 Baltimore Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2375,0
+2025-06-12,Summer,unknown,/Neighbr,356 Ashland Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1226,0
+2025-06-12,Summer,unknown,/Neighbr,192 Arnold Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1080,0
+2025-06-12,Summer,unknown,/Neighbr,770 Walker Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1147,0
+2025-06-12,Summer,unknown,/Neighbr,570 Walker Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1025,0
+2025-06-12,Summer,unknown,/Neighbr,480 Beresford Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1072,0
+2025-06-12,Summer,unknown,/Neighbr,567 McNaughton Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1340,0
+2025-06-12,Summer,unknown,/Neighbr,590 Walker Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1260,0
+2025-06-12,Summer,unknown,/Neighbr,439 Morley Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1000,0
+2025-06-12,Summer,unknown,/Neighbr,462 Arnold Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,963,0
+2025-06-12,Summer,unknown,/Neighbr,682 Beresford Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1056,0
+2025-06-12,Summer,unknown,/Neighbr,450 Arnold Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,688,0
+2025-06-12,Summer,unknown,/Neighbr,324 Morley Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1058,0
+2025-06-12,Summer,unknown,/Neighbr,560 Beresford Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,925,0
+2025-06-12,Summer,unknown,/Neighbr,515 Wardlaw Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2018,0
+2025-06-12,Summer,unknown,/Neighbr,814 Dudley Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1200,0
+2025-06-12,Summer,unknown,/Neighbr,1149 McMillan Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,700,0
+2025-06-12,Summer,unknown,/Neighbr,805 Dudley Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1120,0
+2025-06-12,Summer,unknown,/Neighbr,608 Fleet Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,991,0
+2025-06-12,Summer,unknown,/Neighbr,857 Lorette Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,880,0
+2025-06-12,Summer,unknown,/Neighbr,575 Fleet Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1200,0
+2025-06-12,Summer,unknown,/Neighbr,803 DUDLEY Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1260,0
+2025-06-12,Summer,unknown,/Neighbr,724 Mulvey Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1128,0
+2025-06-12,Summer,unknown,/Neighbr,731 Scotland Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,653,0
+2025-06-12,Summer,unknown,/Neighbr,604 Warsaw Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,920,0
+2025-06-12,Summer,unknown,/Neighbr,763 Hector Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,890,0
+2025-06-12,Summer,unknown,/Neighbr,1131 Corydon Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1248,0
+2025-06-12,Summer,unknown,/Neighbr,1024 Fleet Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,950,0
+2025-06-12,Summer,unknown,1A,405 Churchill Drive,524900.0,0.0,0.0,9,3,2.0,"detached, double",RD,472,0
+2025-06-12,Summer,unknown,1Aw,Unknown Address #unknown,224900.0,0.0,0.0,12,3,2.0,"carport, rear drive",RD,800,0
+2025-06-12,Summer,unknown,1Aw,Unknown Address #unknown,299900.0,0.0,0.0,12,3,2.0,"rear drive, unpaved",RD,202,0
+2025-06-12,Summer,unknown,1B,Unknown Address #unknown,599990.0,0.0,0.0,0,3,2.0,pad,RD,18,0
+2025-06-12,Summer,unknown,1B,Unknown Address #unknown,249900.0,0.0,0.0,32,3,2.0,.,RD,700,0
+2025-06-12,Summer,unknown,1B,Unknown Address #unknown,309900.0,0.0,0.0,7,3,2.0,stall. ready for you to move in!,RD,712,0
+2025-06-12,Summer,unknown,1Bw,Unknown Address #unknown,349900.0,0.0,0.0,6,3,2.0,"plug-in, rear drive",RD,210,0
+2025-06-12,Summer,unknown,1C,Unknown Address #unknown,1149900.0,0.0,0.0,7,3,2.0,"detached, double",RD,500,0
+2025-06-12,Summer,unknown,1D,Unknown Address #unknown,599900.0,0.0,0.0,9,3,2.0,+ storage. this home,RD,361,0
+2025-06-12,Summer,unknown,1D,Unknown Address #unknown,479900.0,0.0,0.0,8,3,2.0,"detached, double, pad",RD,122,0
+2025-06-12,Summer,unknown,1D,Unknown Address #unknown,524900.0,0.0,0.0,10,3,2.0,"detached, double",RD,600,0
+2025-06-12,Summer,unknown,1D,Unknown Address #unknown,309900.0,0.0,0.0,9,3,2.0,pad,SA,72,0
+2025-06-12,Summer,unknown,1D,Unknown Address #unknown,799900.0,0.0,0.0,28,3,2.0,"attached, double",RD,702,0
+2025-06-12,Summer,unknown,1D,Unknown Address #unknown,395000.0,0.0,0.0,10,3,2.0,"detached, double",RD,0,0
+2025-06-12,Summer,unknown,1E,Unknown Address #unknown,990000.0,0.0,0.0,8,3,2.0,"attached, double",RD,750,0
+2025-06-12,Summer,unknown,1G,Unknown Address #unknown,399900.0,0.0,0.0,8,3,2.0,"detached, double",RD,50,0
+2025-06-12,Summer,unknown,1G,Unknown Address #unknown,439900.0,0.0,0.0,7,3,2.0,"attached, double",RD,104,0
+2025-06-12,Summer,unknown,1G,Unknown Address #unknown,224900.0,0.0,0.0,5,3,2.0,front drive access,VL,178,0
+2025-06-12,Summer,unknown,1G,Unknown Address #unknown,489900.0,0.0,0.0,8,3,2.0,"attached, double",RD,282,0
+2025-06-12,Summer,unknown,1G,Unknown Address #unknown,884000.0,0.0,0.0,42,3,2.0,"attached, double",RD,674,0
+2025-06-12,Summer,unknown,1G,Unknown Address #unknown,499900.0,0.0,0.0,10,3,2.0,"attached, single",RD,380,0
+2025-06-12,Summer,unknown,1G,Unknown Address #unknown,949900.0,0.0,0.0,7,3,2.0,attached,RD,275,0
+2025-06-12,Summer,unknown,1G,Unknown Address #unknown,419900.0,0.0,0.0,7,3,2.0,"attached, double",RD,539,0
+2025-06-12,Summer,unknown,1G,Unknown Address #unknown,399900.0,0.0,0.0,9,3,2.0,"attached, double",RD,796,0
+2025-06-12,Summer,unknown,1H,Unknown Address #unknown,299900.0,0.0,0.0,12,3,2.0,carport,SA,948,0
+2025-06-12,Summer,unknown,1H,Unknown Address #unknown,649000.0,0.0,0.0,7,3,2.0,"attached, double",RD,53,0
+2025-06-12,Summer,unknown,1H,Unknown Address #unknown,529900.0,0.0,0.0,13,3,2.0,"front drive access, no garage, paved driveway",RD,850,0
+2025-06-12,Summer,unknown,1H,Unknown Address #unknown,549900.0,0.0,0.0,7,3,2.0,"attached, double",RD,263,0
+2025-06-12,Summer,unknown,1H,Unknown Address #unknown,679900.0,0.0,0.0,42,3,2.0,"attached, double, plug-in",RD,649,0
+2025-06-12,Summer,unknown,1J,Unknown Address #unknown,379900.0,0.0,0.0,8,3,2.0,"detached, single",RD,307,0
+2025-06-12,Summer,unknown,1Jw,Unknown Address #unknown,299900.0,0.0,0.0,6,3,2.0,attached,RD,382,0
+2025-06-12,Summer,unknown,1Jw,Unknown Address #unknown,379000.0,0.0,0.0,8,3,2.0,"detached, single",RD,948,0
+2025-06-12,Summer,unknown,1K,Unknown Address #unknown,890000.0,0.0,0.0,13,3,2.0,"attached, double",RD,812,0
+2025-06-12,Summer,unknown,1K,Unknown Address #unknown,374900.0,0.0,0.0,8,3,2.0,"detached, single",RD,804,0
+2025-06-12,Summer,unknown,1K,Unknown Address #unknown,456000.0,0.0,0.0,39,3,2.0,"attached, single",RD,0,0
+2025-06-12,Summer,unknown,1K,Unknown Address #unknown,499000.0,0.0,0.0,13,3,2.0,"detached, single",RD,68,0
+2025-06-12,Summer,unknown,1K,Unknown Address #unknown,499000.0,0.0,0.0,10,3,2.0,"attached, double",RD,660,0
+2025-06-12,Summer,unknown,1K,Unknown Address #unknown,469900.0,0.0,0.0,10,3,2.0,there is at,RD,844,0
+2025-06-12,Summer,unknown,1L,Unknown Address #unknown,524900.0,0.0,0.0,12,3,2.0,"attached, double",RD,314,0
+2025-06-12,Summer,unknown,1L,Unknown Address #unknown,429900.0,0.0,0.0,7,3,2.0,plug-in,RD,120,0
+2025-06-12,Summer,unknown,1M,Unknown Address #unknown,788000.0,0.0,0.0,19,3,2.0,"attached, double",RD,218,0
+2025-06-12,Summer,unknown,1M,Unknown Address #unknown,639900.0,0.0,0.0,14,3,2.0,"attached, double",RD,706,0
+2025-06-12,Summer,unknown,1M,Unknown Address #unknown,689900.0,0.0,0.0,8,3,2.0,"attached, double",RD,215,0
+2025-06-12,Summer,unknown,1M,Unknown Address #unknown,749900.0,0.0,0.0,19,3,2.0,"attached, double",RD,983,0
+2025-06-12,Summer,unknown,1P,Unknown Address #unknown,584900.0,0.0,0.0,6,3,2.0,"attached, double",RD,870,0
+2025-06-12,Summer,unknown,1P,Unknown Address #unknown,498900.0,0.0,0.0,8,3,2.0,"attached, double",RD,293,0
+2025-06-12,Summer,unknown,1Q,Unknown Address #unknown,399900.0,0.0,0.0,6,3,2.0,pad,RD,166,0
+2025-06-12,Summer,unknown,1Q,Unknown Address #unknown,349900.0,0.0,0.0,7,3,2.0,in back for 3 vehicles and the yard is easy to maintain. public,RD,820,0
+2025-06-12,Summer,unknown,1Q,Unknown Address #unknown,339900.0,0.0,0.0,8,3,2.0,"pad, plug-in",RD,72,0
+2025-06-12,Summer,unknown,1Q,Unknown Address #unknown,265000.0,0.0,0.0,4,3,2.0,unpaved,RD,960,0
+2025-06-12,Summer,unknown,1R,Unknown Address #unknown,524900.0,0.0,0.0,6,3,2.0,"detached, double, rear drive",RD,115,0
+2025-06-12,Summer,unknown,1R,Unknown Address #unknown,1070000.0,0.0,0.0,11,3,2.0,"attached, double",RD,494,0
+2025-06-12,Summer,unknown,1R,Unknown Address #unknown,598880.0,0.0,0.0,7,3,2.0,pad,RD,612,0
+2025-06-12,Summer,unknown,1R,Unknown Address #unknown,499900.0,0.0,0.0,8,3,2.0,"detached, double",SA,537,0
+2025-06-12,Summer,unknown,1R,Unknown Address #unknown,649900.0,0.0,0.0,13,3,2.0,"attached, double",RD,629,0
+2025-06-12,Summer,unknown,1R,Unknown Address #unknown,479900.0,0.0,0.0,0,3,2.0,"pad, rear drive",TH,492,0
+2025-06-12,Summer,unknown,1R,Unknown Address #unknown,489900.0,0.0,0.0,7,3,2.0,"attached, plug-in, single",SA,468,0
+2025-06-12,Summer,unknown,1S,Unknown Address #unknown,559900.0,0.0,0.0,54,3,2.0,"attached, double",RD,504,0
+2025-06-12,Summer,unknown,1S,Unknown Address #unknown,499900.0,0.0,0.0,10,3,2.0,"attached, double",RD,382,0
+2025-06-12,Summer,unknown,1S,Unknown Address #unknown,549900.0,0.0,0.0,7,3,2.0,"attached, double",RD,744,0
+2025-06-12,Summer,unknown,1S,Unknown Address #unknown,529900.0,0.0,0.0,7,3,2.0,"attached, double",RD,484,0
+2025-06-12,Summer,unknown,1S,Unknown Address #unknown,478000.0,0.0,0.0,11,3,2.0,"attached, single",RD,591,0
+2025-06-12,Summer,unknown,1S,Unknown Address #unknown,424900.0,0.0,0.0,7,3,2.0,"attached, double",RD,344,0
+2025-06-12,Summer,unknown,1W,Unknown Address #unknown,999900.0,0.0,0.0,8,3,2.0,"attached, rear drive",RD,815,0
+2025-06-12,Summer,unknown,2A,Unknown Address #unknown,339900.0,0.0,0.0,8,3,2.0,"detached, rear drive, single",RD,948,0
+2025-06-12,Summer,unknown,2A,Unknown Address #unknown,629900.0,0.0,0.0,6,3,2.0,"detached, double",RD,936,0
+2025-06-12,Summer,unknown,2A,Unknown Address #unknown,499900.0,0.0,0.0,15,3,2.0,spot.,RD,612,0
+2025-06-12,Summer,unknown,2A,Unknown Address #unknown,224900.0,0.0,0.0,11,3,2.0,rear drive,RD,715,0
+2025-06-12,Summer,unknown,2A,Unknown Address #unknown,579900.0,0.0,0.0,9,3,2.0,"detached, double",RD,30,0
+2025-06-12,Summer,unknown,2B,Unknown Address #unknown,350000.0,0.0,0.0,6,3,2.0,"detached, double",DP,745,0
+2025-06-12,Summer,unknown,2B,Unknown Address #unknown,319900.0,0.0,0.0,8,3,2.0,"too! updated; he furn & hwt '21, newer wnds, electrical upgrade in 2014 (no knob & tube). very nice! lucky you!",RD,738,0
+2025-06-12,Summer,unknown,2B,Unknown Address #unknown,369900.0,0.0,0.0,7,3,2.0,"detached, double, pad",RD,826,0
+2025-06-12,Summer,unknown,2C,Unknown Address #unknown,399900.0,0.0,0.0,8,3,2.0,front drive access; ttl: 4,RD,947,0
+2025-06-12,Summer,unknown,2C,Unknown Address #unknown,524900.0,0.0,0.0,8,3,2.0,pad,RD,220,0
+2025-06-12,Summer,unknown,2C,Unknown Address #unknown,799900.0,0.0,0.0,10,3,2.0,"attached, single",RD,548,0
+2025-06-12,Summer,unknown,2C,Unknown Address #unknown,159900.0,0.0,0.0,26,3,2.0,"detached, rear drive, single",RD,624,0
+2025-06-12,Summer,unknown,2D,Unknown Address #unknown,299900.0,0.0,0.0,10,3,2.0,pad,SA,200,0
+2025-06-12,Summer,unknown,2D,Unknown Address #unknown,325000.0,0.0,0.0,9,3,2.0,"attached, detached, double, single",RD,15,0
+2025-06-12,Summer,unknown,2D,Unknown Address #unknown,330000.0,0.0,0.0,28,3,2.0,"detached, rear drive, single",RD,832,0
+2025-06-12,Summer,unknown,2D,Unknown Address #unknown,649900.0,0.0,0.0,9,3,2.0,"attached, double",RD,19,0
+2025-06-12,Summer,unknown,2D,Unknown Address #unknown,279900.0,0.0,0.0,7,3,2.0,"detached, single",RD,672,0
+2025-06-12,Summer,unknown,2D,Unknown Address #unknown,299900.0,0.0,0.0,11,3,2.0,pad,RD,771,0
+2025-06-12,Summer,unknown,2E,Unknown Address #unknown,299900.0,0.0,0.0,7,3,2.0,"front drive access, no garage, paved driveway",RD,924,0
+2025-06-12,Summer,unknown,2E,Unknown Address #unknown,289000.0,0.0,0.0,12,3,2.0,"detached, double",RD,34,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,259900.0,0.0,0.0,6,3,2.0,for 2 vehicles. this,MH,472,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,489900.0,0.0,0.0,12,3,2.0,"attached, single",RD,216,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,499900.0,0.0,0.0,12,3,2.0,"attached, double",RD,612,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,579900.0,0.0,0.0,13,3,2.0,"attached, double",RD,464,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,599900.0,0.0,0.0,8,3,2.0,"attached, double",RD,475,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,429900.0,0.0,0.0,14,3,2.0,"stall and shed. located in the heart of rps, which offers every convenience, including all levels of schools,",RD,307,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,439900.0,0.0,0.0,10,3,2.0,"attached, single",RD,44,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,529900.0,0.0,0.0,25,3,2.0,"attached, double",RD,268,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,619900.0,0.0,0.0,7,3,2.0,"attached, double, plug-in",RD,12,0
+2025-06-12,Summer,unknown,2F,22 Faraway Lane,579900.0,0.0,0.0,7,3,2.0,"attached, double",RD,423,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,489800.0,0.0,0.0,7,3,2.0,"attached, single",RD,591,0
+2025-06-12,Summer,unknown,2F,Unknown Address #unknown,479900.0,0.0,0.0,34,3,2.0,pad,RD,112,0
+2025-06-12,Summer,unknown,2G,Unknown Address #unknown,424900.0,0.0,0.0,15,3,2.0,"attached, single",RD,536,0
+2025-06-12,Summer,unknown,2G,Unknown Address #unknown,379900.0,0.0,0.0,7,3,2.0,"detached, single",RD,911,0
+2025-06-12,Summer,unknown,2G,Unknown Address #unknown,569900.0,0.0,0.0,7,3,2.0,"attached, double",RD,146,0
+2025-06-12,Summer,unknown,2G,Unknown Address #unknown,329900.0,0.0,0.0,7,3,2.0,or storage space within the yard. many updates,RD,190,0
+2025-06-12,Summer,unknown,/Neighbr,867 Bairdmore Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1268,0
+2025-06-12,Summer,unknown,/Neighbr,1066 Lee Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1430,0
+2025-06-12,Summer,unknown,/Neighbr,127 Bairdmore Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1657,0
+2025-06-12,Summer,unknown,/Neighbr,84 Deer Pointe Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2224,0
+2025-06-12,Summer,unknown,/Neighbr,242 ALBORO Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1800,0
+2025-06-12,Summer,unknown,/Neighbr,14 Kemper Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1310,0
+2025-06-12,Summer,unknown,/Neighbr,62 Woodland Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2700,0
+2025-06-12,Summer,unknown,/Neighbr,38 Woodland Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1900,0
+2025-06-12,Summer,unknown,/Neighbr,520 St Jean Baptiste Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1936,0
+2025-06-12,Summer,unknown,/Neighbr,466 Aulneau Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2612,0
+2025-06-12,Summer,unknown,/Neighbr,394 St Jean Baptiste Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1626,0
+2025-06-12,Summer,unknown,/Neighbr,147 Kitson Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,920,0
+2025-06-12,Summer,unknown,/Neighbr,210 Dollard Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1335,0
+2025-06-12,Summer,unknown,/Neighbr,447 Langevin Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,728,0
+2025-06-12,Summer,unknown,/Neighbr,517 Ritchot Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1464,0
+2025-06-12,Summer,unknown,/Neighbr,545 Ritchot Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,876,0
+2025-06-12,Summer,unknown,/Neighbr,224 Thomas Berry Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,960,0
+2025-06-12,Summer,unknown,/Neighbr,155 Archibald Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1010,0
+2025-06-12,Summer,unknown,/Neighbr,567 Deniset Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,826,0
+2025-06-12,Summer,unknown,/Neighbr,366 Dubuc Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1216,0
+2025-06-12,Summer,unknown,/Neighbr,220 Eugenie Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1672,0
+2025-06-12,Summer,unknown,/Neighbr,118 Lyndale Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1019,0
+2025-06-12,Summer,unknown,/Neighbr,556 Prosper Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1063,0
+2025-06-12,Summer,unknown,/Neighbr,248 Traverse Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,750,0
+2025-06-12,Summer,unknown,/Neighbr,38 Gauvin Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1952,0
+2025-06-12,Summer,unknown,/Neighbr,272 Horace Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1564,0
+2025-06-12,Summer,unknown,/Neighbr,385 Lariviere Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,891,0
+2025-06-12,Summer,unknown,/Neighbr,125 Monck Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1977,0
+2025-06-12,Summer,unknown,/Neighbr,570 Deniset Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,720,0
+2025-06-12,Summer,unknown,/Neighbr,38 Glen Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,947,0
+2025-06-12,Summer,unknown,/Neighbr,111 Cunnington Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1100,0
+2025-06-12,Summer,unknown,/Neighbr,41 West Fernwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,779,0
+2025-06-12,Summer,unknown,/Neighbr,366 Riel Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1116,0
+2025-06-12,Summer,unknown,/Neighbr,15 Sandralin Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1120,0
+2025-06-12,Summer,unknown,/Neighbr,151 Redview Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2470,0
+2025-06-12,Summer,unknown,/Neighbr,268 Dunkirk Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1348,0
+2025-06-12,Summer,unknown,/Neighbr,30 Triton Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1244,0
+2025-06-12,Summer,unknown,/Neighbr,286 Victoria Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1408,0
+2025-06-12,Summer,unknown,/Neighbr,24 Glen Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1145,0
+2025-06-12,Summer,unknown,/Neighbr,113 St Michael Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,743,0
+2025-06-12,Summer,unknown,/Neighbr,15 Parkville Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,835,0
+2025-06-12,Summer,unknown,/Neighbr,19 Glenlawn Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1265,0
+2025-06-12,Summer,unknown,/Neighbr,70 Robertson Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1437,0
+2025-06-12,Summer,unknown,/Neighbr,31 Bright Oaks Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,988,0
+2025-06-12,Summer,unknown,/Neighbr,128 Elm Park Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2430,0
+2025-06-12,Summer,unknown,/Neighbr,15 Warrendale Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1324,0
+2025-06-12,Summer,unknown,/Neighbr,58 Blue Spruce Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,990,0
+2025-06-12,Summer,unknown,/Neighbr,98 Woodbury Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1216,0
+2025-06-12,Summer,unknown,/Neighbr,132 Arden Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1708,0
+2025-06-12,Summer,unknown,/Neighbr,139 Parkville Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1092,0
+2025-06-12,Summer,unknown,/Neighbr,54 St Vital Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1292,0
+2025-06-12,Summer,unknown,/Neighbr,243 Darwin Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1664,0
+2025-06-12,Summer,unknown,/Neighbr,28 St Elmo Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,672,0
+2025-06-12,Summer,unknown,/Neighbr,15 Worthington Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1036,0
+2025-06-12,Summer,unknown,/Neighbr,268 Metcalfe Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,625,0
+2025-06-12,Summer,unknown,/Neighbr,79 Dunraven Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,908,0
+2025-06-12,Summer,unknown,/Neighbr,60 Kingswood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,832,0
+2025-06-12,Summer,unknown,/Neighbr,65 Berrydale Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2155,0
+2025-06-12,Summer,unknown,/Neighbr,179 Imperial Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1050,0
+2025-06-12,Summer,unknown,/Neighbr,16 St George Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,840,0
+2025-06-12,Summer,unknown,/Neighbr,152 Berrydale Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1008,0
+2025-06-12,Summer,unknown,/Neighbr,37 St Elmo Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,994,0
+2025-06-12,Summer,unknown,/Neighbr,131 Fernwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1016,0
+2025-06-12,Summer,unknown,/Neighbr,105 POPLARWOOD Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1233,0
+2025-06-12,Summer,unknown,/Neighbr,27 Fitzpatrick Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1344,0
+2025-06-12,Summer,unknown,/Neighbr,42 Carriere Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1104,0
+2025-06-12,Summer,unknown,/Neighbr,42 Frederick Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,992,0
+2025-06-12,Summer,unknown,/Neighbr,188 Portland Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1288,0
+2025-06-12,Summer,unknown,/Neighbr,161 Stranmillis Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1532,0
+2025-06-12,Summer,unknown,/Neighbr,35 Sherwood Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,700,0
+2025-06-12,Summer,unknown,/Neighbr,294 Egerton Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1000,0
+2025-06-12,Summer,unknown,/Neighbr,77 Clayton Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,816,0
+2025-06-12,Summer,unknown,/Neighbr,56 Essex Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,786,0
+2025-06-12,Summer,unknown,/Neighbr,115 Vivian Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1116,0
+2025-06-12,Summer,unknown,/Neighbr,215 Havelock Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,828,0
+2025-06-12,Summer,unknown,/Neighbr,321 Beliveau Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,878,0
+2025-06-12,Summer,unknown,/Neighbr,25 Sadler Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1525,0
+2025-06-12,Summer,unknown,/Neighbr,46 Woodydell Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1034,0
+2025-06-12,Summer,unknown,/Neighbr,82 Pembridge Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1032,0
+2025-06-12,Summer,unknown,/Neighbr,12 Iowa Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1113,0
+2025-06-12,Summer,unknown,/Neighbr,444 Novavista Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,904,0
+2025-06-12,Summer,unknown,/Neighbr,518 Novavista Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,906,0
+2025-06-12,Summer,unknown,/Neighbr,26 Whitley Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1230,0
+2025-06-12,Summer,unknown,/Neighbr,50 Ashworth Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,892,0
+2025-06-12,Summer,unknown,/Neighbr,197 Sterling Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1014,0
+2025-06-12,Summer,unknown,/Neighbr,321 Ashworth Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,879,0
+2025-06-12,Summer,unknown,/Neighbr,202 Hazelwood Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,837,0
+2025-06-12,Summer,unknown,/Neighbr,82 ashworth Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,800,0
+2025-06-12,Summer,unknown,/Neighbr,15 Grassington Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1012,0
+2025-06-12,Summer,unknown,/Neighbr,14 Woodford Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,733,0
+2025-06-12,Summer,unknown,/Neighbr,503 Woodydell Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,88 Vista Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1459,0
+2025-06-12,Summer,unknown,/Neighbr,130 Kingsclear Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1475,0
+2025-06-12,Summer,unknown,/Neighbr,67 Malmsbury Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1464,0
+2025-06-12,Summer,unknown,/Neighbr,26 Thornewood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1216,0
+2025-06-12,Summer,unknown,/Neighbr,72 Farnsworth Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1960,0
+2025-06-12,Summer,unknown,/Neighbr,202 Paddington Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,830,0
+2025-06-12,Summer,unknown,/Neighbr,51 Ashford Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,968,0
+2025-06-12,Summer,unknown,/Neighbr,816 Aldgate Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1320,0
+2025-06-12,Summer,unknown,/Neighbr,6 Brixton Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,867,0
+2025-06-12,Summer,unknown,/Neighbr,59 Winterhaven Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2174,0
+2025-06-12,Summer,unknown,/Neighbr,233 Southglen Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,964,0
+2025-06-12,Summer,unknown,/Neighbr,349 Ashworth Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,860,0
+2025-06-12,Summer,unknown,/Neighbr,3 Hollingbury Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1680,0
+2025-06-12,Summer,unknown,/Neighbr,3 Fulton Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1088,0
+2025-06-12,Summer,unknown,/Neighbr,42 Lechman Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,836,0
+2025-06-12,Summer,unknown,/Neighbr,196 Gobert Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1238,0
+2025-06-12,Summer,unknown,/Neighbr,11 Highcastle Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1560,0
+2025-06-12,Summer,unknown,/Neighbr,95 Ashford Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1320,0
+2025-06-12,Summer,unknown,/Neighbr,297 Ravensden Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1670,0
+2025-06-12,Summer,unknown,/Neighbr,106 Burland Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1565,0
+2025-06-12,Summer,unknown,/Neighbr,6 Quantrell Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2027,0
+2025-06-12,Summer,unknown,/Neighbr,46 Brotman Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1308,0
+2025-06-12,Summer,unknown,/Neighbr,130 Southwalk Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1620,0
+2025-06-12,Summer,unknown,/Neighbr,116 Queensbury Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1792,0
+2025-06-12,Summer,unknown,/Neighbr,188 Barlow Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1654,0
+2025-06-12,Summer,unknown,/Neighbr,134 Alburg Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1824,0
+2025-06-12,Summer,unknown,/Neighbr,32 Barlow Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1279,0
+2025-06-12,Summer,unknown,/Neighbr,47 Hedgestone Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1380,0
+2025-06-12,Summer,unknown,/Neighbr,32 Prudhomme Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1971,0
+2025-06-12,Summer,unknown,/Neighbr,98 Buckley Trow Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2087,0
+2025-06-12,Summer,unknown,/Neighbr,39 Brotman Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1265,0
+2025-06-12,Summer,unknown,/Neighbr,16 Fleury Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1190,0
+2025-06-12,Summer,unknown,/Neighbr,57 Westmount Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1030,0
+2025-06-12,Summer,unknown,/Neighbr,56 Fontaine Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1189,0
+2025-06-12,Summer,unknown,/Neighbr,15 Boulder Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1118,0
+2025-06-12,Summer,unknown,/Neighbr,106 Berkshire Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1032,0
+2025-06-12,Summer,unknown,/Neighbr,12 Nipigon Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1120,0
+2025-06-12,Summer,unknown,/Neighbr,65 Berkshire Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1205,0
+2025-06-12,Summer,unknown,/Neighbr,39 Peterboro Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1220,0
+2025-06-12,Summer,unknown,/Neighbr,246 Penfold Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1350,0
+2025-06-12,Summer,unknown,/Neighbr,127 Seaside Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1527,0
+2025-06-12,Summer,unknown,/Neighbr,58 Fontaine Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,994,0
+2025-06-12,Summer,unknown,/Neighbr,1162 Betournay Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1036,0
+2025-06-12,Summer,unknown,/Neighbr,347 Drake Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1035,0
+2025-06-12,Summer,unknown,/Neighbr,8 Almond Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1380,0
+2025-06-12,Summer,unknown,/Neighbr,53 Peterboro Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1220,0
+2025-06-12,Summer,unknown,/Neighbr,930 Autumnwood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,93 Wiltshire Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1110,0
+2025-06-12,Summer,unknown,/Neighbr,3 Mohawk Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1260,0
+2025-06-12,Summer,unknown,/Neighbr,1 ALDERWOOD Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,892,0
+2025-06-12,Summer,unknown,/Neighbr,468 Speers Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1359,0
+2025-06-12,Summer,unknown,/Neighbr,43 Almond Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,967,0
+2025-06-12,Summer,unknown,/Neighbr,54 Penticton Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1053,0
+2025-06-12,Summer,unknown,/Neighbr,46 Cascade Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1047,0
+2025-06-12,Summer,unknown,/Neighbr,11 Maplehurst Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,970,0
+2025-06-12,Summer,unknown,/Neighbr,116 Howden Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,870,0
+2025-06-12,Summer,unknown,/Neighbr,1 Halliday Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1083,0
+2025-06-12,Summer,unknown,/Neighbr,966 Dugas Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,706,0
+2025-06-12,Summer,unknown,/Neighbr,31 Heather Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1109,0
+2025-06-12,Summer,unknown,/Neighbr,34 Rockcliffe Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1176,0
+2025-06-12,Summer,unknown,/Neighbr,143 Driftwood Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1486,0
+2025-06-12,Summer,unknown,/Neighbr,121 Weatherstone Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1044,0
+2025-06-12,Summer,unknown,/Neighbr,166 Edgemont Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2057,0
+2025-06-12,Summer,unknown,/Neighbr,36 Lake Lawn Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1619,0
+2025-06-12,Summer,unknown,/Neighbr,66 Willow Point Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1094,0
+2025-06-12,Summer,unknown,/Neighbr,34 Bluewater Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,754,0
+2025-06-12,Summer,unknown,/Neighbr,38 Tamarac Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2179,0
+2025-06-12,Summer,unknown,/Neighbr,15 Edgewater Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1906,0
+2025-06-12,Summer,unknown,/Neighbr,228 Cliffwood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2300,0
+2025-06-12,Summer,unknown,/Neighbr,26 Weatherstone Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1044,0
+2025-06-12,Summer,unknown,/Neighbr,59 Clarendon Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1160,0
+2025-06-12,Summer,unknown,/Neighbr,175 Bluewater Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,754,0
+2025-06-12,Summer,unknown,/Neighbr,3 Mount Laurel Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1745,0
+2025-06-12,Summer,unknown,/Neighbr,35 Pauline Boutal Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1068,0
+2025-06-12,Summer,unknown,/Neighbr,140 Bridgetown Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2070,0
+2025-06-12,Summer,unknown,/Neighbr,37 Breland Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1366,0
+2025-06-12,Summer,unknown,/Neighbr,28 Demetrioff Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1509,0
+2025-06-12,Summer,unknown,/Neighbr,15 Frigate Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1219,0
+2025-06-12,Summer,unknown,/Neighbr,City,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1342,0
+2025-06-12,Summer,unknown,/Neighbr,43 Yorkwood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2480,0
+2025-06-12,Summer,unknown,/Neighbr,144 Henry Dormer Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1240,0
+2025-06-12,Summer,unknown,/Neighbr,28 Peres Oblats Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1783,0
+2025-06-12,Summer,unknown,/Neighbr,55 Montvale Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1232,0
+2025-06-12,Summer,unknown,/Neighbr,69 Boisselle Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1709,0
+2025-06-12,Summer,unknown,/Neighbr,35 Causeway Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1478,0
+2025-06-12,Summer,unknown,/Neighbr,14 Beaupre Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1105,0
+2025-06-12,Summer,unknown,/Neighbr,151 Nordstrom Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1750,0
+2025-06-12,Summer,unknown,/Neighbr,70 Nordstrom Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1433,0
+2025-06-12,Summer,unknown,/Neighbr,45 Beaudry Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1660,0
+2025-06-12,Summer,unknown,/Neighbr,107 Arpin Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1747,0
+2025-06-12,Summer,unknown,/Neighbr,141 Camirant Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1387,0
+2025-06-12,Summer,unknown,/Neighbr,203 Bonaventure Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1620,0
+2025-06-12,Summer,unknown,/Neighbr,176 Evelyne Reese Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1492,0
+2025-06-12,Summer,unknown,/Neighbr,208 De La Seigneurie Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1482,0
+2025-06-12,Summer,unknown,/Neighbr,139 Norcross Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1416,0
+2025-06-12,Summer,unknown,/Neighbr,709 De La Seigneurie Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1505,0
+2025-06-12,Summer,unknown,/Neighbr,35 Harbinger Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1791,0
+2025-06-12,Summer,unknown,/Neighbr,126 Evelyne Reese Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1501,0
+2025-06-12,Summer,unknown,/Neighbr,153 Ebb Tide Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2060,0
+2025-06-12,Summer,unknown,/Neighbr,159 Whitehorn Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1381,0
+2025-06-12,Summer,unknown,/Neighbr,805 De La Seigneurie Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1416,0
+2025-06-12,Summer,unknown,/Neighbr,3 Diamond Dust Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1819,0
+2025-06-12,Summer,unknown,/Neighbr,96 West Plains Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2496,0
+2025-06-12,Summer,unknown,/Neighbr,142 Red sky Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1216,0
+2025-06-12,Summer,unknown,/Neighbr,77 Ranville Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1360,0
+2025-06-12,Summer,unknown,/Neighbr,361 Sage Creek Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1604,0
+2025-06-12,Summer,unknown,/Neighbr,31 Blue Mountain Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1446,0
+2025-06-12,Summer,unknown,/Neighbr,11 West Plains Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2320,0
+2025-06-12,Summer,unknown,/Neighbr,15 Redpoll Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2550,0
+2025-06-12,Summer,unknown,/Neighbr,46 Proulx Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1988,0
+2025-06-12,Summer,unknown,/Neighbr,331 Robert Bockstael Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1836,0
+2025-06-12,Summer,unknown,/Neighbr,18 Baptiste Tourond Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2314,0
+2025-06-12,Summer,unknown,/Neighbr,159 Blue Sun Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2297,0
+2025-06-12,Summer,unknown,/Neighbr,10 Willow Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1959,0
+2025-06-12,Summer,unknown,/Neighbr,40 West Plains Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1680,0
+2025-06-12,Summer,unknown,/Neighbr,380 Sage Creek Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1624,0
+2025-06-12,Summer,unknown,/Neighbr,59 High Plain Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1919,0
+2025-06-12,Summer,unknown,/Neighbr,27 Yellow Moon Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2435,0
+2025-06-12,Summer,unknown,/Neighbr,335 Robert Bockstael Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1475,0
+2025-06-12,Summer,unknown,/Neighbr,43 Grey Heron Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1628,0
+2025-06-12,Summer,unknown,/Neighbr,10 Sundog Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1700,0
+2025-06-12,Summer,unknown,/Neighbr,135 Coneflower Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1742,0
+2025-06-12,Summer,unknown,/Neighbr,80 Estate Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2952,0
+2025-06-12,Summer,unknown,/Neighbr,76 Prairie Grove Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1136,0
+2025-06-12,Summer,unknown,/Neighbr,268 Union Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,846,0
+2025-06-12,Summer,unknown,/Neighbr,240 Martin Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1045,0
+2025-06-12,Summer,unknown,/Neighbr,299 Jamison Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1001,0
+2025-06-12,Summer,unknown,/Neighbr,545 Washington Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,895,0
+2025-06-12,Summer,unknown,/Neighbr,447 tweed Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,600,0
+2025-06-12,Summer,unknown,/Neighbr,367 Ottawa Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,760,0
+2025-06-12,Summer,unknown,/Neighbr,435 Martin Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,700,0
+2025-06-12,Summer,unknown,/Neighbr,166 McIntosh Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1888,0
+2025-06-12,Summer,unknown,/Neighbr,281 Jamison Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1100,0
+2025-06-12,Summer,unknown,/Neighbr,386 Union Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,843,0
+2025-06-12,Summer,unknown,/Neighbr,332 Riverton Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1185,0
+2025-06-12,Summer,unknown,/Neighbr,180 Dearborn Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,770,0
+2025-06-12,Summer,unknown,/Neighbr,556 Larsen Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1030,0
+2025-06-12,Summer,unknown,/Neighbr,85 Watt Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1100,0
+2025-06-12,Summer,unknown,/Neighbr,805 Manhattan Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,913,0
+2025-06-12,Summer,unknown,/Neighbr,615 Windsor Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1086,0
+2025-06-12,Summer,unknown,/Neighbr,851 Beach Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1248,0
+2025-06-12,Summer,unknown,/Neighbr,689 Moncton Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1043,0
+2025-06-12,Summer,unknown,/Neighbr,1006 Simpson Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1120,0
+2025-06-12,Summer,unknown,/Neighbr,609 Talbot Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,610,0
+2025-06-12,Summer,unknown,/Neighbr,85 Battershill Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1558,0
+2025-06-12,Summer,unknown,/Neighbr,660 Prince Rupert Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,768,0
+2025-06-12,Summer,unknown,/Neighbr,707 Government Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,953,0
+2025-06-12,Summer,unknown,/Neighbr,835 Beach Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,860,0
+2025-06-12,Summer,unknown,/Neighbr,1098 McCalman Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1037,0
+2025-06-12,Summer,unknown,/Neighbr,704 Government Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1421,0
+2025-06-12,Summer,unknown,/Neighbr,647 Harbison Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2550,0
+2025-06-12,Summer,unknown,/Neighbr,642 Union Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,824,0
+2025-06-12,Summer,unknown,/Neighbr,869 Simpson Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,964,0
+2025-06-12,Summer,unknown,/Neighbr,449 Keenleyside Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1056,0
+2025-06-12,Summer,unknown,/Neighbr,15 Garvie Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,952,0
+2025-06-12,Summer,unknown,/Neighbr,496 Besant Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,912,0
+2025-06-12,Summer,unknown,/Neighbr,620 Lindhurst Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,808,0
+2025-06-12,Summer,unknown,/Neighbr,768 Prince Rupert Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,768,0
+2025-06-12,Summer,unknown,/Neighbr,583 Talbot Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,720,0
+2025-06-12,Summer,unknown,/Neighbr,104 Roberta Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,832,0
+2025-06-12,Summer,unknown,/Neighbr,37 Oakview Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1175,0
+2025-06-12,Summer,unknown,/Neighbr,78 Tamarind Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1950,0
+2025-06-12,Summer,unknown,/Neighbr,31 Linden Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1159,0
+2025-06-12,Summer,unknown,/Neighbr,50 Glencoe Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1246,0
+2025-06-12,Summer,unknown,/Neighbr,174 Canterbury Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,792,0
+2025-06-12,Summer,unknown,/Neighbr,169 Leighton Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,880,0
+2025-06-12,Summer,unknown,/Neighbr,664 Kildonan Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,3000,0
+2025-06-12,Summer,unknown,/Neighbr,104 Harbison Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,711,0
+2025-06-12,Summer,unknown,/Neighbr,117 Carmen Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,864,0
+2025-06-12,Summer,unknown,/Neighbr,485 Roberta Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,980,0
+2025-06-12,Summer,unknown,/Neighbr,595 Kimberly Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1012,0
+2025-06-12,Summer,unknown,/Neighbr,431 Hazel Dell Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,965,0
+2025-06-12,Summer,unknown,/Neighbr,515 Hazel Dell Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,985,0
+2025-06-12,Summer,unknown,/Neighbr,263 Sydney Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,800,0
+2025-06-12,Summer,unknown,/Neighbr,320 Helmsdale Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1396,0
+2025-06-12,Summer,unknown,/Neighbr,481 Neil Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1050,0
+2025-06-12,Summer,unknown,/Neighbr,454 Roberta Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1030,0
+2025-06-12,Summer,unknown,/Neighbr,425 Oakview Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1030,0
+2025-06-12,Summer,unknown,/Neighbr,221 Helmsdale Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,792,0
+2025-06-12,Summer,unknown,/Neighbr,341 Chelsea Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,792,0
+2025-06-12,Summer,unknown,/Neighbr,312 Helmsdale Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2067,0
+2025-06-12,Summer,unknown,/Neighbr,532 Linden Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1131,0
+2025-06-12,Summer,unknown,/Neighbr,560 Kimberly Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1009,0
+2025-06-12,Summer,unknown,/Neighbr,557 Chelsea Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,912,0
+2025-06-12,Summer,unknown,/Neighbr,557 Trent Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,590,0
+2025-06-12,Summer,unknown,/Neighbr,309 Dunrobin Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,905,0
+2025-06-12,Summer,unknown,/Neighbr,87 Reay Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,70 Amelia Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1272,0
+2025-06-12,Summer,unknown,/Neighbr,77 Ravenhill Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1156,0
+2025-06-12,Summer,unknown,/Neighbr,51 Timberline Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1167,0
+2025-06-12,Summer,unknown,/Neighbr,31 Bonnydoon Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,880,0
+2025-06-12,Summer,unknown,/Neighbr,67 Menno Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1300,0
+2025-06-12,Summer,unknown,/Neighbr,179 Antrim Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,860,0
+2025-06-12,Summer,unknown,/Neighbr,839 London Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1050,0
+2025-06-12,Summer,unknown,/Neighbr,15 Lemmen Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1090,0
+2025-06-12,Summer,unknown,/Neighbr,54 Rockspur Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1030,0
+2025-06-12,Summer,unknown,/Neighbr,165 AVACO Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1196,0
+2025-06-12,Summer,unknown,/Neighbr,809 Gateway Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2420,0
+2025-06-12,Summer,unknown,/Neighbr,100 Broad Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1115,0
+2025-06-12,Summer,unknown,/Neighbr,378 Colvin Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,987,0
+2025-06-12,Summer,unknown,/Neighbr,10 Rowe Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1032,0
+2025-06-12,Summer,unknown,/Neighbr,222 Donwood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1340,0
+2025-06-12,Summer,unknown,/Neighbr,412 Oakland Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,970,0
+2025-06-12,Summer,unknown,/Neighbr,164 Eade Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1083,0
+2025-06-12,Summer,unknown,/Neighbr,122 Bret Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,928,0
+2025-06-12,Summer,unknown,/Neighbr,634 Cedarcrest Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1009,0
+2025-06-12,Summer,unknown,/Neighbr,736 McLeod Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,957,0
+2025-06-12,Summer,unknown,/Neighbr,333 Edelweiss Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1140,0
+2025-06-12,Summer,unknown,/Neighbr,283 McKay Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1120,0
+2025-06-12,Summer,unknown,/Neighbr,90 Clarkleigh Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1551,0
+2025-06-12,Summer,unknown,/Neighbr,51 Duck Creek Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1500,0
+2025-06-12,Summer,unknown,/Neighbr,131 Whooping Crane Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1486,0
+2025-06-12,Summer,unknown,/Neighbr,217 Mill Rock Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1922,0
+2025-06-12,Summer,unknown,/Neighbr,115 Whooping Crane Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1486,0
+2025-06-12,Summer,unknown,/Neighbr,164 Duck Creek Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1468,0
+2025-06-12,Summer,unknown,/Neighbr,252 LOGGERHEAD Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1707,0
+2025-06-12,Summer,unknown,/Neighbr,2079 Sinclair Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,998,0
+2025-06-12,Summer,unknown,/Neighbr,114 Darbrett Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1114,0
+2025-06-12,Summer,unknown,/Neighbr,126 Mosselle Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1622,0
+2025-06-12,Summer,unknown,/Neighbr,804 Swailes Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1335,0
+2025-06-12,Summer,unknown,/Neighbr,2828 Mcphillips Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1450,0
+2025-06-12,Summer,unknown,/Neighbr,8 Winestock Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2085,0
+2025-06-12,Summer,unknown,/Neighbr,19 Verona Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1489,0
+2025-06-12,Summer,unknown,/Neighbr,18 Holiday Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1101,0
+2025-06-12,Summer,unknown,/Neighbr,19 COURLAND Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1695,0
+2025-06-12,Summer,unknown,/Neighbr,567 Templeton Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1280,0
+2025-06-12,Summer,unknown,/Neighbr,726 Leila Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1914,0
+2025-06-12,Summer,unknown,/Neighbr,12 Brenner Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1151,0
+2025-06-12,Summer,unknown,/Neighbr,626 Templeton Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1810,0
+2025-06-12,Summer,unknown,/Neighbr,84 Viola Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1833,0
+2025-06-12,Summer,unknown,/Neighbr,42 Holiday Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1734,0
+2025-06-12,Summer,unknown,/Neighbr,135 Mosselle Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1711,0
+2025-06-12,Summer,unknown,/Neighbr,6 Tully Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1946,0
+2025-06-12,Summer,unknown,/Neighbr,1057 Lansdowne Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1092,0
+2025-06-12,Summer,unknown,/Neighbr,18 Colish Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1320,0
+2025-06-12,Summer,unknown,/Neighbr,43 Cherryhill Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1713,0
+2025-06-12,Summer,unknown,/Neighbr,124 Arrowwood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1054,0
+2025-06-12,Summer,unknown,/Neighbr,610 Leila Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1130,0
+2025-06-12,Summer,unknown,/Neighbr,68 Arrowwood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1057,0
+2025-06-12,Summer,unknown,/Neighbr,10 Mellish Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1010,0
+2025-06-12,Summer,unknown,/Neighbr,1190 Inkster Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1080,0
+2025-06-12,Summer,unknown,/Neighbr,116 Arrowwood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1115,0
+2025-06-12,Summer,unknown,/Neighbr,9 Grandcrest Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1830,0
+2025-06-12,Summer,unknown,/Neighbr,528 Springfield Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1080,0
+2025-06-12,Summer,unknown,/Neighbr,408 Oakland Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1042,0
+2025-06-12,Summer,unknown,/Neighbr,7 Elaine Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1665,0
+2025-06-12,Summer,unknown,/Neighbr,1664 Rothesay Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1127,0
+2025-06-12,Summer,unknown,/Neighbr,67 Pennefather Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1432,0
+2025-06-12,Summer,unknown,/Neighbr,257 Bonner Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1672,0
+2025-06-12,Summer,unknown,/Neighbr,341 Douglas Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1166,0
+2025-06-12,Summer,unknown,/Neighbr,2 Jack Hawthorn Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1076,0
+2025-06-12,Summer,unknown,/Neighbr,309 Knowles Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,855,0
+2025-06-12,Summer,unknown,/Neighbr,2029 Rothesay Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1328,0
+2025-06-12,Summer,unknown,/Neighbr,259 Gilmore Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1063,0
+2025-06-12,Summer,unknown,/Neighbr,505 Emerson Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1300,0
+2025-06-12,Summer,unknown,/Neighbr,271 Douglas Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1152,0
+2025-06-12,Summer,unknown,/Neighbr,18 Rachel Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1528,0
+2025-06-12,Summer,unknown,/Neighbr,34 Chornick Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1792,0
+2025-06-12,Summer,unknown,/Neighbr,164 Malcana Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1076,0
+2025-06-12,Summer,unknown,/Neighbr,218 Thurlby Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1059,0
+2025-06-12,Summer,unknown,/Neighbr,4 Ragsdill Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1721,0
+2025-06-12,Summer,unknown,/Neighbr,102 Strongberg Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1170,0
+2025-06-12,Summer,unknown,/Neighbr,148 Jim Smith Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,965,0
+2025-06-12,Summer,unknown,/Neighbr,90 Strongberg Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1463,0
+2025-06-12,Summer,unknown,/Neighbr,3 Bodie Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1620,0
+2025-06-12,Summer,unknown,/Neighbr,126 Sun Valley Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1200,0
+2025-06-12,Summer,unknown,/Neighbr,10 High Point Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1320,0
+2025-06-12,Summer,unknown,/Neighbr,71 Red Oak Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,957,0
+2025-06-12,Summer,unknown,/Neighbr,109 Strongberg Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1505,0
+2025-06-12,Summer,unknown,/Neighbr,City,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1905,0
+2025-06-12,Summer,unknown,/Neighbr,75 Brunka Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1500,0
+2025-06-12,Summer,unknown,/Neighbr,26 McLellan Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1101,0
+2025-06-12,Summer,unknown,/Neighbr,42 David Evans Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1550,0
+2025-06-12,Summer,unknown,/Neighbr,119 Bridgewood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1236,0
+2025-06-12,Summer,unknown,/Neighbr,1594 Concordia Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1101,0
+2025-06-12,Summer,unknown,/Neighbr,446 GRASSIE Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1420,0
+2025-06-12,Summer,unknown,/Neighbr,83 Golis Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1760,0
+2025-06-12,Summer,unknown,/Neighbr,135 Tychonick Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1286,0
+2025-06-12,Summer,unknown,/Neighbr,1857 Plessis Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,710,0
+2025-06-12,Summer,unknown,/Neighbr,90 Meadow Lake Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,910,0
+2025-06-12,Summer,unknown,/Neighbr,46 John Neufeld Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1426,0
+2025-06-12,Summer,unknown,/Neighbr,823 Kernaghan Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1212,0
+2025-06-12,Summer,unknown,/Neighbr,114 Golden Boy Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1302,0
+2025-06-12,Summer,unknown,/Neighbr,50 Whiteway Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,920,0
+2025-06-12,Summer,unknown,/Neighbr,71 Robson Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,834,0
+2025-06-12,Summer,unknown,/Neighbr,107 Rick Boychuk Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1703,0
+2025-06-12,Summer,unknown,/Neighbr,62 Inspiration Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1144,0
+2025-06-12,Summer,unknown,/Neighbr,176 Larry Vickar Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1312,0
+2025-06-12,Summer,unknown,/Neighbr,7 Steve Mymko Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1630,0
+2025-06-12,Summer,unknown,/Neighbr,1313 Plessis Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1672,0
+2025-06-12,Summer,unknown,/Neighbr,1264 Plessis Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,620,0
+2025-06-12,Summer,unknown,/Neighbr,64 GEORGE BARONE Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1535,0
+2025-06-12,Summer,unknown,/Neighbr,11 Dr. Michael K. Grace Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1711,0
+2025-06-12,Summer,unknown,/Neighbr,258 Philip Lee Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1886,0
+2025-06-12,Summer,unknown,/Neighbr,135 John Neufeld Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1695,0
+2025-06-12,Summer,unknown,/Neighbr,10 Meadow Lake Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1044,0
+2025-06-12,Summer,unknown,/Neighbr,15 Bill Dance Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2053,0
+2025-06-12,Summer,unknown,/Neighbr,3 Prychitko Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1860,0
+2025-06-12,Summer,unknown,/Neighbr,172 Private Davy Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1496,0
+2025-06-12,Summer,unknown,/Neighbr,14 Rod Black Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1280,0
+2025-06-12,Summer,unknown,/Neighbr,27 John Neufeld Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1565,0
+2025-06-12,Summer,unknown,/Neighbr,78 Sims Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1033,0
+2025-06-12,Summer,unknown,/Neighbr,7 Helen Mayba Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2442,0
+2025-06-12,Summer,unknown,/Neighbr,311 Peguis Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1327,0
+2025-06-12,Summer,unknown,/Neighbr,82 John Neufeld Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1572,0
+2025-06-12,Summer,unknown,/Neighbr,12 Jerry Klein Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1820,0
+2025-06-12,Summer,unknown,/Neighbr,91 Balaban Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,867,0
+2025-06-12,Summer,unknown,/Neighbr,517 Kildare Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1055,0
+2025-06-12,Summer,unknown,/Neighbr,607 Madeline Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,804,0
+2025-06-12,Summer,unknown,/Neighbr,229 Ralph Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,760,0
+2025-06-12,Summer,unknown,/Neighbr,225 Yale Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1325,0
+2025-06-12,Summer,unknown,/Neighbr,911 Madeline Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,980,0
+2025-06-12,Summer,unknown,/Neighbr,212 Ralph Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,936,0
+2025-06-12,Summer,unknown,/Neighbr,20 Burnaby Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1003,0
+2025-06-12,Summer,unknown,/Neighbr,442 Melrose Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,867,0
+2025-06-12,Summer,unknown,/Neighbr,907 Madeline Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1037,0
+2025-06-12,Summer,unknown,/Neighbr,5 Lethbridge Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,134 Horton Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,825,0
+2025-06-12,Summer,unknown,/Neighbr,431 Melrose Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,740,0
+2025-06-12,Summer,unknown,/Neighbr,1105 Day Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,900,0
+2025-06-12,Summer,unknown,/Neighbr,800 Madeline Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,930,0
+2025-06-12,Summer,unknown,/Neighbr,605 Bond Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1080,0
+2025-06-12,Summer,unknown,/Neighbr,523 Yale Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1018,0
+2025-06-12,Summer,unknown,/Neighbr,135 Victoria Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1016,0
+2025-06-12,Summer,unknown,/Neighbr,904 Madeline Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,705,0
+2025-06-12,Summer,unknown,/Neighbr,415 Victoria Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,719,0
+2025-06-12,Summer,unknown,/Neighbr,90 Romance Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1657,0
+2025-06-12,Summer,unknown,/Neighbr,364 Dowling Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,960,0
+2025-06-12,Summer,unknown,/Neighbr,149 Whittier Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1039,0
+2025-06-12,Summer,unknown,/Neighbr,483 McMeans Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,916,0
+2025-06-12,Summer,unknown,/Neighbr,1049 Kildare Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1080,0
+2025-06-12,Summer,unknown,/Neighbr,180 Allenby Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,988,0
+2025-06-12,Summer,unknown,/Neighbr,351 Kildare Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,900,0
+2025-06-12,Summer,unknown,/Neighbr,30 Corliss Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1200,0
+2025-06-12,Summer,unknown,/Neighbr,43 Bill Larkin Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1200,0
+2025-06-12,Summer,unknown,/Neighbr,509 Whittier Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,906,0
+2025-06-12,Summer,unknown,/Neighbr,36 Camrose Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,996,0
+2025-06-12,Summer,unknown,/Neighbr,654 McMeans Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,741,0
+2025-06-12,Summer,unknown,/Neighbr,407 Victoria Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,645,0
+2025-06-12,Summer,unknown,/Neighbr,50 Millbrook Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,814,0
+2025-06-12,Summer,unknown,/Neighbr,14 Northcliffe Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,847,0
+2025-06-12,Summer,unknown,/Neighbr,393 Dowling Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,841,0
+2025-06-12,Summer,unknown,/Neighbr,80 Fairview Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1272,0
+2025-06-12,Summer,unknown,/Neighbr,428 Dowling Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,838,0
+2025-06-12,Summer,unknown,/Neighbr,136 Newman Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,186 Emberwell Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1047,0
+2025-06-12,Summer,unknown,/Neighbr,884 Kildare Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,720,0
+2025-06-12,Summer,unknown,/Neighbr,156 Dowling Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,688,0
+2025-06-12,Summer,unknown,/Neighbr,270 Desrosiers Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,980,0
+2025-06-12,Summer,unknown,/Neighbr,108 William Gibson Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1517,0
+2025-06-12,Summer,unknown,/Neighbr,352 Thom Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,850,0
+2025-06-12,Summer,unknown,/Neighbr,734 McMeans Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,840,0
+2025-06-12,Summer,unknown,/Neighbr,4 hominick Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1410,0
+2025-06-12,Summer,unknown,/Neighbr,91 Tunbridge Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1008,0
+2025-06-12,Summer,unknown,/Neighbr,233 Melrose Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,26 St Martin Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,954,0
+2025-06-12,Summer,unknown,/Neighbr,624 Coldstream Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,990,0
+2025-06-12,Summer,unknown,/Neighbr,400 Regent Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1029,0
+2025-06-12,Summer,unknown,/Neighbr,215 Regent Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,980,0
+2025-06-12,Summer,unknown,/Neighbr,437 Desrosiers Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2233,0
+2025-06-12,Summer,unknown,/Neighbr,6 Chaucer Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,850,0
+2025-06-12,Summer,unknown,/Neighbr,114 Ravelston Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1080,0
+2025-06-12,Summer,unknown,/Neighbr,11 Cranbrook Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1003,0
+2025-06-12,Summer,unknown,/Neighbr,458 Desrosiers Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1648,0
+2025-06-12,Summer,unknown,/Neighbr,247 Emberwell Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1580,0
+2025-06-12,Summer,unknown,/Neighbr,103 Harlow Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2202,0
+2025-06-12,Summer,unknown,/Neighbr,324 Yale Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,960,0
+2025-06-12,Summer,unknown,/Neighbr,270 Emberwell Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1741,0
+2025-06-12,Summer,unknown,/Neighbr,19 Premier Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1670,0
+2025-06-12,Summer,unknown,/Neighbr,256 Emberwell Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1723,0
+2025-06-12,Summer,unknown,/Neighbr,150 Kildare Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,817,0
+2025-06-12,Summer,unknown,/Neighbr,280 Emberwell Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1734,0
+2025-06-12,Summer,unknown,/Neighbr,104 Remi Claeys Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1204,0
+2025-06-12,Summer,unknown,/Neighbr,6 Paulley Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,880,0
+2025-06-12,Summer,unknown,/Neighbr,56 Hominick Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1726,0
+2025-06-12,Summer,unknown,/Neighbr,306 Emberwell Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1820,0
+2025-06-12,Summer,unknown,/Neighbr,413 Yale Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1342,0
+2025-06-12,Summer,unknown,/Neighbr,365 Symington Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1716,0
+2025-06-12,Summer,unknown,/Neighbr,219 Hoddinott Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1979,0
+2025-06-12,Summer,unknown,/Neighbr,2250 Wenzel Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1182,0
+2025-06-12,Summer,unknown,/Neighbr,55 Allison Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,3252,0
+2025-06-12,Summer,unknown,/Neighbr,6 NEYEDLI Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1960,0
+2025-06-12,Summer,unknown,/Neighbr,20 Keedian Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1350,0
+2025-06-12,Summer,unknown,/Neighbr,18 Old Orchard Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2052,0
+2025-06-12,Summer,unknown,/Neighbr,280 BOWEN Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,9891,0
+2025-06-12,Summer,unknown,/Neighbr,111 Elkhart Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1917,0
+2025-06-12,Summer,unknown,/Neighbr,368 HODDINOTT Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2300,0
+2025-06-12,Summer,unknown,/Neighbr,403 GLENWAY Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1634,0
+2025-06-12,Summer,unknown,/Neighbr,11 ORKNEY Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1810,0
+2025-06-12,Summer,unknown,/Neighbr,700 Pritchard Farm Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2240,0
+2025-06-12,Summer,unknown,/Neighbr,201 Saddleridge Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2080,0
+2025-06-12,Summer,unknown,/Neighbr,120 ELLIOT Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1250,0
+2025-06-12,Summer,unknown,/Neighbr,2073 CORONATION Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1404,0
+2025-06-12,Summer,unknown,/Neighbr,6 RIDGEVIEW Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2433,0
+2025-06-12,Summer,unknown,/Neighbr,6 HIGH MEADOW Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,4300,0
+2025-06-12,Summer,unknown,/Neighbr,2000 Burton Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1404,0
+2025-06-12,Summer,unknown,/Neighbr,3980 REBECK Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1915,0
+2025-06-12,Summer,unknown,/Neighbr,299 Redwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1000,0
+2025-06-12,Summer,unknown,/Neighbr,650 College Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1439,0
+2025-06-12,Summer,unknown,/Neighbr,571 Aberdeen Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1050,0
+2025-06-12,Summer,unknown,/Neighbr,108 Powers Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,672,0
+2025-06-12,Summer,unknown,/Neighbr,159 Annabella Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1250,0
+2025-06-12,Summer,unknown,/Neighbr,253 Magnus Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1296,0
+2025-06-12,Summer,unknown,/Neighbr,465 Pritchard Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1017,0
+2025-06-12,Summer,unknown,/Neighbr,161 Burrows Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1624,0
+2025-06-12,Summer,unknown,/Neighbr,674 Alfred Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,896,0
+2025-06-12,Summer,unknown,/Neighbr,144 Lorne Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1502,0
+2025-06-12,Summer,unknown,/Neighbr,90 Lusted Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1584,0
+2025-06-12,Summer,unknown,/Neighbr,537 Manitoba Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,928,0
+2025-06-12,Summer,unknown,/Neighbr,163 McFarlane Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1425,0
+2025-06-12,Summer,unknown,/Neighbr,655 Alfred Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1000,0
+2025-06-12,Summer,unknown,/Neighbr,157 Austin Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1000,0
+2025-06-12,Summer,unknown,/Neighbr,1103 Redwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,870,0
+2025-06-12,Summer,unknown,/Neighbr,1111 College Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,816,0
+2025-06-12,Summer,unknown,/Neighbr,1060 Magnus Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1000,0
+2025-06-12,Summer,unknown,/Neighbr,878 Magnus Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,768,0
+2025-06-12,Summer,unknown,/Neighbr,956 Redwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1034,0
+2025-06-12,Summer,unknown,/Neighbr,1160 Redwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,833,0
+2025-06-12,Summer,unknown,/Neighbr,870 College Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,860,0
+2025-06-12,Summer,unknown,/Neighbr,815 Redwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1300,0
+2025-06-12,Summer,unknown,/Neighbr,883 COLLEGE Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,956,0
+2025-06-12,Summer,unknown,/Neighbr,818 College Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1065,0
+2025-06-12,Summer,unknown,/Neighbr,1200 Selkirk Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,968,0
+2025-06-12,Summer,unknown,/Neighbr,850 Boyd Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,600,0
+2025-06-12,Summer,unknown,/Neighbr,961 Pritchard Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1232,0
+2025-06-12,Summer,unknown,/Neighbr,940 Redwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1131,0
+2025-06-12,Summer,unknown,/Neighbr,856 Redwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1270,0
+2025-06-12,Summer,unknown,/Neighbr,1073 Alfred Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,836,0
+2025-06-12,Summer,unknown,/Neighbr,876 College Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,920,0
+2025-06-12,Summer,unknown,/Neighbr,624 McKenzie Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1835,0
+2025-06-12,Summer,unknown,/Neighbr,384 Robertson Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1150,0
+2025-06-12,Summer,unknown,/Neighbr,443 Polson Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1156,0
+2025-06-12,Summer,unknown,/Neighbr,1141 Lansdowne Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1060,0
+2025-06-12,Summer,unknown,/Neighbr,440 Bannerman Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,500,0
+2025-06-12,Summer,unknown,/Neighbr,315 Atlantic Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1271,0
+2025-06-12,Summer,unknown,/Neighbr,663 Atlantic Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,744,0
+2025-06-12,Summer,unknown,/Neighbr,494 St John's Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1050,0
+2025-06-12,Summer,unknown,/Neighbr,488 Bannerman Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1078,0
+2025-06-12,Summer,unknown,/Neighbr,288 Polson Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1254,0
+2025-06-12,Summer,unknown,/Neighbr,342 Church Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,456,0
+2025-06-12,Summer,unknown,/Neighbr,400 Seymour Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1014,0
+2025-06-12,Summer,unknown,/Neighbr,1238 Troy Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1022,0
+2025-06-12,Summer,unknown,/Neighbr,588 Machray Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1230,0
+2025-06-12,Summer,unknown,/Neighbr,459 Garlies Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,736,0
+2025-06-12,Summer,unknown,/Neighbr,569 Bannerman Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1200,0
+2025-06-12,Summer,unknown,/Neighbr,324 Church Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1026,0
+2025-06-12,Summer,unknown,/Neighbr,468 Cathedral Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,724,0
+2025-06-12,Summer,unknown,/Neighbr,284 Bannerman Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1047,0
+2025-06-12,Summer,unknown,/Neighbr,1197 Chamberlain Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1024,0
+2025-06-12,Summer,unknown,/Neighbr,822 Cathedral Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,941,0
+2025-06-12,Summer,unknown,/Neighbr,386 Cathedral Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,884,0
+2025-06-12,Summer,unknown,/Neighbr,726 Bannerman Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1200,0
+2025-06-12,Summer,unknown,/Neighbr,305 McAdam Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1218,0
+2025-06-12,Summer,unknown,/Neighbr,471 Inkster Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1400,0
+2025-06-12,Summer,unknown,/Neighbr,488 Polson Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,692,0
+2025-06-12,Summer,unknown,/Neighbr,550 Lansdowne Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1632,0
+2025-06-12,Summer,unknown,/Neighbr,281 Leila Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,848,0
+2025-06-12,Summer,unknown,/Neighbr,259 Belmont Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,746,0
+2025-06-12,Summer,unknown,/Neighbr,270 Jefferson Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,904,0
+2025-06-12,Summer,unknown,/Neighbr,430 Forrest Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1339,0
+2025-06-12,Summer,unknown,/Neighbr,328 Rupertsland Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1050,0
+2025-06-12,Summer,unknown,/Neighbr,232 Inkster Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1259,0
+2025-06-12,Summer,unknown,/Neighbr,131 Kingsbury Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1357,0
+2025-06-12,Summer,unknown,/Neighbr,1256 Salter Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,35 Polson Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,709,0
+2025-06-12,Summer,unknown,/Neighbr,296 Semple Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,750,0
+2025-06-12,Summer,unknown,/Neighbr,373 semple Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1112,0
+2025-06-12,Summer,unknown,/Neighbr,80 Weinberg Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1296,0
+2025-06-12,Summer,unknown,/Neighbr,257 Margaret Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1082,0
+2025-06-12,Summer,unknown,/Neighbr,430 St Anthony Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,904,0
+2025-06-12,Summer,unknown,/Neighbr,184 Cathedral Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1220,0
+2025-06-12,Summer,unknown,/Neighbr,356 Royal Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,954,0
+2025-06-12,Summer,unknown,/Neighbr,45 Atlantic Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1770,0
+2025-06-12,Summer,unknown,/Neighbr,361 Seven Oaks Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1092,0
+2025-06-12,Summer,unknown,/Neighbr,494 Belmont Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1184,0
+2025-06-12,Summer,unknown,/Neighbr,336 Smithfield Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,750,0
+2025-06-12,Summer,unknown,/Neighbr,220 Semple Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,672,0
+2025-06-12,Summer,unknown,/Neighbr,521 Smithfield Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,820,0
+2025-06-12,Summer,unknown,/Neighbr,434 Burrin Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1131,0
+2025-06-12,Summer,unknown,/Neighbr,392 Jefferson Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,815,0
+2025-06-12,Summer,unknown,/Neighbr,76 McAdam Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1052,0
+2025-06-12,Summer,unknown,/Neighbr,400 Enniskillen Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,913,0
+2025-06-12,Summer,unknown,/Neighbr,225 Semple Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,618,0
+2025-06-12,Summer,unknown,/Neighbr,82 Kirkham Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,916,0
+2025-06-12,Summer,unknown,/Neighbr,188 Glencairn Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1236,0
+2025-06-12,Summer,unknown,/Neighbr,18 Glenboro Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1220,0
+2025-06-12,Summer,unknown,/Neighbr,31 Sandalwood Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1745,0
+2025-06-12,Summer,unknown,/Neighbr,186 Clarkleigh Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1551,0
+2025-06-12,Summer,unknown,/Neighbr,83 Grouse Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1859,0
+2025-06-12,Summer,unknown,/Neighbr,55 Skylark Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1381,0
+2025-06-12,Summer,unknown,/Neighbr,23 Skylark Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1494,0
+2025-06-12,Summer,unknown,/Neighbr,1303 Fernbank Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1360,0
+2025-06-12,Summer,unknown,/Neighbr,1271 Fernbank Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1613,0
+2025-06-12,Summer,unknown,/Neighbr,11 Carsdale Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1500,0
+2025-06-12,Summer,unknown,/Neighbr,1264 Fernbank Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1250,0
+2025-06-12,Summer,unknown,/Neighbr,167 Clarkleigh Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1381,0
+2025-06-12,Summer,unknown,/Neighbr,34 Plover Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1636,0
+2025-06-12,Summer,unknown,/Neighbr,454 Northpoint Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1400,0
+2025-06-12,Summer,unknown,/Neighbr,41 Summerscales Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2270,0
+2025-06-12,Summer,unknown,/Neighbr,64 Grouse Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1922,0
+2025-06-12,Summer,unknown,/Neighbr,1260 Fernbank Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1250,0
+2025-06-12,Summer,unknown,/Neighbr,1232 Fernbank Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1321,0
+2025-06-12,Summer,unknown,/Neighbr,456 Northpoint Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1400,0
+2025-06-12,Summer,unknown,/Neighbr,15 Grouse Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1897,0
+2025-06-12,Summer,unknown,/Neighbr,22 Avior Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1909,0
+2025-06-12,Summer,unknown,/Neighbr,20 Grouse Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1648,0
+2025-06-12,Summer,unknown,/Neighbr,208 Mill Rock Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1859,0
+2025-06-12,Summer,unknown,/Neighbr,1280 Fernbank Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1250,0
+2025-06-12,Summer,unknown,/Neighbr,1284 Fernbank Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1380,0
+2025-06-12,Summer,unknown,/Neighbr,118 Summerscales Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1600,0
+2025-06-12,Summer,unknown,/Neighbr,47 Duck Creek Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1500,0
+2025-06-12,Summer,unknown,/Neighbr,1272 Fernbank Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1548,0
+2025-06-12,Summer,unknown,/Neighbr,27 Clarkleigh Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1428,0
+2025-06-12,Summer,unknown,/Neighbr,1220 Fernbank Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1321,0
+2025-06-12,Summer,unknown,/Neighbr,123 Whooping Crane Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1486,0
+2025-06-12,Summer,unknown,/Neighbr,23 Duck Creek Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1387,0
+2025-06-12,Summer,unknown,/Neighbr,1133 Diplomat Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1140,0
+2025-06-12,Summer,unknown,/Neighbr,2079 Sinclair Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1824,0
+2025-06-12,Summer,unknown,/Neighbr,114 Darbrett Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1821,0
+2025-06-12,Summer,unknown,/Neighbr,126 Mosselle Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1892,0
+2025-06-12,Summer,unknown,/Neighbr,94 Strasbourg Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1736,0
+2025-06-12,Summer,unknown,/Neighbr,8 Winestock Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2012,0
+2025-06-12,Summer,unknown,/Neighbr,144 Arrowwood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2289,0
+2025-06-12,Summer,unknown,/Neighbr,19 Verona Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1719,0
+2025-06-12,Summer,unknown,/Neighbr,11 Nurgitz Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1880,0
+2025-06-12,Summer,unknown,/Neighbr,264 Thorn Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2257,0
+2025-06-12,Summer,unknown,/Neighbr,City,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1600,0
+2025-06-12,Summer,unknown,/Neighbr,726 Leila Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2219,0
+2025-06-12,Summer,unknown,/Neighbr,12 Brenner Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1529,0
+2025-06-12,Summer,unknown,/Neighbr,917 Beecher Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1076,0
+2025-06-12,Summer,unknown,/Neighbr,84 Viola Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1114,0
+2025-06-12,Summer,unknown,/Neighbr,42 Holiday Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1489,0
+2025-06-12,Summer,unknown,/Neighbr,43 Nurgitz Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1585,0
+2025-06-12,Summer,unknown,/Neighbr,3 Brenner Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1884,0
+2025-06-12,Summer,unknown,/Neighbr,60 Teakwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1114,0
+2025-06-12,Summer,unknown,/Neighbr,57 Arrowwood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1179,0
+2025-06-12,Summer,unknown,/Neighbr,96 Gilia Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1262,0
+2025-06-12,Summer,unknown,/Neighbr,6 Hillhouse Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2416,0
+2025-06-12,Summer,unknown,/Neighbr,135 Arrowwood Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1674,0
+2025-06-12,Summer,unknown,/Neighbr,60 Verbena Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1416,0
+2025-06-12,Summer,unknown,/Neighbr,96 Teakwood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1035,0
+2025-06-12,Summer,unknown,/Neighbr,19 Peony Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1275,0
+2025-06-12,Summer,unknown,/Neighbr,66 Woodcrest Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1304,0
+2025-06-12,Summer,unknown,/Neighbr,9 Grandcrest Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1830,0
+2025-06-12,Summer,unknown,/Neighbr,679 Sinclair Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1020,0
+2025-06-12,Summer,unknown,/Neighbr,34 Rolmount Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,888,0
+2025-06-12,Summer,unknown,/Neighbr,77 Strewchuk Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,945,0
+2025-06-12,Summer,unknown,/Neighbr,55 Penny Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1286,0
+2025-06-12,Summer,unknown,/Neighbr,254 Mandalay Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,700,0
+2025-06-12,Summer,unknown,/Neighbr,22 Hood Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1628,0
+2025-06-12,Summer,unknown,/Neighbr,242 Mandalay Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,680,0
+2025-06-12,Summer,unknown,/Neighbr,1446 Leila Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1024,0
+2025-06-12,Summer,unknown,/Neighbr,1459 Leila Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1012,0
+2025-06-12,Summer,unknown,/Neighbr,50 Citadel Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,915,0
+2025-06-12,Summer,unknown,/Neighbr,15 Magenta Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1130,0
+2025-06-12,Summer,unknown,/Neighbr,50 Margate Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1200,0
+2025-06-12,Summer,unknown,/Neighbr,67 Mankato Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,824,0
+2025-06-12,Summer,unknown,/Neighbr,7 Madera Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1023,0
+2025-06-12,Summer,unknown,/Neighbr,22 Cannes Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,845,0
+2025-06-12,Summer,unknown,/Neighbr,26 Jack Kolt Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1617,0
+2025-06-12,Summer,unknown,/Neighbr,1052 Beauty Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1080,0
+2025-06-12,Summer,unknown,/Neighbr,50 Kenville Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1733,0
+2025-06-12,Summer,unknown,/Neighbr,86 Idlewild Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1278,0
+2025-06-12,Summer,unknown,/Neighbr,35 Sasaki Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1098,0
+2025-06-12,Summer,unknown,/Neighbr,268 Margate Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,7 Majorca Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,864,0
+2025-06-12,Summer,unknown,/Neighbr,167 Kinver Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1180,0
+2025-06-12,Summer,unknown,/Neighbr,32 Arrow Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1061,0
+2025-06-12,Summer,unknown,/Neighbr,20 Ostafiew Farm Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,691,0
+2025-06-12,Summer,unknown,/Neighbr,62 Inglis Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1204,0
+2025-06-12,Summer,unknown,/Neighbr,51 Kinver Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1019,0
+2025-06-12,Summer,unknown,/Neighbr,127 Weitzel Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,775,0
+2025-06-12,Summer,unknown,/Neighbr,54 Hume Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,832,0
+2025-06-12,Summer,unknown,/Neighbr,2016 Manitoba Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,920,0
+2025-06-12,Summer,unknown,/Neighbr,226 Barnham Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,980,0
+2025-06-12,Summer,unknown,/Neighbr,83 Garden Grove Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1144,0
+2025-06-12,Summer,unknown,/Neighbr,46 Greenhoven Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1624,0
+2025-06-12,Summer,unknown,/Neighbr,51 Fairgrove Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1020,0
+2025-06-12,Summer,unknown,/Neighbr,237 Egesz Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1080,0
+2025-06-12,Summer,unknown,/Neighbr,120 Luzon Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1824,0
+2025-06-12,Summer,unknown,/Neighbr,12 Mayer Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1902,0
+2025-06-12,Summer,unknown,/Neighbr,74 Hazelton Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1824,0
+2025-06-12,Summer,unknown,/Neighbr,51 Quill Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1045,0
+2025-06-12,Summer,unknown,/Neighbr,49 Hillbrook Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1506,0
+2025-06-12,Summer,unknown,/Neighbr,82 Khalsa Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1880,0
+2025-06-12,Summer,unknown,/Neighbr,92 Indra Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1615,0
+2025-06-12,Summer,unknown,/Neighbr,78 Hazelton Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1410,0
+2025-06-12,Summer,unknown,/Neighbr,331 Castlebury Meadows Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1533,0
+2025-06-12,Summer,unknown,/Neighbr,22 Hazelton Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1533,0
+2025-06-12,Summer,unknown,/Neighbr,278 Langside Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1700,0
+2025-06-12,Summer,unknown,/Neighbr,394 TORONTO Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1099,0
+2025-06-12,Summer,unknown,/Neighbr,649 Langside Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,896,0
+2025-06-12,Summer,unknown,/Neighbr,564 Simcoe Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1233,0
+2025-06-12,Summer,unknown,/Neighbr,690 Home Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1159,0
+2025-06-12,Summer,unknown,/Neighbr,640 Furby Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1119,0
+2025-06-12,Summer,unknown,/Neighbr,383 Victor Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1890,0
+2025-06-12,Summer,unknown,/Neighbr,558 Maryland Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2090,0
+2025-06-12,Summer,unknown,/Neighbr,764 Home Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1510,0
+2025-06-12,Summer,unknown,/Neighbr,427 Home Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1168,0
+2025-06-12,Summer,unknown,/Neighbr,472 Arlington Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,848,0
+2025-06-12,Summer,unknown,/Neighbr,358 Agnes Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,970,0
+2025-06-12,Summer,unknown,/Neighbr,260 Langside Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2408,0
+2025-06-12,Summer,unknown,/Neighbr,507 Sherbrook Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1670,0
+2025-06-12,Summer,unknown,/Neighbr,420 Agnes Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1296,0
+2025-06-12,Summer,unknown,/Neighbr,387 Arlington Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,779,0
+2025-06-12,Summer,unknown,/Neighbr,526 Clifton Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2361,0
+2025-06-12,Summer,unknown,/Neighbr,509 Greenwood Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1235,0
+2025-06-12,Summer,unknown,/Neighbr,460 Greenwood Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1928,0
+2025-06-12,Summer,unknown,/Neighbr,109 Lipton Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1248,0
+2025-06-12,Summer,unknown,/Neighbr,51 Dundurn Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2151,0
+2025-06-12,Summer,unknown,/Neighbr,144 Evanson Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1600,0
+2025-06-12,Summer,unknown,/Neighbr,46 Dundurn Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1655,0
+2025-06-12,Summer,unknown,/Neighbr,517 Raglan Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1100,0
+2025-06-12,Summer,unknown,/Neighbr,60 Walnut Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2010,0
+2025-06-12,Summer,unknown,/Neighbr,509 Camden Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1442,0
+2025-06-12,Summer,unknown,/Neighbr,126 Evanson Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1700,0
+2025-06-12,Summer,unknown,/Neighbr,1241 Dominion Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1047,0
+2025-06-12,Summer,unknown,/Neighbr,899 Goulding Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,668,0
+2025-06-12,Summer,unknown,/Neighbr,624 Spruce Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,877,0
+2025-06-12,Summer,unknown,/Neighbr,870 Valour Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1034,0
+2025-06-12,Summer,unknown,/Neighbr,753 Garfield Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1242,0
+2025-06-12,Summer,unknown,/Neighbr,804 Ashburn Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1060,0
+2025-06-12,Summer,unknown,/Neighbr,919 ingersoll Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1320,0
+2025-06-12,Summer,unknown,/Neighbr,969 Strathcona Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1321,0
+2025-06-12,Summer,unknown,/Neighbr,1065 Ashburn Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,716,0
+2025-06-12,Summer,unknown,/Neighbr,736 Valour Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,960,0
+2025-06-12,Summer,unknown,/Neighbr,1080 Downing Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,784,0
+2025-06-12,Summer,unknown,/Neighbr,641 Spruce Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1719,0
+2025-06-12,Summer,unknown,/Neighbr,1090 Spruce Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,852,0
+2025-06-12,Summer,unknown,/Neighbr,745 Valour Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,804,0
+2025-06-12,Summer,unknown,/Neighbr,1201 Clifton Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1060,0
+2025-06-12,Summer,unknown,/Neighbr,1103 Strathcona Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,864,0
+2025-06-12,Summer,unknown,/Neighbr,858 Ingersoll Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,770,0
+2025-06-12,Summer,unknown,/Neighbr,809 Downing Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1087,0
+2025-06-12,Summer,unknown,/Neighbr,673 Alverstone Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,644,0
+2025-06-12,Summer,unknown,/Neighbr,559 Ingersoll Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,801,0
+2025-06-12,Summer,unknown,/Neighbr,660 Strathcona Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1912,0
+2025-06-12,Summer,unknown,/Neighbr,1336 Erin Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,670,0
+2025-06-12,Summer,unknown,/Neighbr,639 Ingersoll Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,748,0
+2025-06-12,Summer,unknown,/Neighbr,1111 Garfield Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,768,0
+2025-06-12,Summer,unknown,/Neighbr,972 Ingersoll Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,756,0
+2025-06-12,Summer,unknown,/Neighbr,1847 Logan Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,900,0
+2025-06-12,Summer,unknown,/Neighbr,1847 Ross Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1271,0
+2025-06-12,Summer,unknown,/Neighbr,1959 Elgin Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,962,0
+2025-06-12,Summer,unknown,/Neighbr,1447 Ross Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,858,0
+2025-06-12,Summer,unknown,/Neighbr,1909 Ross Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,855,0
+2025-06-12,Summer,unknown,/Neighbr,1404 Elgin Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,610,0
+2025-06-12,Summer,unknown,/Neighbr,1453 William Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1232,0
+2025-06-12,Summer,unknown,/Neighbr,1414 Bannatyne Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,800,0
+2025-06-12,Summer,unknown,/Neighbr,1459 Alexander Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,744,0
+2025-06-12,Summer,unknown,/Neighbr,1558 Logan Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,600,0
+2025-06-12,Summer,unknown,/Neighbr,1638 Roy Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1680,0
+2025-06-12,Summer,unknown,/Neighbr,1118 Logan Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1768,0
+2025-06-12,Summer,unknown,/Neighbr,1925 William Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1033,0
+2025-06-12,Summer,unknown,/Neighbr,2059 Gallagher Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1044,0
+2025-06-12,Summer,unknown,/Neighbr,1214 Logan Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,724,0
+2025-06-12,Summer,unknown,/Neighbr,1911 Alexander Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,881,0
+2025-06-12,Summer,unknown,/Neighbr,1857 Alexander Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,694,0
+2025-06-12,Summer,unknown,/Neighbr,1427 Elgin Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,607,0
+2025-06-12,Summer,unknown,/Neighbr,331 Albany Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1167,0
+2025-06-12,Summer,unknown,/Neighbr,222 Inglewood Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1134,0
+2025-06-12,Summer,unknown,/Neighbr,421 Winchester Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,962,0
+2025-06-12,Summer,unknown,/Neighbr,26 Deer Lodge Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1200,0
+2025-06-12,Summer,unknown,/Neighbr,111 Garden Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1407,0
+2025-06-12,Summer,unknown,/Neighbr,374 Inglewood Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1303,0
+2025-06-12,Summer,unknown,/Neighbr,378 Hampton Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1142,0
+2025-06-12,Summer,unknown,/Neighbr,415 Roseberry Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,680,0
+2025-06-12,Summer,unknown,/Neighbr,244 Sackville Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1055,0
+2025-06-12,Summer,unknown,/Neighbr,223 Roseberry Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1296,0
+2025-06-12,Summer,unknown,/Neighbr,422 Truro Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,784,0
+2025-06-12,Summer,unknown,/Neighbr,409 Collegiate Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,715,0
+2025-06-12,Summer,unknown,/Neighbr,305 Sharp Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1102,0
+2025-06-12,Summer,unknown,/Neighbr,352 Parkview Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,900,0
+2025-06-12,Summer,unknown,/Neighbr,410 Moorgate Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1074,0
+2025-06-12,Summer,unknown,/Neighbr,314 Moorgate Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1020,0
+2025-06-12,Summer,unknown,/Neighbr,286 Parkview Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,957,0
+2025-06-12,Summer,unknown,/Neighbr,380 Ferry Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,675,0
+2025-06-12,Summer,unknown,/Neighbr,286 Inglewood Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,700,0
+2025-06-12,Summer,unknown,/Neighbr,257 Brooklyn Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1534,0
+2025-06-12,Summer,unknown,/Neighbr,310 Overdale Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2270,0
+2025-06-12,Summer,unknown,/Neighbr,354 Kensington Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,742,0
+2025-06-12,Summer,unknown,/Neighbr,66 Braintree Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1092,0
+2025-06-12,Summer,unknown,/Neighbr,34 Bruce Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1314,0
+2025-06-12,Summer,unknown,/Neighbr,42 fidler Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1156,0
+2025-06-12,Summer,unknown,/Neighbr,226 Lodge Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1386,0
+2025-06-12,Summer,unknown,/Neighbr,67 Cornwall Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,937,0
+2025-06-12,Summer,unknown,/Neighbr,243 Thompson Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1956,0
+2025-06-12,Summer,unknown,/Neighbr,266 Moray Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1676,0
+2025-06-12,Summer,unknown,/Neighbr,137 Garrioch Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1313,0
+2025-06-12,Summer,unknown,/Neighbr,373 Harcourt Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,766,0
+2025-06-12,Summer,unknown,/Neighbr,23 Hind Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1230,0
+2025-06-12,Summer,unknown,/Neighbr,50 Paisley Place,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1035,0
+2025-06-12,Summer,unknown,/Neighbr,295 Booth Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1447,0
+2025-06-12,Summer,unknown,/Neighbr,236 Nightingale Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1270,0
+2025-06-12,Summer,unknown,/Neighbr,245 Moray Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1446,0
+2025-06-12,Summer,unknown,/Neighbr,346 Nightingale Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1620,0
+2025-06-12,Summer,unknown,/Neighbr,217 Athlone Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1244,0
+2025-06-12,Summer,unknown,/Neighbr,45 Silverwood Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,105 Braintree Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1118,0
+2025-06-12,Summer,unknown,/Neighbr,310 Strathmillan Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,936,0
+2025-06-12,Summer,unknown,/Neighbr,66 Fidler Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1215,0
+2025-06-12,Summer,unknown,/Neighbr,294 Wallasey Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,700,0
+2025-06-12,Summer,unknown,/Neighbr,102 Traill Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1540,0
+2025-06-12,Summer,unknown,/Neighbr,13 Aldrich Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1377,0
+2025-06-12,Summer,unknown,/Neighbr,346 Whitegates Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1495,0
+2025-06-12,Summer,unknown,/Neighbr,63 Longfellow Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2231,0
+2025-06-12,Summer,unknown,/Neighbr,504 Country Club Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1015,0
+2025-06-12,Summer,unknown,/Neighbr,441 Summerlands Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1297,0
+2025-06-12,Summer,unknown,/Neighbr,16 Byrd Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1063,0
+2025-06-12,Summer,unknown,/Neighbr,19 Robert Service Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1219,0
+2025-06-12,Summer,unknown,/Neighbr,202 Whitegates Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1248,0
+2025-06-12,Summer,unknown,/Neighbr,11 Cook Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1674,0
+2025-06-12,Summer,unknown,/Neighbr,198 Barron Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1220,0
+2025-06-12,Summer,unknown,/Neighbr,462 Rouge Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1482,0
+2025-06-12,Summer,unknown,/Neighbr,27 Erlandson Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1180,0
+2025-06-12,Summer,unknown,/Neighbr,319 Country Club Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1488,0
+2025-06-12,Summer,unknown,/Neighbr,33 Galinee Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1625,0
+2025-06-12,Summer,unknown,/Neighbr,534 Stewart Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,862,0
+2025-06-12,Summer,unknown,/Neighbr,11 Aldrich Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2003,0
+2025-06-12,Summer,unknown,/Neighbr,23 Browning Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1360,0
+2025-06-12,Summer,unknown,/Neighbr,47 Dickens Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1604,0
+2025-06-12,Summer,unknown,/Neighbr,482 St Charles Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1600,0
+2025-06-12,Summer,unknown,/Neighbr,493 Woodlands Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,786,0
+2025-06-12,Summer,unknown,/Neighbr,107 Woodlands Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1080,0
+2025-06-12,Summer,unknown,/Neighbr,1115 Buchanan Boulevard,0.0,0.0,0.0,0,3,2.0,lot shape,Use,786,0
+2025-06-12,Summer,unknown,/Neighbr,22 Mackie Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,829,0
+2025-06-12,Summer,unknown,/Neighbr,11 Lumsden Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1157,0
+2025-06-12,Summer,unknown,/Neighbr,60 Corbett Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,807,0
+2025-06-12,Summer,unknown,/Neighbr,7 North Lake Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1365,0
+2025-06-12,Summer,unknown,/Neighbr,187 Lake Ridge Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1100,0
+2025-06-12,Summer,unknown,/Neighbr,15 North Lake Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1855,0
+2025-06-12,Summer,unknown,/Neighbr,29 Uplands Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1167,0
+2025-06-12,Summer,unknown,/Neighbr,29 Carriage Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1014,0
+2025-06-12,Summer,unknown,/Neighbr,711 Cavalier Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1221,0
+2025-06-12,Summer,unknown,/Neighbr,764 Vimy Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1055,0
+2025-06-12,Summer,unknown,/Neighbr,6 Sabine Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1785,0
+2025-06-12,Summer,unknown,/Neighbr,54 Moccasin Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,287 Fairlane Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1078,0
+2025-06-12,Summer,unknown,/Neighbr,123 Risbey Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1085,0
+2025-06-12,Summer,unknown,/Neighbr,54 Granada Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1550,0
+2025-06-12,Summer,unknown,/Neighbr,132 Bernadine Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1012,0
+2025-06-12,Summer,unknown,/Neighbr,213 Stradford Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,988,0
+2025-06-12,Summer,unknown,/Neighbr,15 Gowler Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,848,0
+2025-06-12,Summer,unknown,/Neighbr,27 Costello Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,840,0
+2025-06-12,Summer,unknown,/Neighbr,14 North Lake Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1120,0
+2025-06-12,Summer,unknown,/Neighbr,118 Deloraine Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,125 Voyageur Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1040,0
+2025-06-12,Summer,unknown,/Neighbr,730 School Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1060,0
+2025-06-12,Summer,unknown,/Neighbr,132 Lake Ridge Road,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1200,0
+2025-06-12,Summer,unknown,/Neighbr,654 Parkhill Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,962,0
+2025-06-12,Summer,unknown,/Neighbr,914 Parkhill Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1038,0
+2025-06-12,Summer,unknown,/Neighbr,764 Setter Street,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1560,0
+2025-06-12,Summer,unknown,/Neighbr,71 Granada Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2350,0
+2025-06-12,Summer,unknown,/Neighbr,10 SOUTHDOWN Lane,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2105,0
+2025-06-12,Summer,unknown,/Neighbr,1081 Simmons Drive,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1603,0
+2025-06-12,Summer,unknown,/Neighbr,6 Ammeter Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2377,0
+2025-06-12,Summer,unknown,/Neighbr,53 Killbery Crescent,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1632,0
+2025-06-12,Summer,unknown,/Neighbr,2 Ammeter Bay,0.0,0.0,0.0,0,3,2.0,lot shape,Use,2000,0
+2025-06-12,Summer,unknown,/Neighbr,370 Alexander Avenue,0.0,0.0,0.0,0,3,2.0,lot shape,Use,1803,0

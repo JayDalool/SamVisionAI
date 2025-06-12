@@ -228,16 +228,55 @@
 
 # file: data/load_to_postgresql.py
 
+# file: data/load_to_postgresql.py
+
 import os
 import pandas as pd
 import psycopg2
 from psycopg2 import sql
 from datetime import datetime
+from utils.db_config import get_db_config
 
 CSV_PATH = "parsed_csv/validated.csv"
 
-# Replace with your actual config loading method
-from utils.db_config import get_db_config  # expects dict with user, password, host, dbname
+def safe_str(val, default="none", maxlen=255):
+    try:
+        return str(val)[:maxlen] if pd.notnull(val) else default
+    except:
+        return default
+
+def ensure_all_columns(df: pd.DataFrame) -> pd.DataFrame:
+    defaults = {
+        "neighborhood": "none",
+        "region": "none",
+        "house_type": "none",
+        "bedrooms": 0,
+        "bathrooms": 1.0,
+        "sqft": 0,
+        "lot_size": 0.0,
+        "built_year": 0,
+        "garage_type": "none",
+        "address": "none",
+        "dom": 0,
+        "listing_date": datetime.today().date(),
+        "season": "Summer",
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "list_price": 0,
+        "original_price": 0,
+        "sold_price": 0
+    }
+
+    for col, default in defaults.items():
+        if col not in df:
+            df[col] = default
+        else:
+            if pd.api.types.is_numeric_dtype(df[col]):
+                df[col] = pd.to_numeric(df[col], errors='coerce').fillna(default)
+            else:
+                df[col] = df[col].fillna(default)
+
+    return df
 
 def create_table_if_not_exists(cursor):
     cursor.execute("""
@@ -260,7 +299,8 @@ def create_table_if_not_exists(cursor):
             longitude NUMERIC(9,6),
             list_price BIGINT,
             original_price BIGINT,
-            sold_price BIGINT
+            sold_price BIGINT,
+            UNIQUE(address, listing_date)
         );
     """)
 
@@ -272,35 +312,41 @@ def main():
     if df.empty:
         raise RuntimeError("❌ No data in validated CSV")
 
+    df = ensure_all_columns(df)
+
     config = get_db_config()
     conn = psycopg2.connect(**config)
     cursor = conn.cursor()
-
     create_table_if_not_exists(cursor)
 
     inserted, skipped = 0, []
 
     for _, row in df.iterrows():
         try:
+            if not row.get("address") or pd.isna(row.get("address")):
+                raise ValueError("Missing address")
+            if not row.get("listing_date") or pd.isna(row.get("listing_date")):
+                raise ValueError("Missing listing_date")
+
             values = [
-                row.get("neighborhood", "none"),
-                row.get("region", "none"),
-                row.get("house_type", "none"),
-                int(row["bedrooms"]) if pd.notnull(row["bedrooms"]) else 0,
-                float(row["bathrooms"]) if pd.notnull(row["bathrooms"]) else 1.0,
-                int(row["sqft"]) if pd.notnull(row["sqft"]) else 0,
-                float(row["lot_size"]) if pd.notnull(row["lot_size"]) else 0,
-                int(row["built_year"]) if pd.notnull(row["built_year"]) else 0,
-                row.get("garage_type", "none"),
-                row.get("address", "none"),
-                int(row["dom"]) if pd.notnull(row["dom"]) else 0,
-                row.get("listing_date", datetime.today().date()),
-                row.get("season", "none"),
-                float(row.get("latitude", 0.0)),
-                float(row.get("longitude", 0.0)),
-                int(row.get("list_price", 0)),
-                int(row.get("original_price", 0)),
-                int(row.get("sold_price", 0)),
+                safe_str(row["neighborhood"], maxlen=100),
+                safe_str(row["region"], maxlen=100),
+                safe_str(row["house_type"], maxlen=100),
+                int(row["bedrooms"]),
+                float(row["bathrooms"]),
+                int(row["sqft"]),
+                float(row["lot_size"]),
+                int(row["built_year"]),
+                safe_str(row["garage_type"], maxlen=100),
+                safe_str(row["address"], maxlen=100),
+                int(row["dom"]),
+                pd.to_datetime(row["listing_date"]).date(),
+                safe_str(row["season"], maxlen=50),
+                float(row["latitude"]),
+                float(row["longitude"]),
+                int(row["list_price"]),
+                int(row["original_price"]),
+                int(row["sold_price"]),
             ]
 
             cursor.execute(sql.SQL("""
@@ -309,13 +355,14 @@ def main():
                     sqft, lot_size, built_year, garage_type, address, dom,
                     listing_date, season, latitude, longitude,
                     list_price, original_price, sold_price
-                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                )
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                ON CONFLICT (address, listing_date) DO NOTHING
             """), values)
-
             inserted += 1
 
         except Exception as e:
-            skipped.append(str(row.get("address", "unknown")) + " -> " + str(e))
+            skipped.append(f"{row.get('address', 'unknown')} -> {e}")
 
     conn.commit()
     cursor.close()
@@ -327,4 +374,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
