@@ -1,8 +1,10 @@
 # file: tools/pdf_to_csv.py
 
-import os
-import io
 import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+import io
 import pandas as pd
 from utils.pdf_sales_parser import extract_pdf_sales
 
