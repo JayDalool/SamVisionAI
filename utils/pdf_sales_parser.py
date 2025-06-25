@@ -569,7 +569,7 @@
 #             })
 
 #     return pd.DataFrame(records)
-# # file: utils/pdf_sales_parser.py
+# file: utils/pdf_sales_parser.py
 
 # import re
 # import pandas as pd
@@ -768,18 +768,9 @@
 import re
 import pandas as pd
 from datetime import datetime
-from typing import List, Dict
+from typing import List
 from pdfminer.high_level import extract_text
 import os
-
-# # Extracts text from PDF or TXT file and splits into pages
-# def extract_text_from_path(path: str) -> List[str]:
-#     if path.lower().endswith(".pdf"):
-#         text = extract_text(path)
-#     else:
-#         with open(path, "r", encoding="utf-8") as f:
-#             text = f.read()
-#     return text.split("Page ")
 
 def extract_text_from_path(path: str) -> List[str]:
     ext = os.path.splitext(path)[1].lower()
@@ -791,152 +782,110 @@ def extract_text_from_path(path: str) -> List[str]:
     else:
         raise ValueError(f"Unsupported file extension: {ext}. Only .pdf and .txt are supported.")
     return text.split("Page ")
-
-
-# Determines the season based on current month
-def get_current_season():
-    return ["Winter", "Spring", "Summer", "Fall"][(datetime.today().month % 12) // 3]
-
-# Converts currency strings to float
-def parse_currency(value: str) -> float:
-    try:
-        return float(value.replace("$", "").replace(",", ""))
-    except:
-        return 0.0
-
-# Extracts integer bedroom count from string
-def parse_bedrooms(val: str) -> int:
-    match = re.search(r"\d+", val)
-    return int(match.group(0)) if match else 0
-
-# Parses bathroom count, supporting 1.5, etc.
-def parse_bathrooms(val: str) -> float:
-    match = re.findall(r"\d+", val)
-    if not match:
-        return 0.0
-    elif len(match) == 1:
-        return float(match[0])
-    elif len(match) == 2:
-        return float(match[0]) + 0.5 * float(match[1])
-    return float(match[0])
-
-# Normalizes garage/parking info into consistent format
-def normalize_garage_type(raw: str) -> str:
-    raw = raw.lower().strip() if raw else ""
-    if not raw or raw == 'none':
-        return "none"
-    tags = []
-    if "pad" in raw:
-        tags.append("pad")
-    if "plug" in raw:
-        tags.append("plug-in")
-    if "rear" in raw:
-        tags.append("rear drive")
-    if "unpaved" in raw:
-        tags.append("unpaved")
-    if "attached" in raw:
-        tags.append("attached")
-    if "detached" in raw:
-        tags.append("detached")
-    if "single" in raw:
-        tags.append("single")
-    if "double" in raw:
-        tags.append("double")
-    if "carport" in raw:
-        tags.append("carport")
-    return ", ".join(sorted(set(tags))) if tags else raw
-
-# Cleans up address field
-def clean_address_field(addr: str) -> str:
-    addr = re.sub(r"\n", " ", addr)
-    addr = re.sub(r"Winnipeg Regional.*?Levies", "", addr, flags=re.IGNORECASE)
-    addr = re.sub(r"\d+\s+Sold", "", addr)
-    addr = re.sub(r"\s+", " ", addr).strip()
-    return addr
-
-# Parses a side-by-side format page with 3 listings per row
-def parse_side_by_side_page(text: str) -> List[Dict]:
-    lines = text.splitlines()
-    buffer = {}
-    records = []
-
-    field_keys = {
-        'MLS': 'mls_number',
-        'Area/Neighbr': 'neighborhood',
-        'Address': 'address',
-        'Age/Yr Built': 'year_built',
-        'Type': 'house_type',
-        'Style': 'style',
-        'Living Area': 'sqft',
-        'Baths': 'bathrooms',
-        'Bedrooms': 'bedrooms',
-        'Parking': 'garage_type',
-        'Sold Price': 'sold_price',
-        'List Price': 'list_price',
-        'DOM': 'dom',
-        'Basement': 'basement'
-    }
-
-    for line in lines:
-        for label in field_keys:
-            if line.startswith(label):
-                parts = re.split(r'\s{2,}', line[len(label):].strip())
-                buffer[field_keys[label]] = parts
-
-    for i in range(3):
-        row = {
-            'listing_date': datetime.today().date(),
-            'season': get_current_season()
-        }
-        for key in field_keys.values():
-            val = buffer.get(key, [''])[i] if key in buffer else ''
-
-            if key == 'sqft':
-                val = re.sub(r'[^0-9]', '', val)
-                row[key] = int(val) if val.isdigit() else 0
-            elif key == 'year_built':
-                parts = val.split('/')
-                val = parts[1].strip() if len(parts) > 1 else '0'
-                row[key] = int(val) if val.isdigit() else 0
-            elif key == 'bathrooms':
-                row[key] = parse_bathrooms(val)
-            elif key == 'bedrooms':
-                row[key] = parse_bedrooms(val)
-            elif key in ('list_price', 'sold_price'):
-                row[key] = parse_currency(val)
-            elif key == 'garage_type':
-                row[key] = normalize_garage_type(val)
-            elif key == 'dom':
-                row[key] = int(val) if val.isdigit() else 0
-            elif key == 'basement':
-                row[key] = val.lower().strip()
-            else:
-                row[key] = val.strip()
-
-        # Combine house type and style for enriched label
-        row['house_type'] = f"{row.get('house_type', '')} {row.get('style', '')}".strip()
-
-        row['sell_list_ratio'] = round((row['sold_price'] / row['list_price']), 2) if row['list_price'] else 0.0
-        records.append(row)
-
-    return records
-
-# Parses line-by-line unstructured listings (placeholder)
-def parse_single_column_page(text: str) -> List[Dict]:
-    lines = text.splitlines()
-    records = []
-    # Logic to identify listings and parse fields will be added here
-    return records
-
-# Main entry to parse a file
 def extract_pdf_sales(path: str) -> pd.DataFrame:
     pages = extract_text_from_path(path)
     records = []
 
+    known_neighborhoods = [
+        "Riverview", "Lord Roberts", "Fort Rouge", "Osborne Village", "Crescentwood",
+        "Charleswood", "Richmond West", "Fairfield Park", "Deer Pointe", "Headingley South",
+        "St Boniface", "Norwood", "Norwood Flats", "East Fort Garry", "Wildwood",
+        "East Kildonan", "St Vital", "St Norbert", "St James", "Tuxedo",
+        "River Heights", "Linden Woods", "Garden City", "Transcona", "West End"
+    ]
+
     for page_text in pages:
-        if "MLS" in page_text and "Area/Neighbr" in page_text:
-            records.extend(parse_side_by_side_page(page_text))
-        else:
-            records.extend(parse_single_column_page(page_text))
+        # Split by sets of 3 properties (each starts with Sold status line)
+        property_blocks = re.split(r"(?=Status\s+Sold\s+Sold\s+Sold)", page_text)
+        
+        for block in property_blocks:
+            if not block.strip():
+                continue
+                
+            # Split each property block into 3 individual properties
+            properties = re.split(r"(?=\S+\s+\S+\s+\S+)", block)
+            
+            for prop in properties[1:4]:  # first element is empty
+                if not prop.strip():
+                    continue
+                
+                try:
+                    # MLS Number
+                    mls_match = re.search(r"MLS[\u00aeR#\s:]*?(\d{9})", prop)
+                    mls_number = mls_match.group(1) if mls_match else "unknown"
+                    
+                    # Neighborhood
+                    neigh_match = re.search(r"Area/Neighbr\s+([^\n]+)", prop)
+                    neighborhood = "Loose Area"
+                    if neigh_match:
+                        neighborhood_part = neigh_match.group(1).strip()
+                        for hood in known_neighborhoods:
+                            if hood.lower() in neighborhood_part.lower():
+                                neighborhood = hood
+                                break
+                    
+                    # Address
+                    addr_match = re.search(r"Address\s+([^\n]+)", prop)
+                    address = addr_match.group(1).strip() if addr_match else "Unknown Address"
+                    address = clean_address_field(address)
+                    
+                    # House Type
+                    type_match = re.search(r"Type\s+([^\n]+)", prop)
+                    house_type = type_match.group(1).strip() if type_match else "Single Family Detached"
+                    
+                    # Style
+                    style_match = re.search(r"Style\s+([^\n]+)", prop)
+                    style = style_match.group(1).strip() if style_match else ""
+                    
+                    # Square Footage
+                    sqft_match = re.search(r"Living Area\s+(\d+)\s*SF", prop)
+                    sqft = int(sqft_match.group(1)) if sqft_match else 1200
+                    
+                    # Lot Size
+                    lot_match = re.search(r"(\d+\.\d+)\s*M2", prop)
+                    lot_size = float(lot_match.group(1)) if lot_match else 0.0
+                    
+                    # Prices
+                    price_matches = re.findall(r"\$([\d,]+)", prop)
+                    list_price = parse_currency(price_matches[-6]) if len(price_matches) >= 6 else 0.0
+                    sold_price = parse_currency(price_matches[-3]) if len(price_matches) >= 3 else 0.0
+                    
+                    # DOM
+                    dom_match = re.search(r"DOM\s*(\d+)", prop)
+                    dom = int(dom_match.group(1)) if dom_match else 0
+                    
+                    # Bedrooms/Bathrooms
+                    bedrooms = parse_bedrooms(prop)
+                    bathrooms = parse_bathrooms(prop)
+                    
+                    # Garage Type
+                    garage_raw = ""
+                    parking_section = re.search(r"Parking([\s\S]+?)(?=\n\S)", prop)
+                    if parking_section:
+                        garage_raw = parking_section.group(1)
+                    garage_type = normalize_garage_type(garage_raw)
+                    
+                    records.append({
+                        "listing_date": datetime.today().date(),
+                        "season": get_current_season(),
+                        "mls_number": mls_number,
+                        "neighborhood": neighborhood,
+                        "address": address,
+                        "list_price": list_price,
+                        "sold_price": sold_price,
+                        "sell_list_ratio": round((sold_price / list_price), 2) if list_price else 0.0,
+                        "dom": dom,
+                        "bedrooms": bedrooms,
+                        "bathrooms": bathrooms,
+                        "garage_type": garage_type,
+                        "house_type": house_type,
+                        "sqft": sqft,
+                        "lot_size": lot_size,
+                        "style": style,
+                    })
+                
+                except Exception as e:
+                    print(f"Error parsing property: {e}")
+                    continue
 
     return pd.DataFrame(records)
