@@ -227,7 +227,6 @@
 #     print(f"[WARN] Skipped {len(skipped)} row(s). Example: {skipped[:3]}")
 
 # file: data/load_to_postgresql.py
-
 # file: data/load_to_postgresql.py
 
 import sys
@@ -267,7 +266,9 @@ def ensure_all_columns(df: pd.DataFrame) -> pd.DataFrame:
         "longitude": 0.0,
         "list_price": 0,
         "original_price": 0,
-        "sold_price": 0
+        "sold_price": 0,
+        "style": "none",
+        "type": "none"
     }
 
     for col, default in defaults.items():
@@ -303,6 +304,8 @@ def create_table_if_not_exists(cursor):
             list_price BIGINT,
             original_price BIGINT,
             sold_price BIGINT,
+            style TEXT,
+            type TEXT,
             UNIQUE(address, listing_date)
         );
     """)
@@ -350,6 +353,8 @@ def main():
                 int(row["list_price"]),
                 int(row["original_price"]),
                 int(row["sold_price"]),
+                safe_str(row["style"], maxlen=100),
+                safe_str(row["type"], maxlen=100)
             ]
 
             cursor.execute(sql.SQL("""
@@ -357,9 +362,9 @@ def main():
                     neighborhood, region, house_type, bedrooms, bathrooms,
                     sqft, lot_size, built_year, garage_type, address, dom,
                     listing_date, season, latitude, longitude,
-                    list_price, original_price, sold_price
+                    list_price, original_price, sold_price, style, type
                 )
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 ON CONFLICT (address, listing_date) DO NOTHING
             """), values)
             inserted += 1
