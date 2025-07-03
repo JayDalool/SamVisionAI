@@ -42,3 +42,10 @@ def get_current_season() -> str:
     if month in [6, 7, 8]:
         return "Summer"
     return "Fall"
+
+def extract_price_by_label(label: str, text: str) -> float:
+    match = re.search(rf"{label}\s*[:\-]?\s*\$([\d,]+)", text, re.IGNORECASE)
+    if match:
+        return float(match.group(1).replace(",", ""))
+    return 0.0
+

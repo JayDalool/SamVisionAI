@@ -5,24 +5,26 @@ class FinalSalesMerger:
     """Utility class to merge cleaned sales records from multiple sources."""
 
     EXPECTED_COLUMNS: List[str] = [
-        "listing_date",
-        "season",
-        "mls_number",
-        "neighborhood",
-        "address",
-        "list_price",
-        "sold_price",
-        "sell_list_ratio",
-        "dom",
-        "bedrooms",
-        "bathrooms",
-        "garage_type",
-        "house_type",
-        "style",
-        "type",
-        "sqft",
-        "lot_size",
-    ]
+    "listing_date",
+    "season",
+    "mls_number",
+    "neighborhood",
+    "address",
+    "list_price",
+    "sold_price",
+    "sell_list_ratio",
+    "dom",
+    "bedrooms",
+    "bathrooms",
+    "garage_type",
+    "basement",  
+    "house_type",
+    "style",
+    "type",
+    "sqft",
+    "lot_size",
+]
+
 
     @classmethod
     def _validate_df(cls, df: pd.DataFrame) -> pd.DataFrame:
@@ -66,3 +68,19 @@ class FinalSalesMerger:
 
         merged.to_csv(output_path, index=False)
         return merged
+
+if __name__ == "__main__":
+    import pandas as pd
+    import os
+
+    txt_path = "parsed_csv/from_txt_parser.csv"
+    pdf_path = "parsed_csv/from_pdf_parser.csv"
+    output_path = "parsed_csv/final_sales_merged.csv"
+
+    text_df = pd.read_csv(txt_path) if os.path.exists(txt_path) else pd.DataFrame()
+    pdf_df = pd.read_csv(pdf_path) if os.path.exists(pdf_path) else pd.DataFrame()
+
+
+    merged_df = FinalSalesMerger.merge_and_save(text_df, pdf_df, output_path)
+    print(f"✅ Merged CSV written to {output_path}")
+
