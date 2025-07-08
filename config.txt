@@ -1,7 +1,7 @@
 {
-    'dbname': 'SamVision',
-    'user': 'postgres',
-    'password': '1611',
-    'host': 'localhost',
-    'port': '5432'
+    "dbname": "SamVision",
+    "user": "postgres",
+    "password": "1234",
+    "host": "127.0.0.1",
+    "port": "5432"
 }

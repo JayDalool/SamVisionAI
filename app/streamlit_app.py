@@ -745,6 +745,9 @@
 #                 except Exception as e:
 #                     st.error(f"Error displaying feature importance: {e}")
 
+# ----------------------------Realtor Inteligence -------------------------
+
+
 import streamlit as st
 
 # MUST be first
@@ -760,6 +763,7 @@ import sys
 from datetime import datetime
 from sqlalchemy import create_engine
 import plotly.express as px
+import json
 
 # Ensure utils import
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -890,12 +894,204 @@ with tab2:
             )
         else:
             st.info("Select listings above to generate a CMA report.")
-
 # =============================
 # 💰 TAB 3: PRICE PREDICTION
 # =============================
+# with tab3:
+#     st.header("💰 Predict Winning Offer Price")
+
+#     # Load explanation JSON
+#     explanation = {}
+#     try:
+#         with open("model_explanation.json", "r") as f:
+#             explanation = json.load(f)
+#     except Exception:
+#         explanation = {"note": "Model explanation not found. Retrain to generate explanations."}
+
+#     # Explanation card
+#     with st.container(border=True):
+#         st.subheader("🩺 Model Information")
+#         col1, col2 = st.columns(2)
+#         with col1:
+#             st.markdown(f"✅ **Model:** {explanation.get('model_used', 'Unknown')}")
+#             st.markdown(f"📅 **Trained on:** {explanation.get('trained_on_rows', 'N/A')} rows")
+#             st.markdown(f"🎯 **MAE:** ${explanation.get('mae', 0):,.0f}")
+#             st.markdown(f"📈 **R²:** {explanation.get('r2', 0):.4f}")
+#         with col2:
+#             st.markdown("🛠️ **Features Used:**")
+#             features_list = explanation.get("features_used", [])
+#             if features_list:
+#                 st.markdown(", ".join(features_list[:10]) + ("..." if len(features_list) > 10 else ""))
+#             else:
+#                 st.markdown("_Features unavailable._")
+#         st.info(explanation.get("note", "No detailed notes provided."))
+
+#     # Realtor prioritization utility
+#     def realtor_price_estimate(df_all, neighborhood, sqft, bedrooms, bathrooms, built_year, garage_type):
+#         # Ensure listing_date is datetime
+#         if df_all['listing_date'].dtype != 'datetime64[ns]':
+#             df_all['listing_date'] = pd.to_datetime(df_all['listing_date'], errors='coerce')
+
+#         cutoff_date = pd.Timestamp.now() - pd.Timedelta(days=90)
+
+#         comps = df_all[
+#             (df_all['neighborhood'] == neighborhood) &
+#             (df_all['listing_date'] >= cutoff_date) &
+#             (df_all['sqft'].between(sqft - 300, sqft + 300)) &
+#             (df_all['bedrooms'].between(bedrooms - 1, bedrooms + 1)) &
+#             (df_all['bathrooms'].between(bathrooms - 1, bathrooms + 1)) &
+#             (df_all['built_year'].between(built_year - 7, built_year + 7))
+#         ]
+
+#         if len(comps) >= 6:
+#             garage_adj = 0
+#             if "double" in garage_type.lower():
+#                 garage_adj = 25000
+#             elif "single" in garage_type.lower() or "attached" in garage_type.lower() or "detached" in garage_type.lower():
+#                 garage_adj = 15000
+#             median_price = comps['sold_price'].median() + garage_adj
+#             return median_price, comps
+#         else:
+#             return None, None
+
+
+#     if df_all.empty or model is None:
+#         st.error("No data or trained model available. Upload and parse data, then train your model first.")
+#     else:
+#         default = df_all.iloc[0]
+#         col1, col2, col3 = st.columns(3)
+
+#         with col1:
+#             neighborhood = st.selectbox("Neighborhood", sorted(df_all['neighborhood'].dropna().unique()), index=0)
+#             house_type = st.selectbox("House Type", sorted(df_all['house_type'].dropna().unique()), index=0)
+#             style = st.selectbox("Style", sorted(df_all['style'].dropna().unique()), index=0)
+#             garage_type = st.selectbox("Garage Type", sorted(df_all['garage_type'].dropna().unique()), index=0)
+
+#         with col2:
+#             bedrooms = st.number_input("Bedrooms", min_value=0, max_value=10, value=int(default.get('bedrooms', 3)))
+#             bathrooms = st.number_input("Bathrooms", min_value=0.5, max_value=6.0, value=float(default.get('bathrooms', 2.0)))
+#             sqft = st.number_input("Square Footage", min_value=300, max_value=6000, value=int(default.get('sqft', 1200)))
+
+#         with col3:
+#             built_year = int(default.get('built_year', 2000))
+#             built_year = st.number_input("Built Year", min_value=1900, max_value=datetime.now().year, value=built_year)
+#             season = st.selectbox("Season", ['Winter', 'Spring', 'Summer', 'Fall'], index=2)
+#             list_price = st.number_input("List Price", min_value=50000, max_value=2000000, value=int(default.get('list_price', 300000)))
+
+#         if st.button("🔮 Predict Winning Offer Price"):
+#             realtor_price, comps_used = realtor_price_estimate(
+#                 df_all, neighborhood, sqft, bedrooms, bathrooms, built_year, garage_type
+#             )
+
+#             if realtor_price:
+#                 st.success(f"🏆 **Realtor Intelligence Estimate:** ${realtor_price:,.0f}")
+#                 st.info("Based on 6+ recent comps in this neighborhood within ±300 sqft, ±1 bed/bath, ±7 years.")
+#                 if comps_used is not None:
+#                     st.dataframe(comps_used[['mls_number', 'address', 'sold_price', 'sqft', 'bedrooms', 'bathrooms', 'built_year', 'garage_type']])
+#                 st.session_state["predicted_price"] = realtor_price
+#                 st.session_state["buffer"] = 10000
+#             else:
+#                 try:
+#                     age = datetime.now().year - built_year
+#                     price_diff = 0
+#                     over_asking_pct = 0
+#                     price_per_sqft = list_price / max(sqft, 1)
+
+#                     input_df = pd.DataFrame([{
+#                         'bedrooms': bedrooms, 'bathrooms': bathrooms, 'sqft': sqft, 'built_year': built_year,
+#                         'age': age, 'list_price': list_price, 'price_diff': price_diff,
+#                         'over_asking_pct': over_asking_pct, 'price_per_sqft': price_per_sqft,
+#                         'neighborhood_hotness': 0.5, 'realtor_logic': 0.5, 'recency_weight': 1,
+#                         'house_type': house_type, 'style': style, 'garage_type': garage_type,
+#                         'season': season, 'dom_bucket': '8-14', 'neighborhood': neighborhood
+#                     }])
+
+#                     for col in model.feature_names_in_:
+#                         if col not in input_df.columns:
+#                             input_df[col] = 0
+
+#                     input_df = input_df[model.feature_names_in_]
+#                     numeric_cols = [
+#                         'bedrooms', 'bathrooms', 'sqft', 'built_year', 'age',
+#                         'list_price', 'price_diff', 'over_asking_pct', 'price_per_sqft',
+#                         'neighborhood_hotness', 'realtor_logic', 'recency_weight'
+#                     ]
+#                     for col in numeric_cols:
+#                         if col in input_df.columns:
+#                             input_df[col] = pd.to_numeric(input_df[col], errors='coerce')
+#                     input_df = input_df.fillna(0)
+
+#                     st.write("✅ Clean input ready for ML prediction:")
+#                     st.dataframe(input_df)
+
+#                     predicted_price = model.predict(input_df)[0]
+#                     buffer = max(5000, min(abs(predicted_price * 0.02), 10000))
+
+#                     st.session_state["predicted_price"] = predicted_price
+#                     st.session_state["buffer"] = buffer
+
+#                 except Exception as e:
+#                     st.error(f"Prediction failed: {e}")
+
+#         if "predicted_price" in st.session_state:
+#             predicted_price = st.session_state["predicted_price"]
+#             buffer = st.session_state["buffer"]
+#             st.success(f"🏆 Recommended Winning Offer: ${predicted_price:,.0f} ±${buffer:,.0f}")
+
+
 with tab3:
     st.header("💰 Predict Winning Offer Price")
+
+    # Load explanation JSON
+    explanation = {}
+    try:
+        with open("model_explanation.json", "r") as f:
+            explanation = json.load(f)
+    except Exception:
+        explanation = {"note": "Model explanation not found. Retrain to generate explanations."}
+
+    # Explanation card
+    with st.container(border=True):
+        st.subheader("🩺 Model Information")
+        col1, col2 = st.columns(2)
+        with col1:
+            st.markdown(f"✅ **Model:** {explanation.get('model_used', 'Unknown')}")
+            st.markdown(f"📅 **Trained on:** {explanation.get('trained_on_rows', 'N/A')} rows")
+            st.markdown(f"🎯 **MAE:** ${explanation.get('mae', 0):,.0f}")
+            st.markdown(f"📈 **R²:** {explanation.get('r2', 0):.4f}")
+        with col2:
+            st.markdown("🛠️ **Features Used:**")
+            features_list = explanation.get("features_used", [])
+            if features_list:
+                st.markdown(", ".join(features_list[:10]) + ("..." if len(features_list) > 10 else ""))
+            else:
+                st.markdown("_Features unavailable._")
+        st.info(explanation.get("note", "No detailed notes provided."))
+
+    # Realtor prioritization utility
+    def realtor_price_estimate(df_all, neighborhood, sqft, bedrooms, bathrooms, built_year, garage_type):
+        if df_all['listing_date'].dtype != 'datetime64[ns]':
+            df_all['listing_date'] = pd.to_datetime(df_all['listing_date'], errors='coerce')
+
+        cutoff_date = pd.Timestamp.now() - pd.Timedelta(days=90)
+        comps = df_all[
+            (df_all['neighborhood'] == neighborhood) &
+            (df_all['listing_date'] >= cutoff_date) &
+            (df_all['sqft'].between(sqft - 300, sqft + 300)) &
+            (df_all['bedrooms'].between(bedrooms - 1, bedrooms + 1)) &
+            (df_all['bathrooms'].between(bathrooms - 1, bathrooms + 1)) &
+            (df_all['built_year'].between(built_year - 7, built_year + 7))
+        ]
+        if len(comps) >= 6:
+            garage_adj = 0
+            if "double" in garage_type.lower():
+                garage_adj = 25000
+            elif any(x in garage_type.lower() for x in ["single", "attached", "detached"]):
+                garage_adj = 15000
+            median_price = comps['sold_price'].median() + garage_adj
+            return median_price, comps
+        else:
+            return None, None
 
     if df_all.empty or model is None:
         st.error("No data or trained model available. Upload and parse data, then train your model first.")
@@ -904,156 +1100,97 @@ with tab3:
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            neighborhood = st.selectbox(
-                "Neighborhood",
-                sorted(df_all['neighborhood'].dropna().unique()),
-                index=0
-            )
-            house_type = st.selectbox(
-                "House Type",
-                sorted(df_all['house_type'].dropna().unique()),
-                index=0
-            )
-            style = st.selectbox(
-                "Style",
-                sorted(df_all['style'].dropna().unique()),
-                index=0
-            )
-            garage_type = st.selectbox(
-                "Garage Type",
-                sorted(df_all['garage_type'].dropna().unique()),
-                index=0
-            )
+            neighborhood = st.selectbox("Neighborhood", sorted(df_all['neighborhood'].dropna().unique()), index=0)
+            house_type = st.selectbox("House Type", sorted(df_all['house_type'].dropna().unique()), index=0)
+            style = st.selectbox("Style", sorted(df_all['style'].dropna().unique()), index=0)
+            garage_type = st.selectbox("Garage Type", sorted(df_all['garage_type'].dropna().unique()), index=0)
 
         with col2:
-            bedrooms = st.number_input(
-                "Bedrooms", min_value=0, max_value=10,
-                value=int(default.get('bedrooms', 3))
-            )
-            bathrooms = st.number_input(
-                "Bathrooms", min_value=0.5, max_value=6.0,
-                value=float(default.get('bathrooms', 2.0))
-            )
-            sqft = st.number_input(
-                "Square Footage", min_value=300, max_value=6000,
-                value=int(default.get('sqft', 1200))
-            )
+            bedrooms = st.number_input("Bedrooms", min_value=0, max_value=10, value=int(default.get('bedrooms', 3)))
+            bathrooms = st.number_input("Bathrooms", min_value=0.5, max_value=6.0, value=float(default.get('bathrooms', 2.0)))
+            sqft = st.number_input("Square Footage", min_value=300, max_value=6000, value=int(default.get('sqft', 1200)))
 
         with col3:
-            built_year = int(default.get('built_year', 2000))
-            built_year = built_year if 1900 <= built_year <= datetime.now().year else 2000
-            built_year = st.number_input(
-                "Built Year", min_value=1900, max_value=datetime.now().year,
-                value=built_year
-            )
-            season = st.selectbox(
-                "Season",
-                ['Winter', 'Spring', 'Summer', 'Fall'],
-                index=2
-            )
-            list_price = st.number_input(
-                "List Price", min_value=50000, max_value=2000000,
-                value=int(default.get('list_price', 300000))
-            )
-
-       
+            built_year = st.number_input("Built Year", min_value=1900, max_value=datetime.now().year, value=int(default.get('built_year', 2000)))
+            season = st.selectbox("Season", ['Winter', 'Spring', 'Summer', 'Fall'], index=2)
+            list_price = st.number_input("List Price", min_value=50000, max_value=2000000, value=int(default.get('list_price', 300000)))
+            is_multi_offer = st.checkbox("🏠 Multi-Offer Listing", value=False, help="Check if this is a multi-offer scenario (low DOM, high over-asking).")
 
         if st.button("🔮 Predict Winning Offer Price"):
-            try:
-                age = datetime.now().year - built_year
-                price_diff = 0
-                over_asking_pct = 0
-                price_per_sqft = list_price / max(sqft, 1)
-                # dom_bucket remains, but actual dom is removed
+            realtor_price, comps_used = realtor_price_estimate(
+                df_all, neighborhood, sqft, bedrooms, bathrooms, built_year, garage_type
+            )
 
-                input_df = pd.DataFrame([{
-                    'bedrooms': bedrooms,
-                    'bathrooms': bathrooms,
-                    'sqft': sqft,
-                    'built_year': built_year,
-                    'age': age,
-                    # 'dom': dom,  # Removed
-                    'list_price': list_price,
-                    'price_diff': price_diff,
-                    'over_asking_pct': over_asking_pct,
-                    'price_per_sqft': price_per_sqft,
-                    'neighborhood_hotness': 0.5,
-                    'realtor_logic': 0.5,
-                    'recency_weight': 1,
-                    'house_type': house_type,
-                    'style': style,
-                    'garage_type': garage_type,
-                    'season': season,
-                    'dom_bucket': '8-14',  # kept if used in pipeline
-                    'neighborhood': neighborhood
-                }])
+            if realtor_price and not is_multi_offer:
+                st.success(f"🏆 **Realtor Intelligence Estimate:** ${realtor_price:,.0f}")
+                st.info("✅ Using: Realtor Intelligence Pricing (6+ comps within ±300 sqft, ±1 bed/bath, ±7 years)")
 
-                # Ensure all columns expected by the model exist
-                for col in model.feature_names_in_:
-                    if col not in input_df.columns:
-                        input_df[col] = 0
-
-                # Reorder columns to model expected order
-                input_df = input_df[model.feature_names_in_]
-
-                # Enforce dtypes
-                numeric_cols = [
-                    'bedrooms', 'bathrooms', 'sqft', 'built_year', 'age',
-                    'list_price', 'price_diff', 'over_asking_pct', 'price_per_sqft',
-                    'neighborhood_hotness', 'realtor_logic', 'recency_weight', 'dom'  # if model expects dom
-                ]
-                for col in numeric_cols:
-                    if col in input_df.columns:
-                        input_df[col] = pd.to_numeric(input_df[col], errors='coerce')
-
-                categorical_cols = [
-                    'house_type', 'style', 'garage_type', 'season', 'dom_bucket', 'neighborhood'
-                ]
-                for col in categorical_cols:
-                    if col in input_df.columns:
-                        input_df[col] = input_df[col].astype(str)
-
-                input_df = input_df.fillna(0)
-
-                st.write("✅ Cleaned input_df:")
-                st.dataframe(input_df)
-
-                predicted_price = model.predict(input_df)[0]
-                buffer = max(5000, min(abs(predicted_price * 0.02), 10000))
-
-                st.session_state["predicted_price"] = predicted_price
-                st.session_state["buffer"] = buffer
-
-            except Exception as e:
-                st.error(f"Prediction failed: {e}")
-
-
-
-        if "predicted_price" in st.session_state:
-            predicted_price = st.session_state["predicted_price"]
-            buffer = st.session_state["buffer"]
-            st.success(f"🏆 Recommended Winning Offer: ${predicted_price:,.0f} ±${buffer:,.0f}")
-
-            if st.toggle("Show Feature Importance"):
+                if comps_used is not None:
+                    st.dataframe(comps_used[['mls_number', 'address', 'sold_price', 'sqft', 'bedrooms', 'bathrooms', 'built_year', 'garage_type']])
+                st.session_state["predicted_price"] = realtor_price
+                st.session_state["buffer"] = 10000
+            else:
                 try:
-                    model_obj = model.named_steps['model'] if 'model' in model.named_steps else model
-                    if hasattr(model_obj, 'feature_importances_'):
-                        st.subheader("🔍 Top Predictive Features")
-                        feature_names = model.named_steps['prep'].get_feature_names_out()
-                        feature_imp_series = pd.Series(model_obj.feature_importances_, index=feature_names)
-                        top_features = feature_imp_series.abs().sort_values(ascending=False).head(15).reset_index()
-                        top_features.columns = ['Feature', 'Importance']
-                        fig = px.bar(
-                            top_features,
-                            x='Importance', y='Feature',
-                            orientation='h',
-                            color='Importance',
-                            color_continuous_scale='Blues',
-                            height=600
-                        )
-                        fig.update_layout(yaxis={'categoryorder': 'total ascending'}, showlegend=False)
-                        st.plotly_chart(fig, use_container_width=True)
-                    else:
-                        st.info("Feature importance not available for this model.")
+                    age = datetime.now().year - built_year
+                    price_diff = 0
+                    over_asking_pct = 0
+                    price_per_sqft = list_price / max(sqft, 1)
+                    recency_weight = 1
+                    realtor_logic = 0.8 if is_multi_offer else 0.5
+                    neighborhood_hotness = 0.6 if is_multi_offer else 0.5
+
+                    input_df = pd.DataFrame([{
+                        'bedrooms': bedrooms,
+                        'bathrooms': bathrooms,
+                        'sqft': sqft,
+                        'built_year': built_year,
+                        'age': age,
+                        'list_price': list_price,
+                        'price_diff': price_diff,
+                        'over_asking_pct': over_asking_pct,
+                        'price_per_sqft': price_per_sqft,
+                        'neighborhood_hotness': neighborhood_hotness,
+                        'realtor_logic': realtor_logic,
+                        'recency_weight': recency_weight,
+                        'multi_offer_flag': int(is_multi_offer),
+                        'likely_multi_offer': int(is_multi_offer),
+                        'season_boost': 1.05 if season == 'Summer' else 1.0,
+                        'comp_count_in_neighborhood': df_all[df_all['neighborhood'] == neighborhood].shape[0],
+                        'house_type': house_type,
+                        'garage_type': garage_type,
+                        'season': season,
+                        'neighborhood': neighborhood,
+                        'style': style
+                    }])
+
+                    for col in model.feature_names_in_:
+                        if col not in input_df.columns:
+                            input_df[col] = 0
+
+                    input_df = input_df[model.feature_names_in_]
+                    numeric_cols = [
+                        'bedrooms', 'bathrooms', 'sqft', 'built_year', 'age',
+                        'list_price', 'price_diff', 'over_asking_pct', 'price_per_sqft',
+                        'neighborhood_hotness', 'realtor_logic', 'recency_weight',
+                        'multi_offer_flag', 'likely_multi_offer', 'season_boost', 'comp_count_in_neighborhood'
+                    ]
+                    for col in numeric_cols:
+                        if col in input_df.columns:
+                            input_df[col] = pd.to_numeric(input_df[col], errors='coerce')
+                    input_df = input_df.fillna(0)
+
+                    st.write("✅ Clean input ready for ML prediction:")
+                    st.dataframe(input_df)
+
+                    predicted_price = model.predict(input_df)[0]
+                    buffer = max(5000, min(abs(predicted_price * 0.02), 10000))
+
+                    st.session_state["predicted_price"] = predicted_price
+                    st.session_state["buffer"] = buffer
+
+                    st.success(f"🏆 Recommended Winning Offer: ${predicted_price:,.0f} ±${buffer:,.0f}")
+                    st.info(f"✅ Using: {'Multi-Offer ML Model' if is_multi_offer else 'Standard ML Model'}")
+
                 except Exception as e:
-                    st.error(f"Error displaying feature importance: {e}")
+                    st.error(f"Prediction failed: {e}")
+

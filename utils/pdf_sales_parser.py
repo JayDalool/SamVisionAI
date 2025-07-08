@@ -158,6 +158,128 @@ def parse_year_built_and_age(text):
         return yb, yb
     return None, None
 
+import re
+
+def parse_basement_type(text: str) -> str:
+    """
+    Robustly parse basement type from messy OCR / text blocks,
+    preventing false 'Full' assignments, ignoring construction leakage,
+    and ensuring a known basement type is returned.
+    """
+    text = text.lower()
+
+    # Clean known leakage words that are not basement types
+    leakage_words = [
+        "bedroom", "bathroom", "electrical", "insulation", "kitchen", "furnace",
+        "wood frame", "frame", "siding", "roof", "garage"
+    ]
+    for word in leakage_words:
+        text = text.replace(word, "")
+
+    # Priority matching for most accurate results
+    if "crawl" in text:
+        return "Crawl Space"
+    if "3/4" in text or "three quarter" in text:
+        return "Three Quarter"
+    if "partial" in text:
+        return "Partial"
+    if "half" in text:
+        return "Half"
+    if "walkout" in text:
+        return "Walkout"
+    if "slab" in text:
+        return "Slab"
+    if "unfinished" in text:
+        return "Unfinished"
+    if "finished" in text:
+        return "Finished"
+    if "none" in text:
+        return "None"
+    if "full" in text:
+        return "Full"
+
+    # Fallback to "None" if no match
+    return "None"
+
+import re
+
+# def parse_dom_days(page: str, idx: int) -> int:
+#     """
+#     Robust DOM extraction:
+#     - Tolerates OCR splits and noisy lines
+#     - Anchors on 'DOM' close to numbers
+#     - Ignores outlier values (>180)
+#     - Fallbacks gracefully
+#     """
+#     # Typical DOM range
+#     MIN_DOM, MAX_DOM = 1, 180
+
+#     # Step 1: Extract lines with DOM near a number
+#     dom_candidates = []
+#     for line in page.splitlines():
+#         line_clean = line.strip()
+#         if "DOM" in line_clean.upper():
+#             numbers = re.findall(r"\d{1,3}", line_clean)
+#             for num in numbers:
+#                 n = int(num)
+#                 if MIN_DOM <= n <= MAX_DOM:
+#                     dom_candidates.append(n)
+
+#     # Step 2: Use idx mapping if possible
+#     if idx < len(dom_candidates):
+#         return dom_candidates[idx]
+
+#     # Step 3: Global fallback if structured parsing fails
+#     # (Pick the most frequent value as fallback to reduce random noise)
+#     if dom_candidates:
+#         from collections import Counter
+#         most_common = Counter(dom_candidates).most_common(1)[0][0]
+#         return most_common
+
+#     # Step 4: Final fallback
+#     return 14
+
+
+def parse_dom_days(page: str, idx: int, start: int) -> int:
+    """
+    Robust DOM extraction:
+    - Anchors on 'DOM' or 'Days on Market'
+    - Avoids misattribution to small numbers in OCR noise
+    - Falls back safely
+    """
+    MIN_DOM, MAX_DOM = 1, 180
+    block = page[max(0, start - 300): start + 1200]
+    lines = block.splitlines()
+    dom_candidates = []
+
+    for line in lines:
+        if re.search(r"\b(dom|days on market)\b", line, re.IGNORECASE):
+            nums = re.findall(r"\b\d{1,3}\b", line)
+            for n in nums:
+                n_int = int(n)
+                if MIN_DOM <= n_int <= MAX_DOM:
+                    dom_candidates.append(n_int)
+
+    if dom_candidates:
+        from collections import Counter
+        return Counter(dom_candidates).most_common(1)[0][0]
+
+    # fallback: search globally in block with context
+    context_matches = re.findall(r"(?:dom|days on market)[^\n]{0,40}?(\d{1,3})", block, re.IGNORECASE)
+    for n in context_matches:
+        n_int = int(n)
+        if MIN_DOM <= n_int <= MAX_DOM:
+            return n_int
+
+    # fallback: median to reduce misreading
+    fallback_nums = [int(x) for x in re.findall(r"\b\d{1,3}\b", block) if MIN_DOM <= int(x) <= MAX_DOM]
+    if fallback_nums:
+        fallback_nums.sort()
+        return fallback_nums[len(fallback_nums)//2]
+
+    return 14
+
+
 def parse_neighborhood(page_text, block, address):
     combined = f"{address} {block} {page_text}".lower()
     combined = re.sub(r"[^\w\s]", " ", combined)
@@ -199,7 +321,7 @@ def extract_pdf_sales(path):
     address_regex = re.compile(r"\d{1,5}\s+[A-Za-z0-9 .,'\-]+(?:Ave|Avenue|Street|St|Drive|Dr|Road|Rd|Boulevard|Blvd|Lane|Ln|Bay|Crescent|Cres|Place|Pl|Parkway|Way|Trail|Court|Ct)", re.IGNORECASE)
 
     for page in pages:
-        for match in address_regex.finditer(page):
+        for idx, match in enumerate(address_regex.finditer(page)):
             start = match.start()
             block = page[start:start + 1500]
             address = clean_address_field(match.group())
@@ -214,8 +336,14 @@ def extract_pdf_sales(path):
             sell_ratio = round(sold_price / list_price, 2) if list_price and sold_price else None
             bedrooms = parse_bedrooms(block)
             bathrooms = parse_bathrooms(block)
-            days_ago = random.randint(14, 21)
-            listing_date = today - timedelta(days=days_ago)
+            # basement_type = parse_basement_type(page, idx)
+            # dom_days = parse_dom_days(page, idx)
+            dom_days = parse_dom_days(page, idx, start)
+
+            basement_type = parse_basement_type(block)
+
+            listing_date = today
+
             sqft_match = re.search(r"([\d,]{3,5})\s*(?:sqft|sf|sq ft)", block, re.IGNORECASE)
             sqft = int(sqft_match.group(1).replace(",", "")) if sqft_match else None
             lot_match = re.search(r"Lot\s*Size[:\s]+(\d+)\s*[xX]\s*(\d+)", block, re.IGNORECASE)
@@ -238,6 +366,8 @@ def extract_pdf_sales(path):
                 "sell_list_ratio": sell_ratio,
                 "bedrooms": bedrooms,
                 "bathrooms": bathrooms,
+                "dom_days": dom_days,
+                "basement_type": basement_type,
                 "garage_type": garage_type,
                 "built_year": year_built,
                 "house_type": house_type,
@@ -245,5 +375,6 @@ def extract_pdf_sales(path):
                 "sqft": sqft,
                 "lot_size": lot_size,
             })
+
 
     return pd.DataFrame(records)
