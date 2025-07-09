@@ -1315,7 +1315,7 @@ with tab3:
                 if basement_type in ["None", "Crawl Space"]:
                     basement_adj = -45000
                 elif basement_type == "Full (Unfinished)":
-                    basement_adj = -25000
+                    basement_adj = -15000
                 elif basement_type == "Full (Finished)":
                     basement_adj = 25000
                 elif basement_type == "Walkout":
