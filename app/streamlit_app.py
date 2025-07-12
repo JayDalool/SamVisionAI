@@ -902,6 +902,59 @@ with tab2:
 # with tab3:
 #     st.header("💰 Predict Winning Offer Price")
 
+#     multi_offer_premiums = {
+#         "Agassiz": 5.0, "Airport": 5.0, "Alpine Place": 5.0, "Amber Trails": 5.0, "Archwood": 5.5,
+#         "Armstrong Point": 7.0, "Assiniboia Downs": 5.0, "Assiniboine Park": 6.0,
+#         "Beaumont": 5.5, "Betsworth": 5.0, "Birchwood": 5.0, "Booth": 5.5,
+#         "Bridgwater Centre": 7.0, "Bridgwater Forest": 7.0, "Bridgwater Lakes": 7.0, "Bridgwater Trails": 7.5,
+#         "Broadway-Assiniboine": 6.0, "Brockville": 5.5, "Brooklands": 5.5, "Bruce Park": 6.0,
+#         "Buchanan": 5.0, "Buffalo": 5.0, "Burrows Central": 5.0, "Burrows-Keewatin": 5.0,
+#         "Canterbury Park": 5.5, "Centennial": 5.0, "Central Park": 5.5, "Central River Heights": 6.5,
+#         "Central St. Boniface": 5.5, "Chalmers": 5.0, "Chevrier": 5.0, "China Town": 6.0,
+#         "Civic Centre": 6.0, "Cloutier Drive": 5.0, "Colony": 5.0, "Crescent Park": 7.5,
+#         "Crescentwood": 7.5, "Crestview": 5.0, "Dakota Crossing": 5.5, "Daniel McIntyre": 5.0,
+#         "Deer Lodge": 5.0, "Dufferin": 5.0, "Edward Garden City": 5.0, "Elm Park": 5.5,
+#         "Elmhurst": 5.5, "Eric Coy": 5.0, "Exchange District": 6.0,
+#         "Fairfield Park": 5.5, "Fort Richmond": 5.5, "Fraipont": 5.0, "Garden City": 5.0,
+#         "Glendale": 5.0, "Glenelm": 5.0, "Glenwood": 5.0, "Grant Park": 6.0,
+#         "Grassie": 5.0, "Griffin": 5.0, "Heritage Park": 5.5, "Holden": 5.0,
+#         "Inkster Gardens": 5.0, "Inkster Industrial Park": 5.0, "Inkster-Faraday": 5.0,
+#         "Island Lakes": 5.5, "J.B. Mitchell": 5.0, "Jameswood": 6.5, "Jefferson": 5.0,
+#         "Kensington": 6.0, "Kern Park": 5.5, "Kil-cona Park": 5.5, "Kildonan Crossing": 5.5,
+#         "Kildonan Drive": 5.0, "Kildonan Park": 5.5, "King Edward": 6.0, "Kingston Crescent": 6.5,
+#         "Kirkfield": 5.5, "La Barriere": 5.0, "Lavalee": 5.0, "Legislature": 6.0,
+#         "Leila North": 5.0, "Linden Ridge": 5.5, "Linden Woods": 5.5, "Lord Roberts": 6.0,
+#         "Lord Selkirk Park": 5.0, "Luxton": 5.5, "Maginot": 5.0, "Marlton": 5.0,
+#         "Maple Grove Park": 5.0, "Mathers": 5.0, "Maybank": 5.0, "McMillan": 5.0,
+#         "Meadowood": 5.5, "Meadows": 5.0, "Melrose": 5.0, "Minnetonka": 5.0,
+#         "Minto": 5.0, "Mission Gardens": 5.0, "Mynarski": 5.0, "Niakwa Park": 5.5,
+#         "Niakwa Place": 5.5, "Norberry": 5.0, "Normand Park": 5.0, "North River Heights": 6.5,
+#         "Norwood East": 5.5, "Norwood West": 5.5, "Oak Point Highway": 5.0,
+#         "Old Tuxedo": 7.0, "Pacific Industrial": 5.0, "Parc La Salle": 5.0,
+#         "Parker": 5.0, "Peguis": 5.0, "Pembina Strip": 5.5, "Perrault": 5.0,
+#         "Polo Park": 5.5, "Portage & Main": 6.0, "Prairie Pointe": 6.5,
+#         "Radisson": 5.0, "Regent": 5.0, "Richmond West": 6.5, "Ridgedale": 5.0,
+#         "Ridgewood South": 5.0, "River East": 5.5, "River Park South": 5.5,
+#         "River West Park": 5.5, "Riverbend": 5.5, "River-Osborne": 7.0,
+#         "Riverview": 5.5, "Robertson": 5.0, "Roblin Park": 5.0,
+#         "Rockwood": 5.0, "Roslyn": 5.0, "Royalwood": 5.0,
+#         "Sage Creek": 6.0, "Sargent Park": 5.0, "Seven Oaks": 5.0,
+#         "Shaughnessy Park": 5.5, "Silver Heights": 5.0, "Sir John Franklin": 5.0,
+#         "South Pointe": 5.5, "Southdale": 5.0, "South River Heights": 6.5,
+#         "Spence": 5.0, "Springfield North": 5.0, "Springfield South": 5.0,
+#         "St. Boniface": 5.5, "St. Norbert": 5.5, "St. Vital Perimeter South": 5.5,
+#         "St. Vital Centre": 5.5, "Stock Yards": 5.0, "Sturgeon Creek": 5.0,
+#         "Tuxedo": 8.0, "University": 6.0, "Valhalla": 5.0,
+#         "Varennes": 5.0, "Vista": 5.5, "Waverley Heights": 5.5,
+#         "West Broadway": 6.0, "West Fort Garry Industrial": 5.0,
+#         "West Kildonan Industrial": 5.0, "West Wolseley": 6.5,
+#         "Westdale": 5.0, "Weston": 5.0, "Westwood": 5.5,
+#         "Whyte Ridge": 6.0, "Wildwood": 5.5, "Windsor Park": 5.0,
+#         "Wolseley": 6.5, "Woodhaven": 5.0, "Worthington": 5.0
+#     }
+
+
+#     # Load model explanation
 #     explanation = {}
 #     try:
 #         with open("model_explanation.json", "r") as f:
@@ -926,295 +979,157 @@ with tab2:
 #                 st.markdown("_Features unavailable._")
 #         st.info(explanation.get("note", "No detailed notes provided."))
 
-#     def realtor_price_estimate(df_all, neighborhood, sqft, bedrooms, bathrooms, built_year, garage_type):
-#         if df_all['listing_date'].dtype != 'datetime64[ns]':
-#             df_all['listing_date'] = pd.to_datetime(df_all['listing_date'], errors='coerce')
-#         cutoff_date = pd.Timestamp.now() - pd.Timedelta(days=90)
-#         comps = df_all[
-#             (df_all['neighborhood'] == neighborhood) &
-#             (df_all['listing_date'] >= cutoff_date) &
-#             (df_all['sqft'].between(sqft - 300, sqft + 300)) &
-#             (df_all['bedrooms'].between(bedrooms - 1, bedrooms + 1)) &
-#             (df_all['bathrooms'].between(bathrooms - 1, bathrooms + 1)) &
-#             (df_all['built_year'].between(built_year - 7, built_year + 7))
-#         ]
-#         if len(comps) >= 6:
-#             garage_adj = 0
-#             if "double" in garage_type.lower():
-#                 garage_adj = 25000
-#             elif any(x in garage_type.lower() for x in ["single", "attached", "detached"]):
-#                 garage_adj = 15000
-#             median_price = comps['sold_price'].median() + garage_adj
-#             return median_price, comps
-#         else:
-#             return None, None
-
-#     if df_all.empty or model is None:
-#         st.error("No data or trained model available. Upload and parse data, then train your model first.")
-#     else:
-#         default = df_all.iloc[0]
-#         col1, col2, col3 = st.columns(3)
-
-#         with col1:
-#             neighborhood = st.selectbox("Neighborhood", sorted(df_all['neighborhood'].dropna().unique()), index=0)
-#             house_type = st.selectbox("House Type", sorted(df_all['house_type'].dropna().unique()), index=0)
-#             style = st.selectbox("Style", sorted(df_all['style'].dropna().unique()), index=0)
-#             garage_type = st.selectbox("Garage Type", sorted(df_all['garage_type'].dropna().unique()), index=0)
-
-#         with col2:
-#             bedrooms = st.number_input("Bedrooms", min_value=0, max_value=10, value=int(default.get('bedrooms', 3)))
-#             bathrooms = st.number_input("Bathrooms", min_value=0.5, max_value=6.0, value=float(default.get('bathrooms', 2.0)))
-#             sqft = st.number_input("Square Footage", min_value=300, max_value=6000, value=int(default.get('sqft', 1200)))
-
-#         with col3:
-#             built_year = st.number_input("Built Year", min_value=1900, max_value=datetime.now().year, value=int(default.get('built_year', 2000)))
-#             season = st.selectbox("Season", ['Winter', 'Spring', 'Summer', 'Fall'], index=2)
-#             list_price = st.number_input("List Price", min_value=50000, max_value=2000000, value=int(default.get('list_price', 300000)))
-#             is_multi_offer = st.checkbox("🏠 Multi-Offer Listing", value=False, help="Check if this is a multi-offer scenario.")
-
-#         basement_type = st.selectbox(
-#             "Basement Type",
-#             ["None", "Crawl Space", "Full (Unfinished)", "Full (Finished)", "Walkout"],
-#             index=0
-#         )
-
-#         if st.button("🔮 Predict Winning Offer Price"):
-#             realtor_price, comps_used = realtor_price_estimate(
-#                 df_all, neighborhood, sqft, bedrooms, bathrooms, built_year, garage_type
-#             )
-
-#             basement_adj = 0
-#             if basement_type in ["None", "Crawl Space"]:
-#                 basement_adj = -45000
-#             elif basement_type == "Full (Unfinished)":
-#                 basement_adj = -25000
-#             elif basement_type == "Full (Finished)":
-#                 basement_adj = 25000
-#             elif basement_type == "Walkout":
-#                 st.warning("⚠️ Walkout basements may significantly impact valuation. This estimate assumes no adjustment; manual review recommended.")
-#                 basement_adj = 0
-
-#             if realtor_price and not is_multi_offer:
-#                 final_price = realtor_price + basement_adj
-#                 st.success(f"🏆 **Realtor Intelligence Estimate:** ${final_price:,.0f}")
-#                 st.info(f"✅ Using: Realtor Intelligence Pricing (+Basement Adjustment: {basement_adj:+,})")
-#                 if comps_used is not None:
-#                     st.dataframe(comps_used[['mls_number', 'address', 'sold_price', 'sqft', 'bedrooms', 'bathrooms', 'built_year', 'garage_type']])
-#                 st.session_state["predicted_price"] = final_price
-#                 st.session_state["buffer"] = 10000
-#             else:
-#                 try:
-#                     age = datetime.now().year - built_year
-#                     price_diff = 0
-#                     over_asking_pct = 0
-#                     price_per_sqft = list_price / max(sqft, 1)
-#                     recency_weight = 1
-#                     realtor_logic = 0.8 if is_multi_offer else 0.5
-#                     neighborhood_hotness = 0.6 if is_multi_offer else 0.5
-
-#                     input_df = pd.DataFrame([{
-#                         'bedrooms': bedrooms,
-#                         'bathrooms': bathrooms,
-#                         'sqft': sqft,
-#                         'built_year': built_year,
-#                         'age': age,
-#                         'list_price': list_price,
-#                         'price_diff': price_diff,
-#                         'over_asking_pct': over_asking_pct,
-#                         'price_per_sqft': price_per_sqft,
-#                         'neighborhood_hotness': neighborhood_hotness,
-#                         'realtor_logic': realtor_logic,
-#                         'recency_weight': recency_weight,
-#                         'multi_offer_flag': int(is_multi_offer),
-#                         'likely_multi_offer': int(is_multi_offer),
-#                         'season_boost': 1.05 if season == 'Summer' else 1.0,
-#                         'comp_count_in_neighborhood': df_all[df_all['neighborhood'] == neighborhood].shape[0],
-#                         'house_type': house_type,
-#                         'garage_type': garage_type,
-#                         'season': season,
-#                         'neighborhood': neighborhood,
-#                         'style': style
-#                     }])
-
-#                     for col in model.feature_names_in_:
-#                         if col not in input_df.columns:
-#                             input_df[col] = 0
-
-#                     input_df = input_df[model.feature_names_in_]
-#                     numeric_cols = [
-#                         'bedrooms', 'bathrooms', 'sqft', 'built_year', 'age',
-#                         'list_price', 'price_diff', 'over_asking_pct', 'price_per_sqft',
-#                         'neighborhood_hotness', 'realtor_logic', 'recency_weight',
-#                         'multi_offer_flag', 'likely_multi_offer', 'season_boost', 'comp_count_in_neighborhood'
-#                     ]
-#                     for col in numeric_cols:
-#                         if col in input_df.columns:
-#                             input_df[col] = pd.to_numeric(input_df[col], errors='coerce')
-#                     input_df = input_df.fillna(0)
-
-#                     predicted_price = model.predict(input_df)[0] + basement_adj
-#                     buffer = max(5000, min(abs(predicted_price * 0.02), 10000))
-
-#                     st.success(f"🏆 Recommended Winning Offer: ${predicted_price:,.0f} ±${buffer:,.0f}")
-#                     st.info(f"✅ Using: {'Multi-Offer ML Model' if is_multi_offer else 'Standard ML Model'} (+Basement Adjustment: {basement_adj:+,})")
-
-#                     st.session_state["predicted_price"] = predicted_price
-#                     st.session_state["buffer"] = buffer
-
-#                 except Exception as e:
-#                     st.error(f"Prediction failed: {e}")
-# with tab3:
-#     st.header("💰 Predict Winning Offer Price with Premium Strategy")
-
-#     # 1️⃣ Realtor-friendly education
 #     st.info(
-#         "🏠 **What is an Expected Multi-Offer Premium?**\n\n"
-#         "- In **multi-offer scenarios**, buyers often need to pay **above list price**.\n"
-#         "- Typical Winnipeg premium ranges:\n"
-#         "    • **5–8%** → Balanced markets\n"
-#         "    • **10–15%** → Hot zones (Bridgwater, Sage Creek)\n"
-#         "    • **20%+** → Rare, underpricing/unique properties\n"
-#         "- Use this tool to plan client bidding strategies confidently."
+#         "💡 **How to use:** Enter your property details below. Use the multi-offer toggle and adjust the premium based on area for accurate winning offer price predictions."
 #     )
 
-#     # 2️⃣ Hardcoded Premium Table
-#     premium_table = {
-#         "Bridgwater Trails": 12,
-#         "Bridgwater Lakes": 11,
-#         "Sage Creek": 10,
-#         "River Heights": 9,
-#         "Tuxedo": 8,
-#         "Charleswood": 7,
-#         "North Kildonan": 6,
-#         "Transcona": 5,
-#         "Downtown": 4
-#     }
-#     premium_df = pd.DataFrame([
-#         {"Neighborhood": k, "Typical Multi-Offer Premium (%)": v}
-#         for k, v in premium_table.items()
-#     ])
-#     st.subheader("🔥 Typical Multi-Offer Premiums by Area (Hardcoded)")
-#     st.dataframe(premium_df, use_container_width=True)
-
-#     # 3️⃣ User Inputs
+#     # 🏠 Inputs
+#     default = df_all.iloc[0]
 #     col1, col2, col3 = st.columns(3)
+
 #     with col1:
-#         neighborhood = st.selectbox("Neighborhood", list(premium_table.keys()), index=0)
-#         house_type = st.selectbox("House Type", ["Single Family Detached", "Semi-detached", "Townhouse", "Condo"], index=0)
-#         style = st.selectbox("Style", ["Bungalow", "Two Storey", "Split Level"], index=0)
-#         garage_type = st.selectbox("Garage Type", ["None", "Single", "Double", "Attached", "Detached"], index=0)
+#         neighborhood = st.selectbox("Neighborhood", sorted(df_all['neighborhood'].dropna().unique()), index=0)
+#         house_type = st.selectbox("House Type", sorted(df_all['house_type'].dropna().unique()), index=0)
+#         style = st.selectbox("Style", sorted(df_all['style'].dropna().unique()), index=0)
+#         garage_type = st.selectbox("Garage Type", sorted(df_all['garage_type'].dropna().unique()), index=0)
 
 #     with col2:
-#         bedrooms = st.number_input("Bedrooms", min_value=1, max_value=6, value=3)
-#         bathrooms = st.number_input("Bathrooms", min_value=1.0, max_value=4.0, value=2.0)
-#         sqft = st.number_input("Square Footage", min_value=600, max_value=4000, value=1500)
+#         bedrooms = st.number_input("Bedrooms", min_value=0, max_value=10, value=int(default.get('bedrooms', 3)))
+#         bathrooms = st.number_input("Bathrooms", min_value=0.5, max_value=6.0, value=float(default.get('bathrooms', 2.0)))
+#         sqft = st.number_input("Square Footage", min_value=300, max_value=6000, value=int(default.get('sqft', 1200)))
 
 #     with col3:
-#         built_year = st.number_input("Built Year", min_value=1900, max_value=datetime.now().year, value=2005)
-#         season = st.selectbox("Season", ["Winter", "Spring", "Summer", "Fall"], index=2)
-#         list_price = st.number_input("List Price", min_value=100000, max_value=2000000, value=400000)
-#         is_multi_offer = st.checkbox("🏠 Multi-Offer Listing", value=False)
+#         built_year = st.number_input("Built Year", min_value=1900, max_value=datetime.now().year, value=int(default.get('built_year', 2000)))
+#         season = st.selectbox("Season", ['Winter', 'Spring', 'Summer', 'Fall'], index=2)
+#         list_price = st.number_input("List Price", min_value=50000, max_value=2000000, value=int(default.get('list_price', 300000)))
+#         is_multi_offer = st.checkbox("🏠 Multi-Offer Listing", value=False, help="Check if this property will enter a bidding war.")
 
 #     basement_type = st.selectbox(
 #         "Basement Type",
 #         ["None", "Crawl Space", "Full (Unfinished)", "Full (Finished)", "Walkout"],
-#         index=0
+#         index=0,
+#         help="Basement type affects value. Walkout may require separate analysis."
 #     )
 
-#     # 4️⃣ Dynamic premium slider
-#     default_premium = premium_table.get(neighborhood, 8)
+# # 🔥 Multi-Offer Premium Slider
+#     st.subheader("🔥 Adjust Multi-Offer Premium (%)")
+#     st.caption(
+#         "This is the percentage buyers typically pay above list price in multi-offer situations.\n"
+#         "- **5–8%**: Normal markets\n"
+#         "- **10–15%**: Hot zones\n"
+#         "- **20%+**: Rare/underpricing\n"
+#         "Adjust based on your local market knowledge."
+#     )
+
+#     default_premium = multi_offer_premiums.get(neighborhood or "", 5.0) if is_multi_offer else 0
+
 #     user_premium_pct = st.slider(
-#         "Adjust Expected Multi-Offer Premium (%)",
+#         "Expected Multi-Offer Premium (%)",
 #         min_value=0.0,
-#         max_value=20.0,
-#         value=default_premium if is_multi_offer else 0.0,
-#         help="Adjust based on property, area, and strategy. Typically 8-12% for multi-offers in hot zones."
+#         max_value=25.0,
+#         value=float(default_premium),
+#         step=0.5
 #     )
-#     premium_multiplier = 1 + user_premium_pct / 100 if is_multi_offer else 1
 
-#     # 5️⃣ Basement Adjustment Logic
-#     basement_adj = 0
-#     if basement_type in ["None", "Crawl Space"]:
-#         basement_adj = -45000
-#     elif basement_type == "Full (Unfinished)":
-#         basement_adj = -25000
-#     elif basement_type == "Full (Finished)":
-#         basement_adj = 25000
-#     elif basement_type == "Walkout":
-#         st.warning("⚠️ Walkout basements can significantly impact valuation and may allow for basement suite rental income. Evaluate case-by-case.")
 
-#     # 6️⃣ Prediction & Display
+
+#     # 🚀 Prediction
 #     if st.button("🔮 Predict Winning Offer Price"):
-#         # Basic calculation logic for demonstration
-#         base_price = list_price * 1.05  # Assuming ~5% over ask baseline
-#         predicted_price = (base_price * premium_multiplier) + basement_adj
-#         buffer = max(5000, int(predicted_price * 0.02))
+#         if model is None:
+#             st.error("No trained model available. Please train or load a model first.")
+#         else:
+#             try:
+#                 age = datetime.now().year - built_year
+#                 price_diff = 0
+#                 over_asking_pct = 0
+#                 price_per_sqft = list_price / max(sqft, 1)
+#                 recency_weight = 1
+#                 realtor_logic = 0.8 if is_multi_offer else 0.5
+#                 neighborhood_hotness = 0.6 if is_multi_offer else 0.5
 
-#         st.success(f"🏆 **Recommended Winning Offer: ${predicted_price:,.0f} ± ${buffer:,.0f}**")
-#         st.info(
-#             f"**Calculation Context:**\n"
-#             f"- Multi-Offer: {'Yes' if is_multi_offer else 'No'}\n"
-#             f"- Expected Premium Applied: {user_premium_pct:.1f}%\n"
-#             f"- Basement Adjustment: ${basement_adj:+,}\n"
-#             f"- Market strategy applied for current environment."
-#         )
+#                 # Premium and basement adjustments
+#                 premium_multiplier = 1 + user_premium_pct / 100 if is_multi_offer else 1
+#                 basement_adj = 0
+#                 if basement_type in ["None", "Crawl Space"]:
+#                     basement_adj = -45000
+#                 elif basement_type == "Full (Unfinished)":
+#                     basement_adj = -15000
+#                 elif basement_type == "Full (Finished)":
+#                     basement_adj = 25000
+#                 elif basement_type == "Walkout":
+#                     st.warning("⚠️ Walkout basements may significantly impact valuation. Manual review recommended.")
 
-#         st.caption("This tool aids planning your pricing strategy with sellers and buyers, adapting premiums by area confidently.")
+#                 input_df = pd.DataFrame([{
+#                     'bedrooms': bedrooms,
+#                     'bathrooms': bathrooms,
+#                     'sqft': sqft,
+#                     'built_year': built_year,
+#                     'age': age,
+#                     'list_price': list_price,
+#                     'price_diff': price_diff,
+#                     'over_asking_pct': over_asking_pct,
+#                     'price_per_sqft': price_per_sqft,
+#                     'neighborhood_hotness': neighborhood_hotness,
+#                     'realtor_logic': realtor_logic,
+#                     'recency_weight': recency_weight,
+#                     'multi_offer_flag': int(is_multi_offer),
+#                     'likely_multi_offer': int(is_multi_offer),
+#                     'season_boost': 1.05 if season == 'Summer' else 1.0,
+#                     'comp_count_in_neighborhood': df_all[df_all['neighborhood'] == neighborhood].shape[0],
+#                     'house_type': house_type,
+#                     'garage_type': garage_type,
+#                     'season': season,
+#                     'neighborhood': neighborhood,
+#                     'style': style
+#                 }])
+
+#                 for col in getattr(model, "feature_names_in_", []):
+#                     if col not in input_df.columns:
+#                         input_df[col] = 0
+
+#                 if hasattr(model, "feature_names_in_"):
+#                     input_df = input_df[model.feature_names_in_].fillna(0)
+
+#                     predicted_price = model.predict(input_df)[0] * premium_multiplier + basement_adj
+#                     buffer = max(5000, min(abs(predicted_price * 0.02), 10000))
+
+#                     st.success(f"🏆 Recommended Winning Offer: ${predicted_price:,.0f} ±${buffer:,.0f}")
+#                     st.info(
+#                         f"✅ Using: {'Multi-Offer' if is_multi_offer else 'Standard'} Strategy | "
+#                         f"Premium: {user_premium_pct:.1f}% | Basement Adj: {basement_adj:+,}"
+#                     )
+
+#                     st.session_state["predicted_price"] = predicted_price
+#                     st.session_state["buffer"] = buffer
+#                 else:
+#                     st.error("Loaded model does not have feature_names_in_. Please check your model or retrain.")
+
+#             except Exception as e:
+#                 st.error(f"Prediction failed: {e}")
 
 with tab3:
     st.header("💰 Predict Winning Offer Price")
 
+    # Educated guess premiums (all other areas will default to 5%)
     multi_offer_premiums = {
-        "Agassiz": 5.0, "Airport": 5.0, "Alpine Place": 5.0, "Amber Trails": 5.0, "Archwood": 5.5,
-        "Armstrong Point": 7.0, "Assiniboia Downs": 5.0, "Assiniboine Park": 6.0,
-        "Beaumont": 5.5, "Betsworth": 5.0, "Birchwood": 5.0, "Booth": 5.5,
-        "Bridgwater Centre": 7.0, "Bridgwater Forest": 7.0, "Bridgwater Lakes": 7.0, "Bridgwater Trails": 7.5,
-        "Broadway-Assiniboine": 6.0, "Brockville": 5.5, "Brooklands": 5.5, "Bruce Park": 6.0,
-        "Buchanan": 5.0, "Buffalo": 5.0, "Burrows Central": 5.0, "Burrows-Keewatin": 5.0,
-        "Canterbury Park": 5.5, "Centennial": 5.0, "Central Park": 5.5, "Central River Heights": 6.5,
-        "Central St. Boniface": 5.5, "Chalmers": 5.0, "Chevrier": 5.0, "China Town": 6.0,
-        "Civic Centre": 6.0, "Cloutier Drive": 5.0, "Colony": 5.0, "Crescent Park": 7.5,
-        "Crescentwood": 7.5, "Crestview": 5.0, "Dakota Crossing": 5.5, "Daniel McIntyre": 5.0,
-        "Deer Lodge": 5.0, "Dufferin": 5.0, "Edward Garden City": 5.0, "Elm Park": 5.5,
-        "Elmhurst": 5.5, "Eric Coy": 5.0, "Exchange District": 6.0,
-        "Fairfield Park": 5.5, "Fort Richmond": 5.5, "Fraipont": 5.0, "Garden City": 5.0,
-        "Glendale": 5.0, "Glenelm": 5.0, "Glenwood": 5.0, "Grant Park": 6.0,
-        "Grassie": 5.0, "Griffin": 5.0, "Heritage Park": 5.5, "Holden": 5.0,
-        "Inkster Gardens": 5.0, "Inkster Industrial Park": 5.0, "Inkster-Faraday": 5.0,
-        "Island Lakes": 5.5, "J.B. Mitchell": 5.0, "Jameswood": 6.5, "Jefferson": 5.0,
-        "Kensington": 6.0, "Kern Park": 5.5, "Kil-cona Park": 5.5, "Kildonan Crossing": 5.5,
-        "Kildonan Drive": 5.0, "Kildonan Park": 5.5, "King Edward": 6.0, "Kingston Crescent": 6.5,
-        "Kirkfield": 5.5, "La Barriere": 5.0, "Lavalee": 5.0, "Legislature": 6.0,
-        "Leila North": 5.0, "Linden Ridge": 5.5, "Linden Woods": 5.5, "Lord Roberts": 6.0,
-        "Lord Selkirk Park": 5.0, "Luxton": 5.5, "Maginot": 5.0, "Marlton": 5.0,
-        "Maple Grove Park": 5.0, "Mathers": 5.0, "Maybank": 5.0, "McMillan": 5.0,
-        "Meadowood": 5.5, "Meadows": 5.0, "Melrose": 5.0, "Minnetonka": 5.0,
-        "Minto": 5.0, "Mission Gardens": 5.0, "Mynarski": 5.0, "Niakwa Park": 5.5,
-        "Niakwa Place": 5.5, "Norberry": 5.0, "Normand Park": 5.0, "North River Heights": 6.5,
-        "Norwood East": 5.5, "Norwood West": 5.5, "Oak Point Highway": 5.0,
-        "Old Tuxedo": 7.0, "Pacific Industrial": 5.0, "Parc La Salle": 5.0,
-        "Parker": 5.0, "Peguis": 5.0, "Pembina Strip": 5.5, "Perrault": 5.0,
-        "Polo Park": 5.5, "Portage & Main": 6.0, "Prairie Pointe": 6.5,
-        "Radisson": 5.0, "Regent": 5.0, "Richmond West": 6.5, "Ridgedale": 5.0,
-        "Ridgewood South": 5.0, "River East": 5.5, "River Park South": 5.5,
-        "River West Park": 5.5, "Riverbend": 5.5, "River-Osborne": 7.0,
-        "Riverview": 5.5, "Robertson": 5.0, "Roblin Park": 5.0,
-        "Rockwood": 5.0, "Roslyn": 5.0, "Royalwood": 5.0,
-        "Sage Creek": 6.0, "Sargent Park": 5.0, "Seven Oaks": 5.0,
-        "Shaughnessy Park": 5.5, "Silver Heights": 5.0, "Sir John Franklin": 5.0,
-        "South Pointe": 5.5, "Southdale": 5.0, "South River Heights": 6.5,
-        "Spence": 5.0, "Springfield North": 5.0, "Springfield South": 5.0,
-        "St. Boniface": 5.5, "St. Norbert": 5.5, "St. Vital Perimeter South": 5.5,
-        "St. Vital Centre": 5.5, "Stock Yards": 5.0, "Sturgeon Creek": 5.0,
-        "Tuxedo": 8.0, "University": 6.0, "Valhalla": 5.0,
-        "Varennes": 5.0, "Vista": 5.5, "Waverley Heights": 5.5,
-        "West Broadway": 6.0, "West Fort Garry Industrial": 5.0,
-        "West Kildonan Industrial": 5.0, "West Wolseley": 6.5,
-        "Westdale": 5.0, "Weston": 5.0, "Westwood": 5.5,
-        "Whyte Ridge": 6.0, "Wildwood": 5.5, "Windsor Park": 5.0,
-        "Wolseley": 6.5, "Woodhaven": 5.0, "Worthington": 5.0
-    }
+        # Hot competition zones
+        "Bridgwater Trails": 8.0, "Bridgwater Lakes": 7.5, "Bridgwater Forest": 7.5, "Bridgwater Centre": 7.5,
+        "Tuxedo": 9.0, "Old Tuxedo": 9.0, "Crescentwood": 8.0, "Crescent Park": 8.0,
+        "Osborne Village": 8.5, "River-Osborne": 8.0, "West Wolseley": 7.5,
+        "Waverley Heights": 7.0, "Waverley West B": 7.0, "Fort Richmond": 7.0, "Linden Woods": 8.0,
 
+        # Mid-tier competition
+        "River Heights": 6.5, "North River Heights": 6.5, "Sage Creek": 6.5,
+        "Richmond West": 6.5, "Grant Park": 6.0, "Jameswood": 6.0,
+        "Kensington": 6.0, "King Edward": 6.0, "University": 6.0,
+        "Central River Heights": 6.5, "Exchange District": 6.0, "Prairie Pointe": 6.0,
+
+        # Balanced suburbs
+        "Charleswood": 5.5, "St. Vital": 5.5, "St. Norbert": 5.5,
+        "Amber Trails": 5.5, "Garden City": 5.5, "Maples": 5.5,
+        "Westwood": 5.5, "Elm Park": 5.5
+        # All others default to 5.0%
+    }
 
     # Load model explanation
     explanation = {}
@@ -1242,8 +1157,12 @@ with tab3:
         st.info(explanation.get("note", "No detailed notes provided."))
 
     st.info(
-        "💡 **How to use:** Enter your property details below. Use the multi-offer toggle and adjust the premium based on area for accurate winning offer price predictions."
+        "💡 **How to use:** Enter property details below. Check Multi-Offer to auto-fill local premium. "
+        "Adjust manually if needed for accurate winning offer price predictions."
     )
+
+    # Disclaimer
+    st.warning("⚠️ Disclaimer: This tool provides an *educated estimate* based on historical stats and does not guarantee precise pricing. Always verify with current market data and professional judgment.")
 
     # 🏠 Inputs
     default = df_all.iloc[0]
@@ -1256,93 +1175,61 @@ with tab3:
         garage_type = st.selectbox("Garage Type", sorted(df_all['garage_type'].dropna().unique()), index=0)
 
     with col2:
-        bedrooms = st.number_input("Bedrooms", min_value=0, max_value=10, value=int(default.get('bedrooms', 3)))
-        bathrooms = st.number_input("Bathrooms", min_value=0.5, max_value=6.0, value=float(default.get('bathrooms', 2.0)))
-        sqft = st.number_input("Square Footage", min_value=300, max_value=6000, value=int(default.get('sqft', 1200)))
+        basement_type = st.selectbox("Basement Type",["None", "Crawl Space", "Full (Unfinished)", "Full (Finished)", "Walkout"],index=0)
+        bedrooms = st.number_input("Bedrooms", 0, 10, int(default.get('bedrooms', 3)))
+        bathrooms = st.number_input("Bathrooms", 0.5, 6.0, float(default.get('bathrooms', 2.0)))
+        sqft = st.number_input("Square Footage", 300, 6000, int(default.get('sqft', 1200)))
 
     with col3:
-        built_year = st.number_input("Built Year", min_value=1900, max_value=datetime.now().year, value=int(default.get('built_year', 2000)))
+        built_year = st.number_input("Built Year", 1900, datetime.now().year, int(default.get('built_year', 2000)))
         season = st.selectbox("Season", ['Winter', 'Spring', 'Summer', 'Fall'], index=2)
-        list_price = st.number_input("List Price", min_value=50000, max_value=2000000, value=int(default.get('list_price', 300000)))
-        is_multi_offer = st.checkbox("🏠 Multi-Offer Listing", value=False, help="Check if this property will enter a bidding war.")
+        list_price = st.number_input("List Price", 50000, 2000000, int(default.get('list_price', 300000)))
+        is_multi_offer = st.checkbox("🏠 Multi-Offer Listing", value=False)
 
-    basement_type = st.selectbox(
-        "Basement Type",
-        ["None", "Crawl Space", "Full (Unfinished)", "Full (Finished)", "Walkout"],
-        index=0,
-        help="Basement type affects value. Walkout may require separate analysis."
-    )
+    
 
-# 🔥 Multi-Offer Premium Slider
+    # 🔥 Multi-Offer Premium Slider
     st.subheader("🔥 Adjust Multi-Offer Premium (%)")
     st.caption(
         "This is the percentage buyers typically pay above list price in multi-offer situations.\n"
-        "- **5–8%**: Normal markets\n"
-        "- **10–15%**: Hot zones\n"
-        "- **20%+**: Rare/underpricing\n"
+        "- **5–9%**: Normal Winnipeg markets\n"
+        "- **10–15%**: Rare aggressive underpricing\n"
+        "- **20%+**: Extremely rare; adjust manually\n"
         "Adjust based on your local market knowledge."
     )
 
     default_premium = multi_offer_premiums.get(neighborhood or "", 5.0) if is_multi_offer else 0
-
     user_premium_pct = st.slider(
         "Expected Multi-Offer Premium (%)",
-        min_value=0.0,
-        max_value=25.0,
-        value=float(default_premium),
-        step=0.5
+        0.0, 25.0, float(default_premium), 0.5
     )
 
-
-
-    # 🚀 Prediction
+    # 🚀 Prediction Logic
     if st.button("🔮 Predict Winning Offer Price"):
         if model is None:
             st.error("No trained model available. Please train or load a model first.")
         else:
             try:
                 age = datetime.now().year - built_year
-                price_diff = 0
-                over_asking_pct = 0
                 price_per_sqft = list_price / max(sqft, 1)
-                recency_weight = 1
-                realtor_logic = 0.8 if is_multi_offer else 0.5
-                neighborhood_hotness = 0.6 if is_multi_offer else 0.5
-
-                # Premium and basement adjustments
                 premium_multiplier = 1 + user_premium_pct / 100 if is_multi_offer else 1
-                basement_adj = 0
-                if basement_type in ["None", "Crawl Space"]:
-                    basement_adj = -45000
-                elif basement_type == "Full (Unfinished)":
-                    basement_adj = -15000
-                elif basement_type == "Full (Finished)":
-                    basement_adj = 25000
-                elif basement_type == "Walkout":
+                basement_adj = {"None": -45000, "Crawl Space": -45000, "Full (Unfinished)": -15000,
+                                "Full (Finished)": 25000, "Walkout": 0}.get(basement_type, 0)
+
+                if basement_type == "Walkout":
                     st.warning("⚠️ Walkout basements may significantly impact valuation. Manual review recommended.")
 
                 input_df = pd.DataFrame([{
-                    'bedrooms': bedrooms,
-                    'bathrooms': bathrooms,
-                    'sqft': sqft,
-                    'built_year': built_year,
-                    'age': age,
-                    'list_price': list_price,
-                    'price_diff': price_diff,
-                    'over_asking_pct': over_asking_pct,
-                    'price_per_sqft': price_per_sqft,
-                    'neighborhood_hotness': neighborhood_hotness,
-                    'realtor_logic': realtor_logic,
-                    'recency_weight': recency_weight,
-                    'multi_offer_flag': int(is_multi_offer),
-                    'likely_multi_offer': int(is_multi_offer),
+                    'bedrooms': bedrooms, 'bathrooms': bathrooms, 'sqft': sqft,
+                    'built_year': built_year, 'age': age, 'list_price': list_price,
+                    'price_diff': 0, 'over_asking_pct': 0, 'price_per_sqft': price_per_sqft,
+                    'neighborhood_hotness': 0.6 if is_multi_offer else 0.5,
+                    'realtor_logic': 0.8 if is_multi_offer else 0.5, 'recency_weight': 1,
+                    'multi_offer_flag': int(is_multi_offer), 'likely_multi_offer': int(is_multi_offer),
                     'season_boost': 1.05 if season == 'Summer' else 1.0,
                     'comp_count_in_neighborhood': df_all[df_all['neighborhood'] == neighborhood].shape[0],
-                    'house_type': house_type,
-                    'garage_type': garage_type,
-                    'season': season,
-                    'neighborhood': neighborhood,
-                    'style': style
+                    'house_type': house_type, 'garage_type': garage_type,
+                    'season': season, 'neighborhood': neighborhood, 'style': style
                 }])
 
                 for col in getattr(model, "feature_names_in_", []):
@@ -1351,7 +1238,6 @@ with tab3:
 
                 if hasattr(model, "feature_names_in_"):
                     input_df = input_df[model.feature_names_in_].fillna(0)
-
                     predicted_price = model.predict(input_df)[0] * premium_multiplier + basement_adj
                     buffer = max(5000, min(abs(predicted_price * 0.02), 10000))
 
@@ -1364,7 +1250,7 @@ with tab3:
                     st.session_state["predicted_price"] = predicted_price
                     st.session_state["buffer"] = buffer
                 else:
-                    st.error("Loaded model does not have feature_names_in_. Please check your model or retrain.")
+                    st.error("Loaded model does not have feature_names_in_. Please retrain or check your pipeline.")
 
             except Exception as e:
                 st.error(f"Prediction failed: {e}")
