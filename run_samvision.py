@@ -44,7 +44,7 @@ def start_streamlit():
     ]
     subprocess.Popen(cmd)
     time.sleep(2)  # give Streamlit a moment to start
-    webbrowser.open("http://localhost:8501")
+    webbrowser.open("http://127.0.0.1:8501")
 
 
 if __name__ == "__main__":

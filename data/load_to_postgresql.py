@@ -7,7 +7,7 @@ import pandas as pd
 import psycopg2
 from psycopg2 import sql
 from datetime import datetime
-from db_config import get_db_config
+from utils.db_config import get_db_config
 
 CSV_PATH = "parsed_csv/validated.csv"
 

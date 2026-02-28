@@ -5,6 +5,7 @@ def get_db_config():
         'dbname': 'SamVision',
         'user': 'postgres',
         'password': '1611',
-        'host': 'localhost',
+        'host': '127.0.0.1',
         'port': '5432'
     }
+

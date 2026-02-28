@@ -13,17 +13,20 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from lightgbm import LGBMRegressor, early_stopping, log_evaluation
 from sklearn.metrics import mean_absolute_error, mean_absolute_percentage_error, r2_score
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+from utils.db_config import get_db_config
+from sqlalchemy import create_engine
 print("🚀 Starting SamVision AI model training pipeline with Realtor Multi-Offer Logic...")
 
 # ========================
 # DB Config & Load
 # ========================
-with open("config.txt", "r") as file:
-    db_config = ast.literal_eval(file.read())
-
+cfg = get_db_config()
 engine = create_engine(
-    f"postgresql+psycopg2://{db_config['user']}:{db_config['password']}@{db_config['host']}:{db_config['port']}/{db_config['dbname']}"
+    f"postgresql+psycopg2://{cfg['user']}:{cfg['password']}@{cfg['host']}:{cfg['port']}/{cfg['dbname']}"
 )
 
 query = """

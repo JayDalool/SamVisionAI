@@ -1,9 +1,9 @@
 {
     "model_used": "LightGBMRegressor with Realtor Multi-Offer Intelligence",
-    "trained_on_rows": 13612,
-    "mae": 1214.3761984791188,
-    "mape": 0.0029344297034866345,
-    "r2": 0.9999020303872708,
+    "trained_on_rows": 20548,
+    "mae": 865.7068873493639,
+    "mape": 0.0020823296341973938,
+    "r2": 0.9999672085360604,
     "features_used": [
         "bedrooms",
         "bathrooms",
