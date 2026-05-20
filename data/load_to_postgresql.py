@@ -19,17 +19,13 @@ def safe_str(val, default="none", maxlen=255):
         return default
     
 def ensure_database_exists(base_config, dbname="SamVision"):
-    config_no_db = base_config.copy()
-    config_no_db.pop("dbname", None)
-
-    dsn = (
-        f"dbname=postgres "
-        f"user={config_no_db['user']} "
-        f"password={config_no_db['password']} "
-        f"host={config_no_db['host']} "
-        f"port={config_no_db['port']}"
+    conn = psycopg2.connect(
+        dbname="postgres",
+        user=base_config["user"],
+        password=base_config["password"],
+        host=base_config["host"],
+        port=base_config["port"],
     )
-    conn = psycopg2.connect(dsn)
     conn.autocommit = True
     cur = conn.cursor()
 
@@ -140,19 +136,18 @@ def main():
     df["listing_date"] = pd.to_datetime(df["listing_date"], errors="coerce").dt.date
     df = df[df["listing_date"].notnull()]
 
-    # 🔑 1) Base config (from your config / get_db_config)
+    # 🔑 1) Base config (from environment via get_db_config)
     base_config = get_db_config()
 
     # 🔑 2) Ensure DB exists (using same user/pass/host/port)
     ensure_database_exists(base_config, dbname=base_config.get("dbname", "SamVision"))
-    dsn = (
-        f"dbname={base_config['dbname']} "
-        f"user={base_config['user']} "
-        f"password={base_config['password']} "
-        f"host={base_config['host']} "
-        f"port={base_config['port']}"
+    conn = psycopg2.connect(
+        dbname=base_config["dbname"],
+        user=base_config["user"],
+        password=base_config["password"],
+        host=base_config["host"],
+        port=base_config["port"],
     )
-    conn = psycopg2.connect(dsn)
     cursor = conn.cursor()
 
 

@@ -1,0 +1,38 @@
+services:
+  samvision-postgres:
+    image: postgres:16-alpine
+    container_name: samvision-postgres
+    environment:
+      POSTGRES_DB: ${SAMVISION_DB_NAME:?Set SAMVISION_DB_NAME in .env}
+      POSTGRES_USER: ${SAMVISION_DB_USER:?Set SAMVISION_DB_USER in .env}
+      POSTGRES_PASSWORD: ${SAMVISION_DB_PASSWORD:?Set SAMVISION_DB_PASSWORD in .env}
+    volumes:
+      - samvision-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$${POSTGRES_USER}\" -d \"$${POSTGRES_DB}\""]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  samvision-app:
+    build: .
+    container_name: samvision-app
+    env_file:
+      - .env
+    environment:
+      SAMVISION_ADMIN_USERNAME: ${SAMVISION_ADMIN_USERNAME:?Set SAMVISION_ADMIN_USERNAME in .env}
+      SAMVISION_ADMIN_PASSWORD_HASH: ${SAMVISION_ADMIN_PASSWORD_HASH:?Set SAMVISION_ADMIN_PASSWORD_HASH in .env}
+      SAMVISION_SESSION_SECRET: ${SAMVISION_SESSION_SECRET:?Set SAMVISION_SESSION_SECRET in .env}
+      SAMVISION_DB_NAME: ${SAMVISION_DB_NAME:?Set SAMVISION_DB_NAME in .env}
+      SAMVISION_DB_USER: ${SAMVISION_DB_USER:?Set SAMVISION_DB_USER in .env}
+      SAMVISION_DB_PASSWORD: ${SAMVISION_DB_PASSWORD:?Set SAMVISION_DB_PASSWORD in .env}
+      SAMVISION_DB_HOST: ${SAMVISION_DB_HOST:-samvision-postgres}
+      SAMVISION_DB_PORT: ${SAMVISION_DB_PORT:-5432}
+    ports:
+      - "127.0.0.1:8501:8501"
+    depends_on:
+      samvision-postgres:
+        condition: service_healthy
+
+volumes:
+  samvision-postgres-data:
