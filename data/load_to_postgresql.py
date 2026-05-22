@@ -7,9 +7,19 @@ import pandas as pd
 import psycopg2
 from psycopg2 import sql
 from datetime import datetime
+from pathlib import Path
 from utils.db_config import get_db_config
 
-CSV_PATH = "parsed_csv/validated.csv"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+
+def get_csv_path() -> Path:
+    configured_path = os.getenv("SAMVISION_DATA_CSV")
+    if configured_path:
+        path = Path(configured_path)
+        return path if path.is_absolute() else PROJECT_ROOT / path
+
+    return PROJECT_ROOT / "parsed_csv" / "validated.csv"
 
 
 def safe_str(val, default="none", maxlen=255):
@@ -116,10 +126,11 @@ def create_table_if_not_exists(cursor):
 def main():
     print(f"🚀 Starting DB Load | {datetime.now().isoformat()}")
 
-    if not os.path.exists(CSV_PATH):
-        raise FileNotFoundError(f"❌ Missing file: {CSV_PATH}")
+    csv_path = get_csv_path()
+    if not csv_path.exists():
+        raise FileNotFoundError(f"❌ Missing file: {csv_path}")
 
-    df = pd.read_csv(CSV_PATH)
+    df = pd.read_csv(csv_path)
     if df.empty:
         raise RuntimeError("❌ No data in validated CSV")
 
@@ -200,7 +211,7 @@ def main():
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 ON CONFLICT (address, listing_date) DO NOTHING
             """), values)
-            inserted += 1
+            inserted += cursor.rowcount
 
         except Exception as e:
             skipped.append(f"{row.get('address', 'unknown')} -> {e}")

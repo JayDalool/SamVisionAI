@@ -16,4 +16,5 @@ env/
 venv/
 pdf_uploads/*
 parsed_csv/*
+!parsed_csv/validated.csv
 trained_price_model_*.pkl
