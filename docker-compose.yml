@@ -2,6 +2,7 @@ services:
   samvision-postgres:
     image: postgres:16-alpine
     container_name: samvision-postgres
+    restart: unless-stopped
     environment:
       POSTGRES_DB: ${SAMVISION_DB_NAME:?Set SAMVISION_DB_NAME in .env}
       POSTGRES_USER: ${SAMVISION_DB_USER:?Set SAMVISION_DB_USER in .env}
@@ -13,10 +14,13 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - samvision-net
 
   samvision-app:
     build: .
     container_name: samvision-app
+    restart: unless-stopped
     env_file:
       - .env
     environment:
@@ -33,6 +37,16 @@ services:
     depends_on:
       samvision-postgres:
         condition: service_healthy
+    networks:
+      - samvision-net
+      - proxy
 
 volumes:
   samvision-postgres-data:
+
+networks:
+  samvision-net:
+    name: samvision-net
+
+  proxy:
+    external: true
