@@ -172,3 +172,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Generated model-benchmark reports (regenerate via `python -m ml.benchmark_models`)
+reports/
