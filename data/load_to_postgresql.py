@@ -7,9 +7,19 @@ import pandas as pd
 import psycopg2
 from psycopg2 import sql
 from datetime import datetime
+from pathlib import Path
 from utils.db_config import get_db_config
 
-CSV_PATH = "parsed_csv/validated.csv"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+
+def get_csv_path() -> Path:
+    configured_path = os.getenv("SAMVISION_DATA_CSV")
+    if configured_path:
+        path = Path(configured_path)
+        return path if path.is_absolute() else PROJECT_ROOT / path
+
+    return PROJECT_ROOT / "parsed_csv" / "validated.csv"
 
 
 def safe_str(val, default="none", maxlen=255):
@@ -19,17 +29,13 @@ def safe_str(val, default="none", maxlen=255):
         return default
     
 def ensure_database_exists(base_config, dbname="SamVision"):
-    config_no_db = base_config.copy()
-    config_no_db.pop("dbname", None)
-
-    dsn = (
-        f"dbname=postgres "
-        f"user={config_no_db['user']} "
-        f"password={config_no_db['password']} "
-        f"host={config_no_db['host']} "
-        f"port={config_no_db['port']}"
+    conn = psycopg2.connect(
+        dbname="postgres",
+        user=base_config["user"],
+        password=base_config["password"],
+        host=base_config["host"],
+        port=base_config["port"],
     )
-    conn = psycopg2.connect(dsn)
     conn.autocommit = True
     cur = conn.cursor()
 
@@ -120,10 +126,11 @@ def create_table_if_not_exists(cursor):
 def main():
     print(f"🚀 Starting DB Load | {datetime.now().isoformat()}")
 
-    if not os.path.exists(CSV_PATH):
-        raise FileNotFoundError(f"❌ Missing file: {CSV_PATH}")
+    csv_path = get_csv_path()
+    if not csv_path.exists():
+        raise FileNotFoundError(f"❌ Missing file: {csv_path}")
 
-    df = pd.read_csv(CSV_PATH)
+    df = pd.read_csv(csv_path)
     if df.empty:
         raise RuntimeError("❌ No data in validated CSV")
 
@@ -140,19 +147,18 @@ def main():
     df["listing_date"] = pd.to_datetime(df["listing_date"], errors="coerce").dt.date
     df = df[df["listing_date"].notnull()]
 
-    # 🔑 1) Base config (from your config / get_db_config)
+    # 🔑 1) Base config (from environment via get_db_config)
     base_config = get_db_config()
 
     # 🔑 2) Ensure DB exists (using same user/pass/host/port)
     ensure_database_exists(base_config, dbname=base_config.get("dbname", "SamVision"))
-    dsn = (
-        f"dbname={base_config['dbname']} "
-        f"user={base_config['user']} "
-        f"password={base_config['password']} "
-        f"host={base_config['host']} "
-        f"port={base_config['port']}"
+    conn = psycopg2.connect(
+        dbname=base_config["dbname"],
+        user=base_config["user"],
+        password=base_config["password"],
+        host=base_config["host"],
+        port=base_config["port"],
     )
-    conn = psycopg2.connect(dsn)
     cursor = conn.cursor()
 
 
@@ -205,7 +211,7 @@ def main():
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 ON CONFLICT (address, listing_date) DO NOTHING
             """), values)
-            inserted += 1
+            inserted += cursor.rowcount
 
         except Exception as e:
             skipped.append(f"{row.get('address', 'unknown')} -> {e}")

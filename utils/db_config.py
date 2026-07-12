@@ -1,11 +1,23 @@
-# file: utils/db_config.py
+import os
+
+
+REQUIRED_DB_ENV = {
+    "dbname": "SAMVISION_DB_NAME",
+    "user": "SAMVISION_DB_USER",
+    "password": "SAMVISION_DB_PASSWORD",
+    "host": "SAMVISION_DB_HOST",
+    "port": "SAMVISION_DB_PORT",
+}
+
 
 def get_db_config():
-        return {
-        'dbname': 'SamVision',
-        'user': 'postgres',
-        'password': '1611',
-        'host': '127.0.0.1',
-        'port': '5432'
-    }
+    missing = [
+        env_name for env_name in REQUIRED_DB_ENV.values() if not os.getenv(env_name)
+    ]
+    if missing:
+        raise RuntimeError(
+            "Missing required database environment variables: " + ", ".join(missing)
+        )
+
+    return {key: os.environ[env_name] for key, env_name in REQUIRED_DB_ENV.items()}
 

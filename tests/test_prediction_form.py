@@ -11,6 +11,7 @@ from unittest.mock import patch
 import pandas as pd
 from streamlit.testing.v1 import AppTest
 
+from utils.auth import hash_password
 from utils.prediction_form import (
     BASEMENT_TYPES,
     DEFAULT_MULTI_OFFER_PREMIUM,
@@ -30,6 +31,13 @@ from utils.prediction_form import (
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 APP_PATH = ROOT_DIR / "app" / "streamlit_app.py"
+TEST_PASSWORD = "correct horse battery staple"
+TEST_HASH = hash_password(
+    TEST_PASSWORD,
+    iterations=100_000,
+    salt=bytes.fromhex("00112233445566778899aabbccddeeff"),
+)
+TEST_SECRET = "test-session-secret-that-is-long-enough"
 
 
 # ---------------------------------------------------------------------------
@@ -160,12 +168,12 @@ class StateSeedingTests(unittest.TestCase):
 
 # ---------------------------------------------------------------------------
 # End-to-end regression test through the real Streamlit app (AppTest).
-# The app has no login gate, so the tabs (and the prediction form) render on the
-# first run. get_engine() still needs DB env vars to build its URL, but the
-# actual query is patched, so these values are never used to connect.
 # ---------------------------------------------------------------------------
-def _db_env() -> dict[str, str]:
+def _auth_env() -> dict[str, str]:
     return {
+        "SAMVISION_ADMIN_USERNAME": "admin",
+        "SAMVISION_ADMIN_PASSWORD_HASH": TEST_HASH,
+        "SAMVISION_SESSION_SECRET": TEST_SECRET,
         "SAMVISION_DB_NAME": "SamVision",
         "SAMVISION_DB_USER": "postgres",
         "SAMVISION_DB_PASSWORD": "test-only",
@@ -197,16 +205,19 @@ def _app_context():
     rental_stub = types.ModuleType("utils.rental_income_tool")
     rental_stub.render_rental_income_tab = lambda: None
     # load_data() is @st.cache_data; clear it so a cached frame from another test
-    # or a real DB read can't leak in here.
+    # (e.g. the auth suite hitting an unreachable DB) can't leak in here.
     st.cache_data.clear()
-    with patch.dict(os.environ, _db_env(), clear=False), patch.dict(
+    with patch.dict(os.environ, _auth_env(), clear=False), patch.dict(
         sys.modules, {"utils.rental_income_tool": rental_stub}
     ), patch("pandas.read_sql_query", return_value=_fake_housing_df()):
         yield
 
 
-def _start_app() -> AppTest:
-    app = AppTest.from_file(str(APP_PATH), default_timeout=60)
+def _login(app: AppTest) -> AppTest:
+    app.run()
+    app.text_input[0].input("admin")
+    app.text_input[1].input(TEST_PASSWORD)
+    app.button[0].click()
     app.run()
     return app
 
@@ -216,14 +227,14 @@ class PredictionFormStateRegressionTests(unittest.TestCase):
 
     def test_all_prediction_widgets_have_stable_keys(self) -> None:
         with _app_context():
-            app = _start_app()
+            app = _login(AppTest.from_file(str(APP_PATH), default_timeout=60))
             # Every widget is addressable by its explicit key (would raise otherwise).
             for key in PREDICTION_STATE_KEYS:
                 self.assertIn(key, app.session_state)
 
     def test_changing_one_field_does_not_reset_others(self) -> None:
         with _app_context():
-            app = _start_app()
+            app = _login(AppTest.from_file(str(APP_PATH), default_timeout=60))
 
             app.selectbox(key=KEY_NEIGHBORHOOD).set_value("Tuxedo")
             app.checkbox(key=KEY_IS_MULTI_OFFER).set_value(True)
@@ -246,7 +257,7 @@ class PredictionFormStateRegressionTests(unittest.TestCase):
 
     def test_premium_slider_not_auto_overwritten_on_rerun(self) -> None:
         with _app_context():
-            app = _start_app()
+            app = _login(AppTest.from_file(str(APP_PATH), default_timeout=60))
             # Enabling multi-offer must NOT silently jump the slider to the
             # neighborhood suggestion (that was the reset bug).
             app.selectbox(key=KEY_NEIGHBORHOOD).set_value("Tuxedo")
@@ -256,7 +267,7 @@ class PredictionFormStateRegressionTests(unittest.TestCase):
 
     def test_use_suggested_button_applies_premium(self) -> None:
         with _app_context():
-            app = _start_app()
+            app = _login(AppTest.from_file(str(APP_PATH), default_timeout=60))
             app.selectbox(key=KEY_NEIGHBORHOOD).set_value("Tuxedo")
             app.checkbox(key=KEY_IS_MULTI_OFFER).set_value(True)
             app.run()
@@ -266,7 +277,7 @@ class PredictionFormStateRegressionTests(unittest.TestCase):
 
     def test_reset_button_restores_defaults(self) -> None:
         with _app_context():
-            app = _start_app()
+            app = _login(AppTest.from_file(str(APP_PATH), default_timeout=60))
             app.number_input(key=KEY_BEDROOMS).set_value(7)
             app.slider(key=KEY_PREMIUM_PCT).set_value(20.0)
             app.run()

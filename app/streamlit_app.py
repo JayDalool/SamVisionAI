@@ -16,6 +16,64 @@ ROOT_DIR = os.path.dirname(APP_DIR)
 if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
+from utils.auth import (
+    auth_config_errors,
+    clear_authentication,
+    is_authenticated,
+    load_auth_config,
+    mark_authenticated,
+    validate_credentials,
+)
+
+
+def require_login():
+    auth_config = load_auth_config()
+    errors = auth_config_errors(auth_config)
+
+    if not errors and is_authenticated(st.session_state, auth_config):
+        with st.sidebar:
+            st.caption(f"Signed in as {auth_config.username}")
+            if st.button("Logout", use_container_width=True):
+                clear_authentication(st.session_state)
+                st.rerun()
+        return
+
+    st.title("SamVision AI")
+    st.subheader("Sign in")
+
+    if errors:
+        st.error(
+            "Authentication is not configured. Set SAMVISION_ADMIN_USERNAME, "
+            "SAMVISION_ADMIN_PASSWORD_HASH, and SAMVISION_SESSION_SECRET before using the app."
+        )
+        for error in errors:
+            st.warning(error)
+        st.stop()
+
+    with st.form("login_form"):
+        username = st.text_input("Username")
+        password = st.text_input("Password", type="password")
+        submitted = st.form_submit_button("Log in")
+
+    if submitted:
+        if validate_credentials(username, password, auth_config):
+            mark_authenticated(
+                st.session_state,
+                auth_config.username,
+                auth_config.session_secret,
+            )
+            st.session_state.pop("samvision_login_failed", None)
+            st.rerun()
+        st.session_state["samvision_login_failed"] = True
+
+    if st.session_state.get("samvision_login_failed"):
+        st.error("Invalid username or password.")
+
+    st.stop()
+
+
+require_login()
+
 # --- Normal imports ---
 import pandas as pd
 import numpy as np
@@ -23,6 +81,7 @@ import joblib
 from datetime import datetime
 import json
 from sqlalchemy import create_engine
+from sqlalchemy.engine import URL
 import plotly.express as px  # (you use it elsewhere)
 
 from utils.db_config import get_db_config
@@ -66,11 +125,13 @@ model = joblib.load(model_path) if os.path.exists(model_path) else None
 @st.cache_resource(show_spinner=False)
 def get_engine():
     cfg = get_db_config()
-    # ✅ Use psycopg v3 driver (recommended for Windows stability)
-    url = (
-        f"postgresql+psycopg2://"
-        f"{cfg['user']}:{cfg['password']}@"
-        f"{cfg['host']}:{cfg['port']}/{cfg['dbname']}"
+    url = URL.create(
+        "postgresql+psycopg2",
+        username=cfg["user"],
+        password=cfg["password"],
+        host=cfg["host"],
+        port=int(cfg["port"]),
+        database=cfg["dbname"],
     )
     return create_engine(url)
 

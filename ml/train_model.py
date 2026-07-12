@@ -7,6 +7,7 @@ import ast
 import os
 from datetime import datetime
 from sqlalchemy import create_engine
+from sqlalchemy.engine import URL
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -18,7 +19,6 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from utils.db_config import get_db_config
-from sqlalchemy import create_engine
 print("🚀 Starting SamVision AI model training pipeline with Realtor Multi-Offer Logic...")
 
 # ========================
@@ -26,7 +26,14 @@ print("🚀 Starting SamVision AI model training pipeline with Realtor Multi-Off
 # ========================
 cfg = get_db_config()
 engine = create_engine(
-    f"postgresql+psycopg2://{cfg['user']}:{cfg['password']}@{cfg['host']}:{cfg['port']}/{cfg['dbname']}"
+    URL.create(
+        "postgresql+psycopg2",
+        username=cfg["user"],
+        password=cfg["password"],
+        host=cfg["host"],
+        port=int(cfg["port"]),
+        database=cfg["dbname"],
+    )
 )
 
 query = """
