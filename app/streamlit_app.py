@@ -86,6 +86,28 @@ import plotly.express as px  # (you use it elsewhere)
 
 from utils.db_config import get_db_config
 from utils.pdf_sales_parser import extract_pdf_sales
+from utils.prediction_form import (
+    KEY_BASEMENT_TYPE,
+    KEY_BATHROOMS,
+    KEY_BEDROOMS,
+    KEY_BUILT_YEAR,
+    KEY_GARAGE_TYPE,
+    KEY_HOUSE_TYPE,
+    KEY_IS_MULTI_OFFER,
+    KEY_LIST_PRICE,
+    KEY_NEIGHBORHOOD,
+    KEY_PREMIUM_PCT,
+    KEY_SEASON,
+    KEY_SQFT,
+    KEY_STYLE,
+    BASEMENT_TYPES,
+    SEASONS,
+    basement_adjustment,
+    field_defaults,
+    init_prediction_state,
+    reset_prediction_state,
+    suggested_multi_offer_premium,
+)
 
 # ✅ NEW: Rental Income tool tab
 from utils.rental_income_tool import render_rental_income_tab
@@ -271,21 +293,6 @@ with tab2:
 with tab3:
     st.header("💰 Predict Winning Offer Price")
 
-    # Educated guess premiums (all other areas will default to 5%)
-    multi_offer_premiums = {
-        "Bridgwater Trails": 8.0, "Bridgwater Lakes": 7.5, "Bridgwater Forest": 7.5, "Bridgwater Centre": 7.5,
-        "Tuxedo": 9.0, "Old Tuxedo": 9.0, "Crescentwood": 8.0, "Crescent Park": 8.0,
-        "Osborne Village": 8.5, "River-Osborne": 8.0, "West Wolseley": 7.5,
-        "Waverley Heights": 7.0, "Waverley West B": 7.0, "Fort Richmond": 7.0, "Linden Woods": 8.0,
-        "River Heights": 6.5, "North River Heights": 6.5, "Sage Creek": 6.5,
-        "Richmond West": 6.5, "Grant Park": 6.0, "Jameswood": 6.0,
-        "Kensington": 6.0, "King Edward": 6.0, "University": 6.0,
-        "Central River Heights": 6.5, "Exchange District": 6.0, "Prairie Pointe": 6.0,
-        "Charleswood": 5.5, "St. Vital": 5.5, "St. Norbert": 5.5,
-        "Amber Trails": 5.5, "Garden City": 5.5, "Maples": 5.5,
-        "Westwood": 5.5, "Elm Park": 5.5
-    }
-
     # Load model explanation
     explanation = {}
     try:
@@ -321,7 +328,6 @@ with tab3:
         st.stop()
 
     default = df_all.iloc[0]
-    col1, col2, col3 = st.columns(3)
 
     # Defensive unique lists
     def uniq(col, fallback):
@@ -330,31 +336,69 @@ with tab3:
             return vals if vals else fallback
         return fallback
 
+    neighborhood_options = uniq("neighborhood", ["Unknown"])
+    house_type_options = uniq("house_type", ["Unknown"])
+    style_options = uniq("style", ["Unknown"])
+    garage_type_options = uniq("garage_type", ["Unknown"])
+
+    # Seed widget state once (never overwrites existing user input). Every widget
+    # below uses a stable explicit key, so a rerun triggered by editing one field
+    # never resets the others.
+    init_prediction_state(
+        st.session_state,
+        neighborhoods=neighborhood_options,
+        house_types=house_type_options,
+        styles=style_options,
+        garage_types=garage_type_options,
+        defaults=field_defaults(default),
+    )
+
+    col1, col2, col3 = st.columns(3)
+
     with col1:
-        neighborhood = st.selectbox("Neighborhood", uniq("neighborhood", ["Unknown"]), index=0)
-        house_type = st.selectbox("House Type", uniq("house_type", ["Unknown"]), index=0)
-        style = st.selectbox("Style", uniq("style", ["Unknown"]), index=0)
-        garage_type = st.selectbox("Garage Type", uniq("garage_type", ["Unknown"]), index=0)
+        neighborhood = st.selectbox("Neighborhood", neighborhood_options, key=KEY_NEIGHBORHOOD)
+        house_type = st.selectbox("House Type", house_type_options, key=KEY_HOUSE_TYPE)
+        style = st.selectbox("Style", style_options, key=KEY_STYLE)
+        garage_type = st.selectbox("Garage Type", garage_type_options, key=KEY_GARAGE_TYPE)
 
     with col2:
-        basement_type = st.selectbox(
-            "Basement Type",
-            ["None", "Crawl Space", "Full (Unfinished)", "Full (Finished)", "Walkout"],
-            index=0,
-        )
-        bedrooms = st.number_input("Bedrooms", 0, 10, int(default.get("bedrooms", 3)))
-        bathrooms = st.number_input("Bathrooms", 0.5, 6.0, float(default.get("bathrooms", 2.0)))
-        sqft = st.number_input("Square Footage", 300, 6000, int(default.get("sqft", 1200)))
+        basement_type = st.selectbox("Basement Type", BASEMENT_TYPES, key=KEY_BASEMENT_TYPE)
+        bedrooms = st.number_input("Bedrooms", 0, 10, step=1, key=KEY_BEDROOMS)
+        bathrooms = st.number_input("Bathrooms", 0.5, 6.0, step=0.5, key=KEY_BATHROOMS)
+        sqft = st.number_input("Square Footage", 300, 6000, step=50, key=KEY_SQFT)
 
     with col3:
-        built_year = st.number_input("Built Year", 1900, datetime.now().year, int(default.get("built_year", 2000)))
-        season = st.selectbox("Season", ["Winter", "Spring", "Summer", "Fall"], index=2)
-        list_price = st.number_input("List Price", 50000, 2000000, int(default.get("list_price", 300000)))
-        is_multi_offer = st.checkbox("🏠 Multi-Offer Listing", value=False)
+        built_year = st.number_input("Built Year", 1900, datetime.now().year, step=1, key=KEY_BUILT_YEAR)
+        season = st.selectbox("Season", SEASONS, key=KEY_SEASON)
+        list_price = st.number_input("List Price", 50000, 2000000, step=1000, key=KEY_LIST_PRICE)
+        is_multi_offer = st.checkbox("🏠 Multi-Offer Listing", key=KEY_IS_MULTI_OFFER)
 
     st.subheader("🔥 Adjust Multi-Offer Premium (%)")
-    default_premium = multi_offer_premiums.get(neighborhood or "", 5.0) if is_multi_offer else 0.0
-    user_premium_pct = st.slider("Expected Multi-Offer Premium (%)", 0.0, 25.0, float(default_premium), 0.5)
+    # The slider owns its own value via a stable key; it is NOT re-defaulted on
+    # every rerun (that was the bug that reset it when other fields changed). The
+    # neighborhood suggestion is applied only when the user clicks the button.
+    suggested_premium = suggested_multi_offer_premium(neighborhood, is_multi_offer)
+
+    def _apply_suggested_premium():
+        st.session_state[KEY_PREMIUM_PCT] = suggested_multi_offer_premium(
+            st.session_state.get(KEY_NEIGHBORHOOD),
+            st.session_state.get(KEY_IS_MULTI_OFFER, False),
+        )
+
+    prem_col, btn_col = st.columns([3, 1])
+    with prem_col:
+        user_premium_pct = st.slider("Expected Multi-Offer Premium (%)", 0.0, 25.0, step=0.5, key=KEY_PREMIUM_PCT)
+    with btn_col:
+        if is_multi_offer:
+            st.caption(f"Suggested for {neighborhood}: {suggested_premium:.1f}%")
+            st.button("Use suggested", on_click=_apply_suggested_premium, use_container_width=True)
+
+    st.button(
+        "♻️ Reset Form",
+        on_click=reset_prediction_state,
+        args=(st.session_state,),
+        help="Clear all prediction inputs back to their defaults.",
+    )
 
     if st.button("🔮 Predict Winning Offer Price"):
         if model is None:
@@ -364,13 +408,7 @@ with tab3:
                 age = datetime.now().year - built_year
                 price_per_sqft = list_price / max(sqft, 1)
                 premium_multiplier = 1 + user_premium_pct / 100 if is_multi_offer else 1
-                basement_adj = {
-                    "None": -45000,
-                    "Crawl Space": -45000,
-                    "Full (Unfinished)": -15000,
-                    "Full (Finished)": 25000,
-                    "Walkout": 0,
-                }.get(basement_type, 0)
+                basement_adj = basement_adjustment(basement_type)
 
                 input_df = pd.DataFrame([{
                     "bedrooms": bedrooms,
