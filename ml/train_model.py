@@ -38,7 +38,7 @@ engine = create_engine(
 
 query = """
 SELECT neighborhood, house_type, style, bedrooms, bathrooms, sqft,
-       built_year, garage_type, season, sold_price, list_price, listing_date, dom_days
+       built_year, garage_type, season, sold_price, list_price, sold_date, dom_days
 FROM housing_data;
 """
 
@@ -54,8 +54,11 @@ print(f"[ℹ️] Loaded {len(df)} rows from DB")
 # ========================
 # Preprocessing & Feature Engineering
 # ========================
-df['listing_date'] = pd.to_datetime(df['listing_date'], errors='coerce')
-df['age'] = datetime.now().year - df['built_year']
+df['sold_date'] = pd.to_datetime(df['sold_date'], errors='coerce')
+df['built_year'] = pd.to_numeric(df['built_year'], errors='coerce')
+# Property age at the moment of sale — from the real sold_date, never today()/
+# training time/import time/MLS year.
+df['age'] = (df['sold_date'].dt.year - df['built_year']).clip(lower=0)
 df['price_diff'] = df['sold_price'] - df['list_price']
 df['over_asking_pct'] = df['price_diff'] / df['list_price']
 df['price_per_sqft'] = df['sold_price'] / df['sqft']
@@ -68,16 +71,17 @@ df = df[
     (df['sold_price'] > 0) &
     (df['list_price'] > 0) &
     (df['dom_days'] >= 0)
-].dropna(subset=['sold_price', 'list_price', 'listing_date'])
+].dropna(subset=['sold_price', 'list_price', 'sold_date'])
 print(f"[ℹ️] Rows after filtering: {len(df)}")
 
 # Outlier capping
 df['sold_price'] = df['sold_price'].clip(upper=df['sold_price'].quantile(0.99))
 df['list_price'] = df['list_price'].clip(upper=df['list_price'].quantile(0.99))
 
-# Recency weighting
-recent_cutoff = df['listing_date'].max() - pd.Timedelta(days=90)
-df['recency_weight'] = (df['listing_date'] >= recent_cutoff).astype(int)
+# Recency weighting off the real sold_date: flag sales in the most recent 90-day
+# window. sold_date comes from the WRREB reports — never fabricated or MLS-derived.
+recent_cutoff = df['sold_date'].max() - pd.Timedelta(days=90)
+df['recency_weight'] = (df['sold_date'] >= recent_cutoff).astype(int)
 
 # Multi-offer Realtor logic
 df['is_multi_offer_by_dom'] = (df['dom_days'] <= 3).astype(int)

@@ -11,9 +11,10 @@ What it does
 * Validates required columns and cleans obviously-invalid rows.
 * Uses ONLY information available *before* a sale as features (no sold_price,
   no price_per_sqft, no over-asking, no sell/list ratio, no days-on-market).
-* Splits chronologically by ``listing_date`` (train -> validation -> test) and
-  removes any address that would otherwise appear in more than one split, so a
-  single property can't leak across the split boundary.
+* Splits chronologically by the real ``sold_date`` (from the WRREB reports;
+  train -> validation -> test) and removes any address that would otherwise
+  appear in more than one split, so a single property can't leak across the
+  split boundary.
 * Benchmarks several candidate models plus simple baselines, all wrapped in a
   single sklearn Pipeline so preprocessing is identical for train and inference.
 * Also evaluates the *current production model* honestly, feeding it the same
@@ -71,7 +72,7 @@ REPORTS_DIR = "reports"
 TARGET = "sold_price"
 
 # Pre-sale feature schema. Everything here is knowable *before* the property
-# sells. Engineered columns (age, listing_month) are derived below.
+# sells. Engineered columns (age, sold_month) are derived below.
 NUMERIC_FEATURES = [
     "bedrooms",
     "bathrooms",
@@ -80,7 +81,7 @@ NUMERIC_FEATURES = [
     "built_year",
     "age",
     "list_price",
-    "listing_month",
+    "sold_month",
 ]
 CATEGORICAL_FEATURES = [
     "neighborhood",
@@ -95,7 +96,7 @@ CATEGORICAL_FEATURES = [
 REQUIRED_COLUMNS = {
     "neighborhood", "house_type", "style", "garage_type", "basement_type",
     "bedrooms", "bathrooms", "sqft", "built_year", "list_price", "sold_price",
-    "listing_date", "season", "address",
+    "sold_date", "season", "address",
 }
 
 # Columns that must NOT be used as features because they leak the target or are
@@ -139,19 +140,24 @@ def validate_columns(df: pd.DataFrame) -> None:
 
 
 def clean_and_engineer(df: pd.DataFrame) -> pd.DataFrame:
-    """Drop invalid rows and derive leakage-free engineered features."""
+    """Drop invalid rows and derive leakage-free engineered features.
+
+    Time features and the chronological split come from the real ``sold_date``
+    (WRREB canonical field). ``sale_year``/``sale_month`` are derived from it;
+    the MLS-embedded year is never used as a temporal truth. There is no
+    fabricated ``listing_month``.
+    """
     df = df.copy()
-    df["listing_date"] = pd.to_datetime(df["listing_date"], errors="coerce")
+    df["sold_date"] = pd.to_datetime(df["sold_date"], errors="coerce")
 
     df = df[
         (df["sold_price"] > 0)
         & (df["list_price"] > 0)
         & (df["sqft"] > 0)
-    ].dropna(subset=["listing_date", "sold_price", "list_price", "sqft"])
+    ].dropna(subset=["sold_date", "sold_price", "list_price", "sqft"])
 
-    listing_year = df["listing_date"].dt.year
-    df["age"] = (listing_year - df["built_year"]).clip(lower=0)
-    df["listing_month"] = df["listing_date"].dt.month
+    df["age"] = (df["sold_date"].dt.year - df["built_year"]).clip(lower=0)
+    df["sold_month"] = df["sold_date"].dt.month
 
     if "lot_size" not in df.columns:
         df["lot_size"] = np.nan
@@ -159,7 +165,7 @@ def clean_and_engineer(df: pd.DataFrame) -> pd.DataFrame:
     for col in CATEGORICAL_FEATURES:
         df[col] = df[col].astype("object").where(df[col].notna(), "Unknown")
 
-    df = df.sort_values("listing_date").reset_index(drop=True)
+    df = df.sort_values("sold_date").reset_index(drop=True)
     return df
 
 
@@ -179,10 +185,11 @@ def chronological_group_split(
 ) -> SplitResult:
     """Split by time, then guarantee no address spans two splits.
 
-    Rows are ordered by ``listing_date``. The earliest ``train_frac`` become
-    training, the next ``val_frac`` validation, and the remainder test. Any
-    validation/test row whose address already appears in an earlier split is
-    dropped so a single property never leaks across the boundary.
+    Rows are ordered by ``sold_date`` (already sorted upstream). The earliest
+    ``train_frac`` become training, the next ``val_frac`` validation, and the
+    remainder test. Any validation/test row whose address already appears in an
+    earlier split is dropped so a single property never leaks across the
+    boundary.
     """
     n = len(df)
     train_end = int(n * train_frac)
@@ -494,9 +501,9 @@ def run_benchmark(output_dir: str = REPORTS_DIR) -> dict:
             "val": int(len(val)),
             "test": int(len(test)),
             "dropped_for_duplicate_property": int(split.dropped_for_dup_property),
-            "strategy": "chronological by listing_date, address held to a single split",
-            "train_date_range": [str(train["listing_date"].min().date()), str(train["listing_date"].max().date())],
-            "test_date_range": [str(test["listing_date"].min().date()), str(test["listing_date"].max().date())],
+            "strategy": "chronological by real sold_date, address held to a single split",
+            "train_date_range": [str(train["sold_date"].min().date()), str(train["sold_date"].max().date())],
+            "test_date_range": [str(test["sold_date"].min().date()), str(test["sold_date"].max().date())],
         },
         "features": {"numeric": NUMERIC_FEATURES, "categorical": CATEGORICAL_FEATURES},
         "excluded_leaking_columns": sorted(LEAKING_COLUMNS),

@@ -109,8 +109,9 @@ class TxtSalesParser:
             bathrooms = parse_bathrooms(block)
 
             records.append({
-                "listing_date": datetime.today().date(),
-                "season": get_current_season(),
+                "listing_date": None,
+                "mls_year_hint": int(mls_number[:4]) if re.fullmatch(r"20\d{7}", mls_number) else None,
+                "season": None,
                 "mls_number": mls_number,
                 "neighborhood": neighborhood,
                 "address": address,

@@ -65,10 +65,10 @@ def ensure_all_columns(df: pd.DataFrame) -> pd.DataFrame:
         "age": 0,
         "garage_type": "none",
         "address": "none",
-        "dom_days": 0,                     
-        "basement_type": "none",           
-        "listing_date": datetime.today().date(),
-        "season": "Summer",
+        "dom_days": 0,
+        "basement_type": "none",
+        "listing_date": None,
+        "season": "Unknown",
         "latitude": 0.0,
         "longitude": 0.0,
         "list_price": 0,
@@ -81,11 +81,14 @@ def ensure_all_columns(df: pd.DataFrame) -> pd.DataFrame:
     for col, default in defaults.items():
         if col not in df:
             df[col] = default
+        elif default is None:
+            # Nullable columns (listing_date): keep missing values as NaN/NaT so
+            # they land as SQL NULL — never backfill a fabricated value.
+            continue
+        elif pd.api.types.is_numeric_dtype(df[col]):
+            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(default)
         else:
-            if pd.api.types.is_numeric_dtype(df[col]):
-                df[col] = pd.to_numeric(df[col], errors='coerce').fillna(default)
-            else:
-                df[col] = df[col].fillna(default)
+            df[col] = df[col].fillna(default)
     return df
 
 def create_table_if_not_exists(cursor):
@@ -104,8 +107,8 @@ def create_table_if_not_exists(cursor):
             age INTEGER,
             garage_type TEXT,
             address TEXT,
-            dom_days INTEGER,                       
-            basement_type TEXT,                     
+            dom_days INTEGER,
+            basement_type TEXT,
             listing_date DATE,
             season TEXT,
             latitude NUMERIC(9,6),
@@ -122,6 +125,9 @@ def create_table_if_not_exists(cursor):
     # Ensure columns exist even if table already created
     cursor.execute("ALTER TABLE housing_data ADD COLUMN IF NOT EXISTS dom_days INTEGER;")
     cursor.execute("ALTER TABLE housing_data ADD COLUMN IF NOT EXISTS basement_type TEXT;")
+    # NOTE: this legacy loader does NOT own the canonical schema. Canonical WRREB
+    # ingestion (real sold_date, MLS/LINC identity) is handled by the dry-run
+    # pipeline in samvision/ingestion/, which never migrates the production DB.
 
 def main():
     print(f"🚀 Starting DB Load | {datetime.now().isoformat()}")
@@ -144,8 +150,11 @@ def main():
     for col in float_cols:
         df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0.0).astype(float)
 
+    # listing_date is legitimately NULL for these legacy sources (no real sale
+    # date in the old reports); keep those rows instead of dropping them, and
+    # never fabricate a date. Real sold_date lands via the WRREB canonical
+    # pipeline, not this loader.
     df["listing_date"] = pd.to_datetime(df["listing_date"], errors="coerce").dt.date
-    df = df[df["listing_date"].notnull()]
 
     # 🔑 1) Base config (from environment via get_db_config)
     base_config = get_db_config()
@@ -171,8 +180,8 @@ def main():
         try:
             if not row.get("address") or pd.isna(row.get("address")):
                 raise ValueError("Missing address")
-            if not row.get("listing_date") or pd.isna(row.get("listing_date")):
-                raise ValueError("Missing listing_date")
+
+            listing_date = row["listing_date"] if pd.notnull(row["listing_date"]) else None
 
             values = [
                 safe_str(row["mls_number"], maxlen=50),
@@ -189,7 +198,7 @@ def main():
                 safe_str(row["address"], maxlen=100),
                 int(row["dom_days"]),
                 safe_str(row["basement_type"], maxlen=50),
-                row["listing_date"],
+                listing_date,
                 safe_str(row["season"], maxlen=50),
                 float(row["latitude"]),
                 float(row["longitude"]),
