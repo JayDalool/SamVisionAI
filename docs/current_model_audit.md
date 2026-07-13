@@ -44,13 +44,29 @@ hold-out (MAE \$32,726). See [Benchmark results](#benchmark-results).
 | Explainability | `model_explanation.json` written at train time and shown in the UI "Model Information" panel. |
 
 ### Data reality vs. the artifact
-- The live DB `housing_data` table currently holds **4,364 rows**, all with
-  `listing_date` in a single narrow window (**2026-02-28 → 2026-05-26**), and the
-  values look synthetically generated (`data/generate_real_estate_data.py`).
-- `model_explanation.json` reports `trained_on_rows = 20548`. The artifact was
-  therefore trained on a **different (larger) dataset than what the DB now
-  serves** — a train/serve data mismatch that by itself makes the reported
-  metrics non-reproducible.
+- The current production records came through the **PDF ingestion pipeline**:
+  `pdf_uploads → parser → parsed_csv/merged.csv → parsed_csv/validated.csv →
+  PostgreSQL housing_data → ml/train_model.py`. See
+  [`docs/training_data_lineage.md`](training_data_lineage.md) for the full trace.
+- The live DB `housing_data` table currently holds **4,364 rows**. Their
+  `listing_date` values fall on only **two dates (2026-02-28 and 2026-05-26)**,
+  and both are **import/run dates, not real sale dates** — the parsers stamp
+  `datetime.today()` and discard the source `Sell Date`. Any chronological
+  validation keyed on `listing_date` is therefore invalid (it is a load-batch
+  split, not a temporal one).
+- **Correction (2026-07-12):** an earlier draft attributed these records to the
+  synthetic generator `data/generate_real_estate_data.py`. That is not
+  supported. The generator is **orphaned** and does not appear to feed the
+  current training pipeline; its schema (e.g. `age`/`garage` bool, no
+  `address`/`mls_number`) and historical date range (2022–2023) **do not match**
+  the live dataset. The live data may still contain unreliable or malformed rows
+  (see the lineage audit), but it should **not** be labeled synthetic solely
+  because that unused generator exists in the repo.
+- `model_explanation.json` reports `trained_on_rows = 20548`. No data source in
+  the repo or DB contains near that many rows (DB: 4,364; largest CSV: 3,838), so
+  the artifact was trained on a **dataset that can no longer be found** — it is
+  **unreproducible**, a train/serve mismatch that by itself makes the reported
+  metrics non-verifiable.
 
 ---
 
