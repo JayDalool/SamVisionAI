@@ -187,8 +187,30 @@ tab1, tab2, tab3, tab4 = st.tabs(
 # =============================
 with tab1:
     st.header("📥 Upload & Parse MLS PDFs")
+
+    st.warning(
+        "**⚠️ Which WRREB Matrix reports to export**\n\n"
+        "The new canonical pipeline needs **two** permanent Matrix reports for the "
+        "same batch of sold listings, joined by MLS number:\n\n"
+        "1. **Residential Agent Single Line incl SP**\n"
+        "2. **Residential Client Full**\n\n"
+        "➡️ The **Agent Multi-Row** report is **no longer required**.\n\n"
+        "Together these provide the real, verified **Sell Date** and are ingested "
+        "with cross-report verification.",
+        icon="📄",
+    )
+    st.info(
+        "**Legacy importer (below) is deprecated.** The legacy *Side By Side Plus* "
+        "importer did not provide a verified Sell Date and is retained only for "
+        "historical compatibility. New batches should go through the WRREB "
+        "two-report pipeline: "
+        "`python -m samvision.ingestion.import_wrreb_batch --single-line <…> "
+        "--client-full <…> --dry-run`.",
+        icon="🚧",
+    )
+
     uploaded_files = st.file_uploader(
-        "Upload PDF Files", type=["pdf"], accept_multiple_files=True
+        "Upload PDF Files (legacy Side By Side Plus)", type=["pdf"], accept_multiple_files=True
     )
 
     if uploaded_files:
