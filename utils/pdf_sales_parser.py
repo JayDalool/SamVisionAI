@@ -314,21 +314,41 @@ def parse_neighborhood(page_text, block, address):
 # ---------- MAIN EXTRACTOR ----------
 def extract_pdf_sales(path):
     pages = extract_text_from_path(path)
-    today = datetime.today().date()
-    season = ["Winter", "Spring", "Summer", "Fall"][(today.month % 12) // 3]
+    # These "Side By Side Plus" MLS reports carry no per-listing sale date. The
+    # only real temporal signal is the year encoded in the MLS number, captured
+    # per record below as ``sale_year``. We deliberately do NOT stamp today's
+    # date (it fabricates a sale date and drifts on every re-run).
     records = []
 
     address_regex = re.compile(r"\d{1,5}\s+[A-Za-z0-9 .,'\-]+(?:Ave|Avenue|Street|St|Drive|Dr|Road|Rd|Boulevard|Blvd|Lane|Ln|Bay|Crescent|Cres|Place|Pl|Parkway|Way|Trail|Court|Ct)", re.IGNORECASE)
 
     for page in pages:
+        # LEGACY "Side By Side Plus" reports have no real sale date. In this
+        # side-by-side layout the "MLS® #" row sits above the "Address" row, so a
+        # forward-only block never contains the MLS. Collect the page's MLS numbers
+        # in reading order and align them positionally with the addresses (i-th
+        # address <-> i-th MLS). Real MLS numbers are 9 digits prefixed with the
+        # listing year (202513506 -> 2025), captured only as ``mls_year_hint`` — a
+        # hint, NEVER a substitute for a real sold_date. ``page_year`` (the page's
+        # modal year) is the fallback when counts don't line up.
+        page_mls = re.findall(r"\b20\d{7}\b", " ".join(re.findall(r"MLS[^\n]*", page)))
+        page_years = [int(m[:4]) for m in page_mls]
+        page_year = max(set(page_years), key=page_years.count) if page_years else None
+
+        col = -1  # index of the current valid address within the page
         for idx, match in enumerate(address_regex.finditer(page)):
             start = match.start()
             block = page[start:start + 1500]
             address = clean_address_field(match.group())
             if not address:
                 continue
-            mls_match = re.search(r"\b20\d{6}\b", block)
-            mls = mls_match.group(0) if mls_match else hashlib.md5(address.encode()).hexdigest()[:10]
+            col += 1
+            if col < len(page_mls):
+                mls = page_mls[col]
+                mls_year_hint = int(mls[:4])
+            else:
+                mls = hashlib.md5(address.encode()).hexdigest()[:10]
+                mls_year_hint = page_year
             prices = [parse_currency(p) for p in re.findall(r"\$([\d,]+)", block)]
             prices = [p for p in prices if p and p > 30000]
             list_price = prices[0] if prices else None
@@ -342,8 +362,6 @@ def extract_pdf_sales(path):
 
             basement_type = parse_basement_type(block)
 
-            listing_date = today
-
             sqft_match = re.search(r"([\d,]{3,5})\s*(?:sqft|sf|sq ft)", block, re.IGNORECASE)
             sqft = int(sqft_match.group(1).replace(",", "")) if sqft_match else None
             lot_match = re.search(r"Lot\s*Size[:\s]+(\d+)\s*[xX]\s*(\d+)", block, re.IGNORECASE)
@@ -356,8 +374,9 @@ def extract_pdf_sales(path):
             year_built, _ = parse_year_built_and_age(block)
 
             records.append({
-                "listing_date": listing_date,
-                "season": season,
+                "listing_date": None,
+                "mls_year_hint": mls_year_hint,
+                "season": None,
                 "mls_number": mls,
                 "neighborhood": neighborhood,
                 "address": address,

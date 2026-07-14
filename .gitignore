@@ -187,3 +187,19 @@ cython_debug/
 
 # Generated model-benchmark reports (regenerate via `python -m ml.benchmark_models`)
 reports/
+
+# Raw WRREB / Matrix listing reports — licensed board data, must NEVER be committed.
+# Keep these under /srv/server/private/samvisionai/wrreb/incoming/ instead of the repo.
+*.pdf
+docs/*.pdf
+pdf_uploads/
+parsed_csv/
+data/missing_addresses.txt
+
+# Extracted raw report text / OCR scratch (derived from licensed data)
+*.wrreb.txt
+**/ocr_scratch/
+**/raw_text/
+
+# Dry-run / reconciliation ingestion output (contains listing data)
+pipeline_output/
