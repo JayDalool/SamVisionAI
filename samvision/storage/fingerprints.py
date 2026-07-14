@@ -10,10 +10,13 @@ import json
 import re
 from typing import Any, Mapping, Optional
 
-# Bump these deliberately; they participate in the batch fingerprint so a parser
-# or contract change makes re-imports distinguishable rather than colliding.
-CONTRACT_VERSION = "wrreb-canonical/1.0"
-RECOGNIZED_CONTRACT_VERSIONS = frozenset({CONTRACT_VERSION})
+# The contract version participates in the batch fingerprint so a parser or
+# contract change makes re-imports distinguishable rather than colliding. The
+# string itself lives in samvision.contract (single source of truth).
+from ..contract import CONTRACT_VERSION, SUPPORTED_CONTRACT_VERSIONS
+
+# Back-compat alias for existing importers.
+RECOGNIZED_CONTRACT_VERSIONS = SUPPORTED_CONTRACT_VERSIONS
 
 # Fields that define a record's identity + critical values. Used for the record
 # fingerprint that drives promotion idempotency and conflict detection.

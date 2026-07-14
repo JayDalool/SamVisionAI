@@ -18,9 +18,8 @@ from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from typing import Any, Optional
 
+from ..contract import SUPPORTED_CONTRACT_VERSIONS
 from .fingerprints import (
-    CONTRACT_VERSION,
-    RECOGNIZED_CONTRACT_VERSIONS,
     batch_fingerprint,
     normalized_property_id,
     record_fingerprint,
@@ -170,9 +169,14 @@ def build_load_plan(input_dir: str | Path) -> LoadPlan:
 
     refusals: list[str] = []
 
-    contract_version = summary.get("contract_version", CONTRACT_VERSION)
-    if contract_version not in RECOGNIZED_CONTRACT_VERSIONS:
-        refusals.append(f"unrecognized contract_version: {contract_version!r}")
+    # contract_version is REQUIRED — no silent default. A missing, empty, or
+    # unsupported value refuses the batch (design §2 / §6).
+    contract_version = summary.get("contract_version")
+    if contract_version is None or not str(contract_version).strip():
+        refusals.append("missing or empty contract_version in summary.json")
+        contract_version = ""
+    elif contract_version not in SUPPORTED_CONTRACT_VERSIONS:
+        refusals.append(f"unsupported contract_version: {contract_version!r}")
 
     if summary.get("critical_reconciliation_failed"):
         refusals.append("critical_reconciliation_failed is true in summary.json")

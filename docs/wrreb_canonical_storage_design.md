@@ -187,7 +187,10 @@ FK→import_batches(id)`, `record_fingerprint`, `data_quality_status` (CHECK ∈
 - Recomputes `batch_fingerprint`; refuses on duplicate.
 - Detects duplicate MLS within the batch.
 - Refuses batches with `critical_reconciliation_failed = true`, unresolved
-  conflicts, or an unrecognized `contract_version`.
+  conflicts, or a missing / empty / unsupported `contract_version`.
+  `contract_version` is **required** in `summary.json` (the ingestion CLI always
+  emits it, from `samvision.contract.CONTRACT_VERSION`); there is no silent
+  default.
 - A DB write requires **both** a non-empty explicit `--database-url` and
   `--authorize-staging-write`; a URL silently inferred from production env is
   refused. The write runs in **one transaction**; any failure rolls back

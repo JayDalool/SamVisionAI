@@ -88,6 +88,7 @@ def make_pipeline_output(
     sl_sha="a" * 64,
     cf_sha="b" * 64,
     critical_failed=False,
+    contract_version=fingerprints.CONTRACT_VERSION,
     summary_overrides=None,
     omit=(),
 ):
@@ -126,6 +127,9 @@ def make_pipeline_output(
         "pages": {"needs_ocr": sum(1 for d in diagnostics if d.get("status") == "needs_ocr")},
         "critical_reconciliation_failed": critical_failed,
     }
+    # contract_version is required; None omits the key entirely (missing case).
+    if contract_version is not None:
+        summary["contract_version"] = contract_version
     if summary_overrides:
         summary.update(summary_overrides)
     (root / "summary.json").write_text(json.dumps(summary, indent=2))
@@ -225,12 +229,36 @@ class ManifestValidationTests(unittest.TestCase):
             plan = batch_loader.build_load_plan(out)
             self.assertFalse(plan.safe_to_write)
 
-    def test_unrecognized_contract_version_rejected(self):
+    def test_supported_contract_version_accepted(self):
         with tempfile.TemporaryDirectory() as d:
             out = make_pipeline_output(Path(d) / "b", accepted=[_accepted_row()],
-                                       summary_overrides={"contract_version": "bogus/9.9"})
+                                       contract_version=fingerprints.CONTRACT_VERSION)
+            plan = batch_loader.build_load_plan(out)
+            self.assertTrue(plan.safe_to_write, plan.refusals)
+
+    def test_missing_contract_version_rejected(self):
+        with tempfile.TemporaryDirectory() as d:
+            out = make_pipeline_output(Path(d) / "b", accepted=[_accepted_row()],
+                                       contract_version=None)  # key omitted
             plan = batch_loader.build_load_plan(out)
             self.assertFalse(plan.safe_to_write)
+            self.assertTrue(any("contract_version" in r for r in plan.refusals))
+
+    def test_empty_contract_version_rejected(self):
+        with tempfile.TemporaryDirectory() as d:
+            out = make_pipeline_output(Path(d) / "b", accepted=[_accepted_row()],
+                                       contract_version="   ")
+            plan = batch_loader.build_load_plan(out)
+            self.assertFalse(plan.safe_to_write)
+            self.assertTrue(any("contract_version" in r for r in plan.refusals))
+
+    def test_unsupported_contract_version_rejected(self):
+        with tempfile.TemporaryDirectory() as d:
+            out = make_pipeline_output(Path(d) / "b", accepted=[_accepted_row()],
+                                       contract_version="bogus/9.9")
+            plan = batch_loader.build_load_plan(out)
+            self.assertFalse(plan.safe_to_write)
+            self.assertTrue(any("unsupported contract_version" in r for r in plan.refusals))
 
     def test_invalid_sold_date_rejected(self):
         with tempfile.TemporaryDirectory() as d:

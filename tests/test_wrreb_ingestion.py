@@ -209,6 +209,14 @@ class TestDryRunSafety(unittest.TestCase):
                     summary = json.load(fh)
                 self.assertEqual(summary["accepted"], 1)
                 self.assertIn("not-implemented", summary["production_load"])
+                # contract_version + parser_version must be emitted explicitly.
+                from samvision.contract import CONTRACT_VERSION
+                self.assertEqual(summary["contract_version"], CONTRACT_VERSION)
+                self.assertEqual(
+                    summary["parser_version"], m.ACTIVE_PARSER_VERSION
+                )
+                self.assertIn("single_line/", summary["parser_version"])
+                self.assertIn("client_full/", summary["parser_version"])
         finally:
             (m.agent_single_line.parse, m.client_full.parse, m.make_batch_id, m.sha256_file) = orig
 
