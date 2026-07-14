@@ -62,7 +62,11 @@ def run(input_dir: str, *, database_url: Optional[str] = None,
         print(json.dumps({"error": "manifest_invalid", "reason": str(exc)}, indent=2))
         return 2
 
-    want_write = authorize_staging_write and not dry_run
+    # A write is gated on BOTH an explicit --database-url and
+    # --authorize-staging-write (design §5). The authorization flag is the intent
+    # to write; dry-run is the default only when the flag is absent, so callers
+    # need not also pass --no-dry-run. Without the flag, this stays a dry run.
+    want_write = authorize_staging_write
     duplicate: Optional[bool] = None
 
     # Read-only duplicate check when a URL is available (both modes).

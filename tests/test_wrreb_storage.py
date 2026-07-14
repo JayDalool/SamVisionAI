@@ -340,6 +340,19 @@ class StagingWriteTests(StorageTestBase):
         self.assertEqual(batch.status, "staged")
         self.assertEqual(batch.accepted_count, 1)
 
+    def test_authorize_flag_writes_without_no_dry_run(self):
+        # Regression: --authorize-staging-write + URL must write even though
+        # --dry-run defaults True (no --no-dry-run required).
+        out = self.out_dir(accepted=[_accepted_row()])
+        rc = load_wrreb_batch.run(str(out), database_url=self.url,
+                                  authorize_staging_write=True)  # dry_run defaults True
+        self.assertEqual(rc, 0)
+        engine = repository.create_engine_from_url(self.url)
+        with engine.connect() as conn:
+            n = conn.execute(sa.select(sa.func.count()).select_from(models.staging_sales)).scalar_one()
+        engine.dispose()
+        self.assertEqual(n, 1)
+
     def test_duplicate_batch_rejected(self):
         out = self.out_dir(accepted=[_accepted_row()])
         self.assertEqual(self._load(out), 0)
