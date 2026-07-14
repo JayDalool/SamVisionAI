@@ -19,11 +19,15 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+from ..contract import CONTRACT_VERSION
 from . import agent_single_line, client_full
 from .models import ReasonCode
 from .provenance import make_batch_id, sha256_file
 from .reconcile import reconcile
 from .validate import validate, ValidationLimits
+
+# The parser version emitted for this batch (matches accepted-row parser_version).
+ACTIVE_PARSER_VERSION = f"{agent_single_line.PARSER_VERSION}+{client_full.PARSER_VERSION}"
 
 _CRITICAL_CONFLICTS = {ReasonCode.SOLD_DATE_CONFLICT, ReasonCode.SOLD_PRICE_CONFLICT,
                        ReasonCode.DUPLICATE_MLS}
@@ -78,6 +82,8 @@ def run(single_path: str, full_path: str, out_dir: str,
 
     summary_out = {
         "batch_id": batch_id,
+        "contract_version": CONTRACT_VERSION,
+        "parser_version": ACTIVE_PARSER_VERSION,
         "dry_run": dry_run,
         "authorize_production": authorize_production,
         "production_load": "not-implemented (MVP is dry-run only)",
