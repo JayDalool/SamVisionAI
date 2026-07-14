@@ -6,10 +6,9 @@
 -- never applied automatically and never at application startup. It is additive
 -- only (no changes to existing tables such as housing_data). PostgreSQL dialect.
 --
--- Wrap in a single transaction so a partial apply cannot leave a half-built
--- schema behind.
-
-BEGIN;
+-- This file intentionally does NOT open its own transaction. Apply it with
+-- `psql -v ON_ERROR_STOP=1 -1` so psql is the single transaction owner and a
+-- partial apply cannot leave a half-built schema behind.
 
 -- ---------------------------------------------------------------------------
 -- import_batches: one row per imported WRREB report pair.
@@ -178,5 +177,3 @@ CREATE INDEX IF NOT EXISTS ix_canonical_linc               ON canonical_sales (l
 CREATE INDEX IF NOT EXISTS ix_canonical_normalized_prop_id ON canonical_sales (normalized_property_id);
 CREATE INDEX IF NOT EXISTS ix_canonical_sold_price         ON canonical_sales (sold_price);
 CREATE INDEX IF NOT EXISTS ix_canonical_property_type      ON canonical_sales (property_type);
-
-COMMIT;

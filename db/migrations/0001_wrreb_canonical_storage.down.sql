@@ -5,12 +5,12 @@
 --
 -- Only these four tables are removed; no existing table (e.g. housing_data) is
 -- touched.
-
-BEGIN;
+--
+-- This file intentionally does NOT open its own transaction. Apply it with
+-- `psql -v ON_ERROR_STOP=1 -1` so psql is the single transaction owner and the
+-- whole rollback is atomic (all-or-nothing).
 
 DROP TABLE IF EXISTS canonical_sales;
 DROP TABLE IF EXISTS import_issues;
 DROP TABLE IF EXISTS staging_sales;
 DROP TABLE IF EXISTS import_batches;
-
-COMMIT;
