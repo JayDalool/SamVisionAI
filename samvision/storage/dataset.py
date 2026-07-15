@@ -32,10 +32,15 @@ def query_canonical_sales(
     neighbourhood: Optional[str] = None,
     area_code: Optional[str] = None,
     property_type: Optional[str] = None,
+    exclude_mls: Optional[str] = None,
     min_data_quality: str = "approved",
     limit: Optional[int] = None,
 ) -> list[dict[str, Any]]:
-    """Return approved canonical sales matching the given filters."""
+    """Return approved canonical sales matching the given filters.
+
+    ``exclude_mls`` drops a specific MLS (e.g. the subject property itself). This
+    function only ever SELECTs; it performs no writes.
+    """
     t = models.canonical_sales
     stmt = sa.select(t).where(t.c.data_quality_status.in_(_allowed_qualities(min_data_quality)))
     if sold_start is not None:
@@ -48,7 +53,10 @@ def query_canonical_sales(
         stmt = stmt.where(t.c.area_code == area_code)
     if property_type is not None:
         stmt = stmt.where(t.c.property_type == property_type)
-    stmt = stmt.order_by(t.c.sold_date.asc())
+    if exclude_mls is not None:
+        stmt = stmt.where(t.c.mls_number != exclude_mls)
+    # Stable ordering: sold_date desc, then mls asc (deterministic tie-break).
+    stmt = stmt.order_by(t.c.sold_date.desc(), t.c.mls_number.asc())
     if limit is not None:
         stmt = stmt.limit(limit)
     return [dict(row._mapping) for row in conn.execute(stmt)]
