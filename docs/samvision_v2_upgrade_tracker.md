@@ -42,11 +42,18 @@ WRREB reports
   → canonical sold-sales dataset
   → deterministic comparable-sales engine
   → backtesting and calibration decisions
-  → realtor review interface
+  → read-only valuation API / contract
+  → professional realtor UI (Fable-designed; NOT Streamlit)
   → candidate Model V2
   → benchmark and model registry
   → controlled production promotion
 ```
+
+> **UI direction (2026-07-14):** the current Streamlit app is a **prototype/trial
+> only** and will be **retired**, not extended. The production interface is a
+> dedicated, professional, realtor-grade UI **designed and built with Fable**,
+> consuming a **read-only valuation API/contract** rather than importing the
+> engine in-process. See Phase 14 and ADR-21.
 
 ## Reference commits (verified against `origin/main`)
 
@@ -244,21 +251,35 @@ automatically tune weights using only 100 sales**.
 > (garage / lot / parking / basement-development are 100% NULL in the current
 > canonical batch).
 
-### PHASE 14 — Realtor-facing comparable review screen — `[ ]`
-- [ ] feature-flagged Streamlit page
+### PHASE 14 — Professional realtor UI (Fable-designed; NOT Streamlit) — `[ ]`
+
+> Streamlit was a trial and will be **retired**. This phase delivers a proper,
+> professional, daily-use realtor UI. It has two parts: **design (14A) can start
+> in parallel now**; **build (14B) waits for the Phase 12 guardrails** so the
+> confidence/warning presentation is final.
+
+**14A — Read-only valuation API / contract** `[ ]`
+- [ ] define a stable read-only contract the UI consumes (subject in →
+  sanitized `ComparableResult` out) — no engine internals leaked
+- [ ] privacy at the boundary: no address / linc / postal / private fields;
+  defined MLS handling for UI display
+- [ ] approved canonical data only; read-only; explicit DB URL, no write flag
+- [ ] versioned response schema so UI and engine evolve independently
+
+**14B — Fable UI design + build** `[ ]`
+- [ ] UI design brief (realtor workflows, daily-use ergonomics, professional look)
+- [ ] Fable design system + high-fidelity mockups (light/dark, responsive)
 - [ ] subject property form
-- [ ] comparable selection results
-- [ ] similarity components / key differences
+- [ ] comparable selection results + similarity components + key differences
 - [ ] sold price and price-per-square-foot
 - [ ] indicated range
-- [ ] confidence and warnings
+- [ ] confidence and warnings, with **manual-review gating** for medium / low / widened / insufficient
 - [ ] include / exclude controls
 - [ ] realtor notes
-- [ ] no appraisal claims
-- [ ] approved canonical data only
-- [ ] read-only initially
+- [ ] explicit "decision support, **not an appraisal**" framing (no appraisal claims)
+- [ ] approved canonical data only; read-only initially
 - [ ] suppress private operational data
-- [ ] manual review required for medium / low / widened results
+- [ ] retire the Streamlit prototype once the new UI reaches parity
 
 ### PHASE 15 — Candidate Model V2 dataset — `[ ]`
 - [ ] approved canonical data only

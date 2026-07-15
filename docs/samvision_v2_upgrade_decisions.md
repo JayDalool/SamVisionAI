@@ -165,3 +165,19 @@ Each record: **Decision · Reason · Consequence · Revisit when**.
   gitignored dir; a tracked-dir guard refuses report writes into source.
 - **Revisit when:** Coordinated remediation of the historical PDFs is planned (with
   approval; do not rewrite shared history unilaterally).
+
+### ADR-21 — Streamlit is a prototype; the production UI is a Fable-built realtor app over a read-only API
+- **Phase:** 14 (decided 2026-07-14)
+- **Decision:** Treat the current Streamlit app as a **trial/prototype only** and
+  **retire** it. Build the production interface as a dedicated, professional,
+  daily-use **realtor UI designed and built with Fable**, consuming a **read-only
+  valuation API/contract** instead of importing the engine in-process.
+- **Reason:** Streamlit was adequate for validating the pipeline but is not a
+  professional daily-use realtor product; an API boundary decouples the UI from
+  engine internals, enforces the privacy/sanitization contract in one place, and
+  lets UI and engine evolve independently.
+- **Consequence:** A new phase 14A (read-only API/contract) precedes 14B (Fable
+  design + build); the Streamlit prototype is retired at UI parity; UI work
+  targets a stable, versioned, sanitized response schema.
+- **Revisit when:** The API contract or product surface materially changes, or a
+  different front-end technology is chosen.
