@@ -11,9 +11,11 @@ risks, and the exact next task.
 
 - **Last updated:** 2026-07-14
 - **Current branch:** `feature/comparable-sales-backtest`
-- **Current phase:** Phase 10 (leave-one-out backtesting) complete locally
+- **Current phase:** Phase 11 (backtest PR) — final verification passed; push/PR pending
 - **Current status:** Phases 1–9 merged to `main`; Phase 10 complete on the
-  feature branch (5 commits, not pushed); staging validated at 100 canonical.
+  feature branch; Phase 11 pre-push verification done (weights unchanged; 36/45/31/17/6
+  targeted suites green; full suite 163/157 with 6 env-only Streamlit failures;
+  sensitive gate clean). Branch not yet pushed. Staging validated at 100 canonical.
 - **Immediate next task:** Push, review, and merge
   `feature/comparable-sales-backtest` **without changing comparable weights**
   (Phase 11).
@@ -209,8 +211,9 @@ automatically tune weights using only 100 sales**.
 
 *Commits* — `f88e486` · `aad6618` · `c006c6b` · `5c8a82d` · `e8bed22`.
 
-### PHASE 11 — Backtest PR — `[ ]` (immediate next task)
-- [ ] final verification
+### PHASE 11 — Backtest PR — `[~]` (in progress; immediate next task)
+- [x] final verification (2026-07-14: weights unchanged; 36/45/31/17/6 green;
+  full suite 163/157, 6 env-only Streamlit failures; sensitive gate clean)
 - [ ] push `feature/comparable-sales-backtest`
 - [ ] open PR
 - [ ] review metrics and privacy behaviour
