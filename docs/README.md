@@ -15,6 +15,7 @@ Design and tracking documents for the SamVisionAI V2 upgrade.
 - [WRREB Canonical Storage Design](wrreb_canonical_storage_design.md)
 - [Comparable-Sales Engine Design](comparable_sales_engine_design.md)
 - [Comparable-Sales Backtest Design](comparable_sales_backtest_design.md)
+- [Realtor UI Design Brief](realtor_ui_design_brief.md) — Phase 14B, input for the Fable-built UI
 
 ## Background / audit
 

@@ -254,9 +254,11 @@ automatically tune weights using only 100 sales**.
 ### PHASE 14 — Professional realtor UI (Fable-designed; NOT Streamlit) — `[ ]`
 
 > Streamlit was a trial and will be **retired**. This phase delivers a proper,
-> professional, daily-use realtor UI. It has two parts: **design (14A) can start
-> in parallel now**; **build (14B) waits for the Phase 12 guardrails** so the
-> confidence/warning presentation is final.
+> professional, daily-use realtor UI. **Sequencing confirmed 2026-07-14:** the
+> data/model upgrade continues (Phases 11→12→13) while the **UI design track runs
+> in parallel now**; the production **build (14B) begins after Phase 12
+> guardrails** so confidence/warning presentation is final. First design artifact:
+> `docs/realtor_ui_design_brief.md` (the brief Fable builds from).
 
 **14A — Read-only valuation API / contract** `[ ]`
 - [ ] define a stable read-only contract the UI consumes (subject in →
